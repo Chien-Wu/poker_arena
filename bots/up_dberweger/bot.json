@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "up_dberweger",
+  "name": "StylePolicy",
+  "runtime": "python",
+  "entrypoint": "adapter:Bot",
+  "capabilities": {
+    "variant": "nlhe",
+    "min_players": 2,
+    "max_players": 9
+  },
+  "default_params": {
+    "samples": 80,
+    "style": "tight_aggressive"
+  },
+  "runtime_network": false,
+  "competition_eligible": false,
+  "provenance": {
+    "kind": "upstream-policy-extract",
+    "original_number": 10,
+    "repository": "dberweger2017/deepcfr-texas-no-limit-holdem-6-players",
+    "policy": "StylePolicy",
+    "note": "Card-aware style/reference policy, not the DeepCFR neural checkpoint."
+  }
+}

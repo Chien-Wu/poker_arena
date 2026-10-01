@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "id": "up_pokerforbots",
+  "name": "aggressive.Handler.OnActionRequest (Go)",
+  "runtime": "command",
+  "capabilities": {
+    "variant": "nlhe",
+    "min_players": 2,
+    "max_players": 9
+  },
+  "default_params": {},
+  "runtime_network": false,
+  "competition_eligible": false,
+  "provenance": {
+    "kind": "upstream-policy-extract",
+    "original_number": 16,
+    "repository": "lox/pokerforbots",
+    "policy": "aggressive.Handler.OnActionRequest (Go)",
+    "note": "Actual Go handler, compiled with a minimal local SDK facade. Seeded PCG constructor added beside the unmodified source."
+  },
+  "command": [
+    "{bot_dir}/code/handler"
+  ],
+  "docker_command": [
+    "/opt/arena-bin/pokerforbots"
+  ]
+}

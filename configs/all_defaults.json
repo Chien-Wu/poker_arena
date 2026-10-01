@@ -1,0 +1,47 @@
+{
+  "players": [
+    {
+      "id": "first",
+      "bot": "mybot1",
+      "params": {}
+    },
+    {
+      "id": "second",
+      "bot": "random_bot",
+      "params": {}
+    }
+  ],
+  "game": {
+    "initial_stack": 2000,
+    "small_blind": 10,
+    "big_blind": 20,
+    "ante": 0,
+    "hands_per_game": 100,
+    "max_actions_per_hand": 2000,
+    "blind_schedule": []
+  },
+  "tournament": {
+    "rounds": 4,
+    "group_size": 5,
+    "rotation_cycles": 1,
+    "regroup": true,
+    "require_equal_groups": false,
+    "tiebreak_hands": 20,
+    "tiebreak_attempts": 3,
+    "tiebreak_scope": "all",
+    "unresolved_ties": "share"
+  },
+  "execution": {
+    "runner": "subprocess",
+    "action_timeout_ms": 2000,
+    "startup_timeout_ms": 20000,
+    "event_timeout_ms": 2000,
+    "max_failures_per_game": 3,
+    "failure_policy": "check_fold",
+    "memory_mb": 2048,
+    "cpu_seconds": 120,
+    "require_no_network": false,
+    "docker_image": "poker-arena-bot:local"
+  },
+  "seed": null
+}

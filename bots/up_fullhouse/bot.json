@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "id": "up_fullhouse",
+  "name": "Shark.decide",
+  "runtime": "python",
+  "entrypoint": "adapter:Bot",
+  "capabilities": {
+    "variant": "nlhe",
+    "min_players": 2,
+    "max_players": 9
+  },
+  "default_params": {
+    "samples": 80
+  },
+  "runtime_network": false,
+  "competition_eligible": false,
+  "provenance": {
+    "kind": "upstream-policy-extract",
+    "original_number": 15,
+    "repository": "BouillieAnonymous/4fullhousehackathon",
+    "policy": "Shark.decide",
+    "note": "Shark reference policy, not the separately packaged 13.x submission."
+  }
+}

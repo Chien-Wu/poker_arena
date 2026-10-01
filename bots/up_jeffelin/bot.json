@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "id": "up_jeffelin",
+  "name": "strength_bot.Player",
+  "runtime": "python",
+  "entrypoint": "adapter:Bot",
+  "capabilities": {
+    "variant": "nlhe",
+    "min_players": 2,
+    "max_players": 2
+  },
+  "default_params": {
+    "samples": 80
+  },
+  "runtime_network": false,
+  "competition_eligible": false,
+  "provenance": {
+    "kind": "upstream-policy-extract",
+    "original_number": 5,
+    "repository": "jeffelin/CFR_pokerbot",
+    "policy": "strength_bot.Player",
+    "note": "Heads-up betting-only projection of the 2026 discard-game reference policy; discard rounds are not simulated."
+  }
+}

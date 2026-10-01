@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "id": "mybot1",
+  "name": "Editable Monte Carlo example",
+  "runtime": "python",
+  "entrypoint": "adapter:Bot",
+  "capabilities": {
+    "variant": "nlhe",
+    "min_players": 2,
+    "max_players": 9
+  },
+  "provenance": "native-example",
+  "default_params": {
+    "equity_samples": 80,
+    "raise_equity": 0.65,
+    "bet_fraction": 0.6,
+    "call_margin": 0.02,
+    "bluff_frequency": 0.02
+  },
+  "runtime_network": false,
+  "competition_eligible": false
+}

@@ -1,0 +1,89 @@
+{
+  "seed": 20261002,
+  "game": {
+    "hands_per_game": 30,
+    "initial_stack": 2000,
+    "small_blind": 10,
+    "big_blind": 20
+  },
+  "tournament": {
+    "rounds": 4,
+    "group_size": 5,
+    "tiebreak_hands": 10,
+    "tiebreak_scope": "all"
+  },
+  "execution": {
+    "runner": "subprocess",
+    "action_timeout_ms": 2000,
+    "failure_policy": "abort"
+  },
+  "players": [
+    {
+      "id": "lucky",
+      "bot": "up_lucky",
+      "params": {
+        "samples": 80
+      }
+    },
+    {
+      "id": "ethan",
+      "bot": "up_ethan",
+      "params": {
+        "samples": 80
+      }
+    },
+    {
+      "id": "dberweger",
+      "bot": "up_dberweger",
+      "params": {
+        "samples": 80
+      }
+    },
+    {
+      "id": "vincent",
+      "bot": "up_vincent",
+      "params": {
+        "samples": 80
+      }
+    },
+    {
+      "id": "dqn_reference",
+      "bot": "up_dqn_reference",
+      "params": {
+        "samples": 80
+      }
+    },
+    {
+      "id": "noregrets",
+      "bot": "up_noregrets",
+      "params": {
+        "samples": 80
+      }
+    },
+    {
+      "id": "fullhouse",
+      "bot": "up_fullhouse",
+      "params": {
+        "samples": 80
+      }
+    },
+    {
+      "id": "pokerforbots",
+      "bot": "up_pokerforbots",
+      "params": {
+        "samples": 80
+      }
+    },
+    {
+      "id": "chien",
+      "bot": "mybot1",
+      "params": {
+        "samples": 80
+      }
+    },
+    {
+      "id": "random",
+      "bot": "random_bot"
+    }
+  ]
+}

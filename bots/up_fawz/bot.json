@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "id": "up_fawz",
+  "name": "pot_odds_bot",
+  "runtime": "python",
+  "entrypoint": "adapter:Bot",
+  "capabilities": {
+    "variant": "nlhe",
+    "min_players": 2,
+    "max_players": 2
+  },
+  "default_params": {
+    "samples": 80
+  },
+  "runtime_network": false,
+  "competition_eligible": false,
+  "provenance": {
+    "kind": "upstream-policy-extract",
+    "original_number": 4,
+    "repository": "fawzmehfil/CFR-Poker-Bot",
+    "policy": "pot_odds_bot",
+    "note": "Existing heuristic baseline, not a trained CFR policy."
+  }
+}

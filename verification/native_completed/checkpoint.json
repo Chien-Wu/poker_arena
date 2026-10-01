@@ -1,0 +1,1117 @@
+{
+  "completed_round": 4,
+  "rounds": [
+    {
+      "round": 1,
+      "groups": [
+        {
+          "players": [
+            "random",
+            "tight",
+            "chien",
+            "aggressive",
+            "caller"
+          ],
+          "games": [
+            {
+              "game_id": "r1:g0:c0:s0",
+              "seats": [
+                "random",
+                "tight",
+                "chien",
+                "aggressive",
+                "caller"
+              ],
+              "stacks": {
+                "random": 0,
+                "tight": 2090,
+                "chien": 2129,
+                "aggressive": 0,
+                "caller": 5781
+              },
+              "ranking": [
+                [
+                  "caller"
+                ],
+                [
+                  "chien"
+                ],
+                [
+                  "tight"
+                ],
+                [
+                  "aggressive"
+                ],
+                [
+                  "random"
+                ]
+              ],
+              "points": {
+                "caller": 5.0,
+                "chien": 4.0,
+                "tight": 3.0,
+                "aggressive": 2.0,
+                "random": 1.0
+              }
+            },
+            {
+              "game_id": "r1:g0:c0:s1",
+              "seats": [
+                "tight",
+                "chien",
+                "aggressive",
+                "caller",
+                "random"
+              ],
+              "stacks": {
+                "tight": 1970,
+                "chien": 4804,
+                "aggressive": 0,
+                "caller": 0,
+                "random": 3226
+              },
+              "ranking": [
+                [
+                  "chien"
+                ],
+                [
+                  "random"
+                ],
+                [
+                  "tight"
+                ],
+                [
+                  "aggressive"
+                ],
+                [
+                  "caller"
+                ]
+              ],
+              "points": {
+                "chien": 5.0,
+                "random": 4.0,
+                "tight": 3.0,
+                "aggressive": 2.0,
+                "caller": 1.0
+              }
+            },
+            {
+              "game_id": "r1:g0:c0:s2",
+              "seats": [
+                "chien",
+                "aggressive",
+                "caller",
+                "random",
+                "tight"
+              ],
+              "stacks": {
+                "chien": 2958,
+                "aggressive": 2098,
+                "caller": 3004,
+                "random": 0,
+                "tight": 1940
+              },
+              "ranking": [
+                [
+                  "caller"
+                ],
+                [
+                  "chien"
+                ],
+                [
+                  "aggressive"
+                ],
+                [
+                  "tight"
+                ],
+                [
+                  "random"
+                ]
+              ],
+              "points": {
+                "caller": 5.0,
+                "chien": 4.0,
+                "aggressive": 3.0,
+                "tight": 2.0,
+                "random": 1.0
+              }
+            },
+            {
+              "game_id": "r1:g0:c0:s3",
+              "seats": [
+                "aggressive",
+                "caller",
+                "random",
+                "tight",
+                "chien"
+              ],
+              "stacks": {
+                "aggressive": 1757,
+                "caller": 4278,
+                "random": 0,
+                "tight": 2060,
+                "chien": 1905
+              },
+              "ranking": [
+                [
+                  "caller"
+                ],
+                [
+                  "tight"
+                ],
+                [
+                  "chien"
+                ],
+                [
+                  "aggressive"
+                ],
+                [
+                  "random"
+                ]
+              ],
+              "points": {
+                "caller": 5.0,
+                "tight": 4.0,
+                "chien": 3.0,
+                "aggressive": 2.0,
+                "random": 1.0
+              }
+            },
+            {
+              "game_id": "r1:g0:c0:s4",
+              "seats": [
+                "caller",
+                "random",
+                "tight",
+                "chien",
+                "aggressive"
+              ],
+              "stacks": {
+                "caller": 0,
+                "random": 0,
+                "tight": 7940,
+                "chien": 0,
+                "aggressive": 2060
+              },
+              "ranking": [
+                [
+                  "tight"
+                ],
+                [
+                  "aggressive"
+                ],
+                [
+                  "caller",
+                  "chien",
+                  "random"
+                ]
+              ],
+              "points": {
+                "tight": 5.0,
+                "aggressive": 4.0,
+                "caller": 2.0,
+                "chien": 2.0,
+                "random": 2.0
+              }
+            }
+          ],
+          "game_points": {
+            "random": 9.0,
+            "tight": 17.0,
+            "chien": 18.0,
+            "aggressive": 13.0,
+            "caller": 18.0
+          },
+          "ranking": [
+            [
+              "chien"
+            ],
+            [
+              "caller"
+            ],
+            [
+              "tight"
+            ],
+            [
+              "aggressive"
+            ],
+            [
+              "random"
+            ]
+          ],
+          "round_points": {
+            "chien": 5.0,
+            "caller": 4.0,
+            "tight": 3.0,
+            "aggressive": 2.0,
+            "random": 1.0
+          }
+        }
+      ],
+      "cumulative_points": {
+        "chien": 5.0,
+        "random": 1.0,
+        "caller": 4.0,
+        "tight": 3.0,
+        "aggressive": 2.0
+      },
+      "ranking": [
+        [
+          "chien"
+        ],
+        [
+          "caller"
+        ],
+        [
+          "tight"
+        ],
+        [
+          "aggressive"
+        ],
+        [
+          "random"
+        ]
+      ]
+    },
+    {
+      "round": 2,
+      "groups": [
+        {
+          "players": [
+            "chien",
+            "caller",
+            "tight",
+            "aggressive",
+            "random"
+          ],
+          "games": [
+            {
+              "game_id": "r2:g0:c0:s0",
+              "seats": [
+                "chien",
+                "caller",
+                "tight",
+                "aggressive",
+                "random"
+              ],
+              "stacks": {
+                "chien": 8060,
+                "caller": 0,
+                "tight": 1940,
+                "aggressive": 0,
+                "random": 0
+              },
+              "ranking": [
+                [
+                  "chien"
+                ],
+                [
+                  "tight"
+                ],
+                [
+                  "aggressive"
+                ],
+                [
+                  "caller"
+                ],
+                [
+                  "random"
+                ]
+              ],
+              "points": {
+                "chien": 5.0,
+                "tight": 4.0,
+                "aggressive": 3.0,
+                "caller": 2.0,
+                "random": 1.0
+              }
+            },
+            {
+              "game_id": "r2:g0:c0:s1",
+              "seats": [
+                "caller",
+                "tight",
+                "aggressive",
+                "random",
+                "chien"
+              ],
+              "stacks": {
+                "caller": 0,
+                "tight": 1990,
+                "aggressive": 5092,
+                "random": 938,
+                "chien": 1980
+              },
+              "ranking": [
+                [
+                  "aggressive"
+                ],
+                [
+                  "tight"
+                ],
+                [
+                  "chien"
+                ],
+                [
+                  "random"
+                ],
+                [
+                  "caller"
+                ]
+              ],
+              "points": {
+                "aggressive": 5.0,
+                "tight": 4.0,
+                "chien": 3.0,
+                "random": 2.0,
+                "caller": 1.0
+              }
+            },
+            {
+              "game_id": "r2:g0:c0:s2",
+              "seats": [
+                "tight",
+                "aggressive",
+                "random",
+                "chien",
+                "caller"
+              ],
+              "stacks": {
+                "tight": 1940,
+                "aggressive": 7562,
+                "random": 0,
+                "chien": 498,
+                "caller": 0
+              },
+              "ranking": [
+                [
+                  "aggressive"
+                ],
+                [
+                  "tight"
+                ],
+                [
+                  "chien"
+                ],
+                [
+                  "caller"
+                ],
+                [
+                  "random"
+                ]
+              ],
+              "points": {
+                "aggressive": 5.0,
+                "tight": 4.0,
+                "chien": 3.0,
+                "caller": 2.0,
+                "random": 1.0
+              }
+            },
+            {
+              "game_id": "r2:g0:c0:s3",
+              "seats": [
+                "aggressive",
+                "random",
+                "chien",
+                "caller",
+                "tight"
+              ],
+              "stacks": {
+                "aggressive": 0,
+                "random": 4092,
+                "chien": 4028,
+                "caller": 0,
+                "tight": 1880
+              },
+              "ranking": [
+                [
+                  "random"
+                ],
+                [
+                  "chien"
+                ],
+                [
+                  "tight"
+                ],
+                [
+                  "aggressive"
+                ],
+                [
+                  "caller"
+                ]
+              ],
+              "points": {
+                "random": 5.0,
+                "chien": 4.0,
+                "tight": 3.0,
+                "aggressive": 2.0,
+                "caller": 1.0
+              }
+            },
+            {
+              "game_id": "r2:g0:c0:s4",
+              "seats": [
+                "random",
+                "chien",
+                "caller",
+                "tight",
+                "aggressive"
+              ],
+              "stacks": {
+                "random": 0,
+                "chien": 0,
+                "caller": 9544,
+                "tight": 456,
+                "aggressive": 0
+              },
+              "ranking": [
+                [
+                  "caller"
+                ],
+                [
+                  "tight"
+                ],
+                [
+                  "aggressive",
+                  "chien"
+                ],
+                [
+                  "random"
+                ]
+              ],
+              "points": {
+                "caller": 5.0,
+                "tight": 4.0,
+                "aggressive": 2.5,
+                "chien": 2.5,
+                "random": 1.0
+              }
+            }
+          ],
+          "game_points": {
+            "chien": 17.5,
+            "caller": 11.0,
+            "tight": 19.0,
+            "aggressive": 17.5,
+            "random": 10.0
+          },
+          "ranking": [
+            [
+              "tight"
+            ],
+            [
+              "chien"
+            ],
+            [
+              "aggressive"
+            ],
+            [
+              "caller"
+            ],
+            [
+              "random"
+            ]
+          ],
+          "round_points": {
+            "tight": 5.0,
+            "chien": 4.0,
+            "aggressive": 3.0,
+            "caller": 2.0,
+            "random": 1.0
+          }
+        }
+      ],
+      "cumulative_points": {
+        "chien": 9.0,
+        "random": 2.0,
+        "caller": 6.0,
+        "tight": 8.0,
+        "aggressive": 5.0
+      },
+      "ranking": [
+        [
+          "chien"
+        ],
+        [
+          "tight"
+        ],
+        [
+          "caller"
+        ],
+        [
+          "aggressive"
+        ],
+        [
+          "random"
+        ]
+      ]
+    },
+    {
+      "round": 3,
+      "groups": [
+        {
+          "players": [
+            "chien",
+            "tight",
+            "caller",
+            "aggressive",
+            "random"
+          ],
+          "games": [
+            {
+              "game_id": "r3:g0:c0:s0",
+              "seats": [
+                "chien",
+                "tight",
+                "caller",
+                "aggressive",
+                "random"
+              ],
+              "stacks": {
+                "chien": 2502,
+                "tight": 1930,
+                "caller": 2044,
+                "aggressive": 3524,
+                "random": 0
+              },
+              "ranking": [
+                [
+                  "aggressive"
+                ],
+                [
+                  "chien"
+                ],
+                [
+                  "caller"
+                ],
+                [
+                  "tight"
+                ],
+                [
+                  "random"
+                ]
+              ],
+              "points": {
+                "aggressive": 5.0,
+                "chien": 4.0,
+                "caller": 3.0,
+                "tight": 2.0,
+                "random": 1.0
+              }
+            },
+            {
+              "game_id": "r3:g0:c0:s1",
+              "seats": [
+                "tight",
+                "caller",
+                "aggressive",
+                "random",
+                "chien"
+              ],
+              "stacks": {
+                "tight": 0,
+                "caller": 0,
+                "aggressive": 2559,
+                "random": 2,
+                "chien": 7439
+              },
+              "ranking": [
+                [
+                  "chien"
+                ],
+                [
+                  "aggressive"
+                ],
+                [
+                  "random"
+                ],
+                [
+                  "caller"
+                ],
+                [
+                  "tight"
+                ]
+              ],
+              "points": {
+                "chien": 5.0,
+                "aggressive": 4.0,
+                "random": 3.0,
+                "caller": 2.0,
+                "tight": 1.0
+              }
+            },
+            {
+              "game_id": "r3:g0:c0:s2",
+              "seats": [
+                "caller",
+                "aggressive",
+                "random",
+                "chien",
+                "tight"
+              ],
+              "stacks": {
+                "caller": 0,
+                "aggressive": 1686,
+                "random": 0,
+                "chien": 6324,
+                "tight": 1990
+              },
+              "ranking": [
+                [
+                  "chien"
+                ],
+                [
+                  "tight"
+                ],
+                [
+                  "aggressive"
+                ],
+                [
+                  "caller"
+                ],
+                [
+                  "random"
+                ]
+              ],
+              "points": {
+                "chien": 5.0,
+                "tight": 4.0,
+                "aggressive": 3.0,
+                "caller": 2.0,
+                "random": 1.0
+              }
+            },
+            {
+              "game_id": "r3:g0:c0:s3",
+              "seats": [
+                "aggressive",
+                "random",
+                "chien",
+                "tight",
+                "caller"
+              ],
+              "stacks": {
+                "aggressive": 0,
+                "random": 0,
+                "chien": 3223,
+                "tight": 1910,
+                "caller": 4867
+              },
+              "ranking": [
+                [
+                  "caller"
+                ],
+                [
+                  "chien"
+                ],
+                [
+                  "tight"
+                ],
+                [
+                  "aggressive"
+                ],
+                [
+                  "random"
+                ]
+              ],
+              "points": {
+                "caller": 5.0,
+                "chien": 4.0,
+                "tight": 3.0,
+                "aggressive": 2.0,
+                "random": 1.0
+              }
+            },
+            {
+              "game_id": "r3:g0:c0:s4",
+              "seats": [
+                "random",
+                "chien",
+                "tight",
+                "caller",
+                "aggressive"
+              ],
+              "stacks": {
+                "random": 3188,
+                "chien": 0,
+                "tight": 1920,
+                "caller": 0,
+                "aggressive": 4892
+              },
+              "ranking": [
+                [
+                  "aggressive"
+                ],
+                [
+                  "random"
+                ],
+                [
+                  "tight"
+                ],
+                [
+                  "chien"
+                ],
+                [
+                  "caller"
+                ]
+              ],
+              "points": {
+                "aggressive": 5.0,
+                "random": 4.0,
+                "tight": 3.0,
+                "chien": 2.0,
+                "caller": 1.0
+              }
+            }
+          ],
+          "game_points": {
+            "chien": 20.0,
+            "tight": 13.0,
+            "caller": 13.0,
+            "aggressive": 19.0,
+            "random": 10.0
+          },
+          "ranking": [
+            [
+              "chien"
+            ],
+            [
+              "aggressive"
+            ],
+            [
+              "caller"
+            ],
+            [
+              "tight"
+            ],
+            [
+              "random"
+            ]
+          ],
+          "round_points": {
+            "chien": 5.0,
+            "aggressive": 4.0,
+            "caller": 3.0,
+            "tight": 2.0,
+            "random": 1.0
+          }
+        }
+      ],
+      "cumulative_points": {
+        "chien": 14.0,
+        "random": 3.0,
+        "caller": 9.0,
+        "tight": 10.0,
+        "aggressive": 9.0
+      },
+      "ranking": [
+        [
+          "chien"
+        ],
+        [
+          "tight"
+        ],
+        [
+          "caller"
+        ],
+        [
+          "aggressive"
+        ],
+        [
+          "random"
+        ]
+      ]
+    },
+    {
+      "round": 4,
+      "groups": [
+        {
+          "players": [
+            "chien",
+            "tight",
+            "caller",
+            "aggressive",
+            "random"
+          ],
+          "games": [
+            {
+              "game_id": "r4:g0:c0:s0",
+              "seats": [
+                "chien",
+                "tight",
+                "caller",
+                "aggressive",
+                "random"
+              ],
+              "stacks": {
+                "chien": 5870,
+                "tight": 4130,
+                "caller": 0,
+                "aggressive": 0,
+                "random": 0
+              },
+              "ranking": [
+                [
+                  "chien"
+                ],
+                [
+                  "tight"
+                ],
+                [
+                  "aggressive"
+                ],
+                [
+                  "caller"
+                ],
+                [
+                  "random"
+                ]
+              ],
+              "points": {
+                "chien": 5.0,
+                "tight": 4.0,
+                "aggressive": 3.0,
+                "caller": 2.0,
+                "random": 1.0
+              }
+            },
+            {
+              "game_id": "r4:g0:c0:s1",
+              "seats": [
+                "tight",
+                "caller",
+                "aggressive",
+                "random",
+                "chien"
+              ],
+              "stacks": {
+                "tight": 1820,
+                "caller": 0,
+                "aggressive": 3562,
+                "random": 0,
+                "chien": 4618
+              },
+              "ranking": [
+                [
+                  "chien"
+                ],
+                [
+                  "aggressive"
+                ],
+                [
+                  "tight"
+                ],
+                [
+                  "random"
+                ],
+                [
+                  "caller"
+                ]
+              ],
+              "points": {
+                "chien": 5.0,
+                "aggressive": 4.0,
+                "tight": 3.0,
+                "random": 2.0,
+                "caller": 1.0
+              }
+            },
+            {
+              "game_id": "r4:g0:c0:s2",
+              "seats": [
+                "caller",
+                "aggressive",
+                "random",
+                "chien",
+                "tight"
+              ],
+              "stacks": {
+                "caller": 0,
+                "aggressive": 90,
+                "random": 3428,
+                "chien": 4472,
+                "tight": 2010
+              },
+              "ranking": [
+                [
+                  "chien"
+                ],
+                [
+                  "random"
+                ],
+                [
+                  "tight"
+                ],
+                [
+                  "aggressive"
+                ],
+                [
+                  "caller"
+                ]
+              ],
+              "points": {
+                "chien": 5.0,
+                "random": 4.0,
+                "tight": 3.0,
+                "aggressive": 2.0,
+                "caller": 1.0
+              }
+            },
+            {
+              "game_id": "r4:g0:c0:s3",
+              "seats": [
+                "aggressive",
+                "random",
+                "chien",
+                "tight",
+                "caller"
+              ],
+              "stacks": {
+                "aggressive": 1654,
+                "random": 0,
+                "chien": 6306,
+                "tight": 2040,
+                "caller": 0
+              },
+              "ranking": [
+                [
+                  "chien"
+                ],
+                [
+                  "tight"
+                ],
+                [
+                  "aggressive"
+                ],
+                [
+                  "random"
+                ],
+                [
+                  "caller"
+                ]
+              ],
+              "points": {
+                "chien": 5.0,
+                "tight": 4.0,
+                "aggressive": 3.0,
+                "random": 2.0,
+                "caller": 1.0
+              }
+            },
+            {
+              "game_id": "r4:g0:c0:s4",
+              "seats": [
+                "random",
+                "chien",
+                "tight",
+                "caller",
+                "aggressive"
+              ],
+              "stacks": {
+                "random": 0,
+                "chien": 2295,
+                "tight": 1850,
+                "caller": 1915,
+                "aggressive": 3940
+              },
+              "ranking": [
+                [
+                  "aggressive"
+                ],
+                [
+                  "chien"
+                ],
+                [
+                  "caller"
+                ],
+                [
+                  "tight"
+                ],
+                [
+                  "random"
+                ]
+              ],
+              "points": {
+                "aggressive": 5.0,
+                "chien": 4.0,
+                "caller": 3.0,
+                "tight": 2.0,
+                "random": 1.0
+              }
+            }
+          ],
+          "game_points": {
+            "chien": 24.0,
+            "tight": 16.0,
+            "caller": 8.0,
+            "aggressive": 17.0,
+            "random": 10.0
+          },
+          "ranking": [
+            [
+              "chien"
+            ],
+            [
+              "aggressive"
+            ],
+            [
+              "tight"
+            ],
+            [
+              "random"
+            ],
+            [
+              "caller"
+            ]
+          ],
+          "round_points": {
+            "chien": 5.0,
+            "aggressive": 4.0,
+            "tight": 3.0,
+            "random": 2.0,
+            "caller": 1.0
+          }
+        }
+      ],
+      "cumulative_points": {
+        "chien": 19.0,
+        "random": 5.0,
+        "caller": 10.0,
+        "tight": 13.0,
+        "aggressive": 13.0
+      },
+      "ranking": [
+        [
+          "chien"
+        ],
+        [
+          "aggressive"
+        ],
+        [
+          "tight"
+        ],
+        [
+          "caller"
+        ],
+        [
+          "random"
+        ]
+      ]
+    }
+  ],
+  "cumulative_points": {
+    "chien": 19.0,
+    "random": 5.0,
+    "caller": 10.0,
+    "tight": 13.0,
+    "aggressive": 13.0
+  },
+  "next_order": [
+    "chien",
+    "aggressive",
+    "tight",
+    "caller",
+    "random"
+  ]
+}

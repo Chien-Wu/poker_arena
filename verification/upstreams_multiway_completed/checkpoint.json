@@ -1,0 +1,2143 @@
+{
+  "completed_round": 4,
+  "rounds": [
+    {
+      "round": 1,
+      "groups": [
+        {
+          "players": [
+            "pokerforbots",
+            "chien",
+            "lucky",
+            "fullhouse",
+            "vincent"
+          ],
+          "games": [
+            {
+              "game_id": "r1:g0:c0:s0",
+              "seats": [
+                "pokerforbots",
+                "chien",
+                "lucky",
+                "fullhouse",
+                "vincent"
+              ],
+              "stacks": {
+                "pokerforbots": 610,
+                "chien": 3445,
+                "lucky": 2005,
+                "fullhouse": 1970,
+                "vincent": 1970
+              },
+              "ranking": [
+                [
+                  "chien"
+                ],
+                [
+                  "lucky"
+                ],
+                [
+                  "fullhouse",
+                  "vincent"
+                ],
+                [
+                  "pokerforbots"
+                ]
+              ],
+              "points": {
+                "chien": 5.0,
+                "lucky": 4.0,
+                "fullhouse": 2.5,
+                "vincent": 2.5,
+                "pokerforbots": 1.0
+              }
+            },
+            {
+              "game_id": "r1:g0:c0:s1",
+              "seats": [
+                "chien",
+                "lucky",
+                "fullhouse",
+                "vincent",
+                "pokerforbots"
+              ],
+              "stacks": {
+                "chien": 3960,
+                "lucky": 1850,
+                "fullhouse": 1950,
+                "vincent": 1970,
+                "pokerforbots": 270
+              },
+              "ranking": [
+                [
+                  "chien"
+                ],
+                [
+                  "vincent"
+                ],
+                [
+                  "fullhouse"
+                ],
+                [
+                  "lucky"
+                ],
+                [
+                  "pokerforbots"
+                ]
+              ],
+              "points": {
+                "chien": 5.0,
+                "vincent": 4.0,
+                "fullhouse": 3.0,
+                "lucky": 2.0,
+                "pokerforbots": 1.0
+              }
+            },
+            {
+              "game_id": "r1:g0:c0:s2",
+              "seats": [
+                "lucky",
+                "fullhouse",
+                "vincent",
+                "pokerforbots",
+                "chien"
+              ],
+              "stacks": {
+                "lucky": 1880,
+                "fullhouse": 1960,
+                "vincent": 1950,
+                "pokerforbots": 250,
+                "chien": 3960
+              },
+              "ranking": [
+                [
+                  "chien"
+                ],
+                [
+                  "fullhouse"
+                ],
+                [
+                  "vincent"
+                ],
+                [
+                  "lucky"
+                ],
+                [
+                  "pokerforbots"
+                ]
+              ],
+              "points": {
+                "chien": 5.0,
+                "fullhouse": 4.0,
+                "vincent": 3.0,
+                "lucky": 2.0,
+                "pokerforbots": 1.0
+              }
+            },
+            {
+              "game_id": "r1:g0:c0:s3",
+              "seats": [
+                "fullhouse",
+                "vincent",
+                "pokerforbots",
+                "chien",
+                "lucky"
+              ],
+              "stacks": {
+                "fullhouse": 1960,
+                "vincent": 1960,
+                "pokerforbots": 130,
+                "chien": 4000,
+                "lucky": 1950
+              },
+              "ranking": [
+                [
+                  "chien"
+                ],
+                [
+                  "fullhouse",
+                  "vincent"
+                ],
+                [
+                  "lucky"
+                ],
+                [
+                  "pokerforbots"
+                ]
+              ],
+              "points": {
+                "chien": 5.0,
+                "fullhouse": 3.5,
+                "vincent": 3.5,
+                "lucky": 2.0,
+                "pokerforbots": 1.0
+              }
+            },
+            {
+              "game_id": "r1:g0:c0:s4",
+              "seats": [
+                "vincent",
+                "pokerforbots",
+                "chien",
+                "lucky",
+                "fullhouse"
+              ],
+              "stacks": {
+                "vincent": 2000,
+                "pokerforbots": 0,
+                "chien": 3941,
+                "lucky": 1829,
+                "fullhouse": 2230
+              },
+              "ranking": [
+                [
+                  "chien"
+                ],
+                [
+                  "fullhouse"
+                ],
+                [
+                  "vincent"
+                ],
+                [
+                  "lucky"
+                ],
+                [
+                  "pokerforbots"
+                ]
+              ],
+              "points": {
+                "chien": 5.0,
+                "fullhouse": 4.0,
+                "vincent": 3.0,
+                "lucky": 2.0,
+                "pokerforbots": 1.0
+              }
+            }
+          ],
+          "game_points": {
+            "pokerforbots": 5.0,
+            "chien": 25.0,
+            "lucky": 12.0,
+            "fullhouse": 17.0,
+            "vincent": 16.0
+          },
+          "ranking": [
+            [
+              "chien"
+            ],
+            [
+              "fullhouse"
+            ],
+            [
+              "vincent"
+            ],
+            [
+              "lucky"
+            ],
+            [
+              "pokerforbots"
+            ]
+          ],
+          "round_points": {
+            "chien": 5.0,
+            "fullhouse": 4.0,
+            "vincent": 3.0,
+            "lucky": 2.0,
+            "pokerforbots": 1.0
+          }
+        },
+        {
+          "players": [
+            "ethan",
+            "noregrets",
+            "dberweger",
+            "random",
+            "dqn_reference"
+          ],
+          "games": [
+            {
+              "game_id": "r1:g1:c0:s0",
+              "seats": [
+                "ethan",
+                "noregrets",
+                "dberweger",
+                "random",
+                "dqn_reference"
+              ],
+              "stacks": {
+                "ethan": 1962,
+                "noregrets": 5848,
+                "dberweger": 0,
+                "random": 0,
+                "dqn_reference": 2190
+              },
+              "ranking": [
+                [
+                  "noregrets"
+                ],
+                [
+                  "dqn_reference"
+                ],
+                [
+                  "ethan"
+                ],
+                [
+                  "dberweger",
+                  "random"
+                ]
+              ],
+              "points": {
+                "noregrets": 5.0,
+                "dqn_reference": 4.0,
+                "ethan": 3.0,
+                "dberweger": 1.5,
+                "random": 1.5
+              }
+            },
+            {
+              "game_id": "r1:g1:c0:s1",
+              "seats": [
+                "noregrets",
+                "dberweger",
+                "random",
+                "dqn_reference",
+                "ethan"
+              ],
+              "stacks": {
+                "noregrets": 0,
+                "dberweger": 1970,
+                "random": 3491,
+                "dqn_reference": 1980,
+                "ethan": 2559
+              },
+              "ranking": [
+                [
+                  "random"
+                ],
+                [
+                  "ethan"
+                ],
+                [
+                  "dqn_reference"
+                ],
+                [
+                  "dberweger"
+                ],
+                [
+                  "noregrets"
+                ]
+              ],
+              "points": {
+                "random": 5.0,
+                "ethan": 4.0,
+                "dqn_reference": 3.0,
+                "dberweger": 2.0,
+                "noregrets": 1.0
+              }
+            },
+            {
+              "game_id": "r1:g1:c0:s2",
+              "seats": [
+                "dberweger",
+                "random",
+                "dqn_reference",
+                "ethan",
+                "noregrets"
+              ],
+              "stacks": {
+                "dberweger": 30,
+                "random": 0,
+                "dqn_reference": 2020,
+                "ethan": 2055,
+                "noregrets": 5895
+              },
+              "ranking": [
+                [
+                  "noregrets"
+                ],
+                [
+                  "ethan"
+                ],
+                [
+                  "dqn_reference"
+                ],
+                [
+                  "dberweger"
+                ],
+                [
+                  "random"
+                ]
+              ],
+              "points": {
+                "noregrets": 5.0,
+                "ethan": 4.0,
+                "dqn_reference": 3.0,
+                "dberweger": 2.0,
+                "random": 1.0
+              }
+            },
+            {
+              "game_id": "r1:g1:c0:s3",
+              "seats": [
+                "random",
+                "dqn_reference",
+                "ethan",
+                "noregrets",
+                "dberweger"
+              ],
+              "stacks": {
+                "random": 1850,
+                "dqn_reference": 1940,
+                "ethan": 2050,
+                "noregrets": 2090,
+                "dberweger": 2070
+              },
+              "ranking": [
+                [
+                  "noregrets"
+                ],
+                [
+                  "dberweger"
+                ],
+                [
+                  "ethan"
+                ],
+                [
+                  "dqn_reference"
+                ],
+                [
+                  "random"
+                ]
+              ],
+              "points": {
+                "noregrets": 5.0,
+                "dberweger": 4.0,
+                "ethan": 3.0,
+                "dqn_reference": 2.0,
+                "random": 1.0
+              }
+            },
+            {
+              "game_id": "r1:g1:c0:s4",
+              "seats": [
+                "dqn_reference",
+                "ethan",
+                "noregrets",
+                "dberweger",
+                "random"
+              ],
+              "stacks": {
+                "dqn_reference": 1950,
+                "ethan": 2040,
+                "noregrets": 0,
+                "dberweger": 2010,
+                "random": 4000
+              },
+              "ranking": [
+                [
+                  "random"
+                ],
+                [
+                  "ethan"
+                ],
+                [
+                  "dberweger"
+                ],
+                [
+                  "dqn_reference"
+                ],
+                [
+                  "noregrets"
+                ]
+              ],
+              "points": {
+                "random": 5.0,
+                "ethan": 4.0,
+                "dberweger": 3.0,
+                "dqn_reference": 2.0,
+                "noregrets": 1.0
+              }
+            }
+          ],
+          "game_points": {
+            "ethan": 18.0,
+            "noregrets": 17.0,
+            "dberweger": 12.5,
+            "random": 13.5,
+            "dqn_reference": 14.0
+          },
+          "ranking": [
+            [
+              "ethan"
+            ],
+            [
+              "noregrets"
+            ],
+            [
+              "dqn_reference"
+            ],
+            [
+              "random"
+            ],
+            [
+              "dberweger"
+            ]
+          ],
+          "round_points": {
+            "ethan": 5.0,
+            "noregrets": 4.0,
+            "dqn_reference": 3.0,
+            "random": 2.0,
+            "dberweger": 1.0
+          }
+        }
+      ],
+      "cumulative_points": {
+        "lucky": 2.0,
+        "ethan": 5.0,
+        "dberweger": 1.0,
+        "vincent": 3.0,
+        "dqn_reference": 3.0,
+        "noregrets": 4.0,
+        "fullhouse": 4.0,
+        "pokerforbots": 1.0,
+        "chien": 5.0,
+        "random": 2.0
+      },
+      "ranking": [
+        [
+          "chien",
+          "ethan"
+        ],
+        [
+          "fullhouse",
+          "noregrets"
+        ],
+        [
+          "dqn_reference",
+          "vincent"
+        ],
+        [
+          "lucky",
+          "random"
+        ],
+        [
+          "dberweger",
+          "pokerforbots"
+        ]
+      ]
+    },
+    {
+      "round": 2,
+      "groups": [
+        {
+          "players": [
+            "chien",
+            "ethan",
+            "fullhouse",
+            "noregrets",
+            "dqn_reference"
+          ],
+          "games": [
+            {
+              "game_id": "r2:g0:c0:s0",
+              "seats": [
+                "chien",
+                "ethan",
+                "fullhouse",
+                "noregrets",
+                "dqn_reference"
+              ],
+              "stacks": {
+                "chien": 1975,
+                "ethan": 1906,
+                "fullhouse": 2070,
+                "noregrets": 2079,
+                "dqn_reference": 1970
+              },
+              "ranking": [
+                [
+                  "noregrets"
+                ],
+                [
+                  "fullhouse"
+                ],
+                [
+                  "chien"
+                ],
+                [
+                  "dqn_reference"
+                ],
+                [
+                  "ethan"
+                ]
+              ],
+              "points": {
+                "noregrets": 5.0,
+                "fullhouse": 4.0,
+                "chien": 3.0,
+                "dqn_reference": 2.0,
+                "ethan": 1.0
+              }
+            },
+            {
+              "game_id": "r2:g0:c0:s1",
+              "seats": [
+                "ethan",
+                "fullhouse",
+                "noregrets",
+                "dqn_reference",
+                "chien"
+              ],
+              "stacks": {
+                "ethan": 2052,
+                "fullhouse": 2010,
+                "noregrets": 2131,
+                "dqn_reference": 1950,
+                "chien": 1857
+              },
+              "ranking": [
+                [
+                  "noregrets"
+                ],
+                [
+                  "ethan"
+                ],
+                [
+                  "fullhouse"
+                ],
+                [
+                  "dqn_reference"
+                ],
+                [
+                  "chien"
+                ]
+              ],
+              "points": {
+                "noregrets": 5.0,
+                "ethan": 4.0,
+                "fullhouse": 3.0,
+                "dqn_reference": 2.0,
+                "chien": 1.0
+              }
+            },
+            {
+              "game_id": "r2:g0:c0:s2",
+              "seats": [
+                "fullhouse",
+                "noregrets",
+                "dqn_reference",
+                "chien",
+                "ethan"
+              ],
+              "stacks": {
+                "fullhouse": 1970,
+                "noregrets": 1855,
+                "dqn_reference": 1950,
+                "chien": 1960,
+                "ethan": 2265
+              },
+              "ranking": [
+                [
+                  "ethan"
+                ],
+                [
+                  "fullhouse"
+                ],
+                [
+                  "chien"
+                ],
+                [
+                  "dqn_reference"
+                ],
+                [
+                  "noregrets"
+                ]
+              ],
+              "points": {
+                "ethan": 5.0,
+                "fullhouse": 4.0,
+                "chien": 3.0,
+                "dqn_reference": 2.0,
+                "noregrets": 1.0
+              }
+            },
+            {
+              "game_id": "r2:g0:c0:s3",
+              "seats": [
+                "noregrets",
+                "dqn_reference",
+                "chien",
+                "ethan",
+                "fullhouse"
+              ],
+              "stacks": {
+                "noregrets": 251,
+                "dqn_reference": 1960,
+                "chien": 5165,
+                "ethan": 604,
+                "fullhouse": 2020
+              },
+              "ranking": [
+                [
+                  "chien"
+                ],
+                [
+                  "fullhouse"
+                ],
+                [
+                  "dqn_reference"
+                ],
+                [
+                  "ethan"
+                ],
+                [
+                  "noregrets"
+                ]
+              ],
+              "points": {
+                "chien": 5.0,
+                "fullhouse": 4.0,
+                "dqn_reference": 3.0,
+                "ethan": 2.0,
+                "noregrets": 1.0
+              }
+            },
+            {
+              "game_id": "r2:g0:c0:s4",
+              "seats": [
+                "dqn_reference",
+                "chien",
+                "ethan",
+                "fullhouse",
+                "noregrets"
+              ],
+              "stacks": {
+                "dqn_reference": 1970,
+                "chien": 1194,
+                "ethan": 3694,
+                "fullhouse": 1995,
+                "noregrets": 1147
+              },
+              "ranking": [
+                [
+                  "ethan"
+                ],
+                [
+                  "fullhouse"
+                ],
+                [
+                  "dqn_reference"
+                ],
+                [
+                  "chien"
+                ],
+                [
+                  "noregrets"
+                ]
+              ],
+              "points": {
+                "ethan": 5.0,
+                "fullhouse": 4.0,
+                "dqn_reference": 3.0,
+                "chien": 2.0,
+                "noregrets": 1.0
+              }
+            }
+          ],
+          "game_points": {
+            "chien": 14.0,
+            "ethan": 17.0,
+            "fullhouse": 19.0,
+            "noregrets": 13.0,
+            "dqn_reference": 12.0
+          },
+          "ranking": [
+            [
+              "fullhouse"
+            ],
+            [
+              "ethan"
+            ],
+            [
+              "chien"
+            ],
+            [
+              "noregrets"
+            ],
+            [
+              "dqn_reference"
+            ]
+          ],
+          "round_points": {
+            "fullhouse": 5.0,
+            "ethan": 4.0,
+            "chien": 3.0,
+            "noregrets": 2.0,
+            "dqn_reference": 1.0
+          }
+        },
+        {
+          "players": [
+            "vincent",
+            "lucky",
+            "random",
+            "dberweger",
+            "pokerforbots"
+          ],
+          "games": [
+            {
+              "game_id": "r2:g1:c0:s0",
+              "seats": [
+                "vincent",
+                "lucky",
+                "random",
+                "dberweger",
+                "pokerforbots"
+              ],
+              "stacks": {
+                "vincent": 1880,
+                "lucky": 2614,
+                "random": 0,
+                "dberweger": 1950,
+                "pokerforbots": 3556
+              },
+              "ranking": [
+                [
+                  "pokerforbots"
+                ],
+                [
+                  "lucky"
+                ],
+                [
+                  "dberweger"
+                ],
+                [
+                  "vincent"
+                ],
+                [
+                  "random"
+                ]
+              ],
+              "points": {
+                "pokerforbots": 5.0,
+                "lucky": 4.0,
+                "dberweger": 3.0,
+                "vincent": 2.0,
+                "random": 1.0
+              }
+            },
+            {
+              "game_id": "r2:g1:c0:s1",
+              "seats": [
+                "lucky",
+                "random",
+                "dberweger",
+                "pokerforbots",
+                "vincent"
+              ],
+              "stacks": {
+                "lucky": 1940,
+                "random": 6100,
+                "dberweger": 0,
+                "pokerforbots": 0,
+                "vincent": 1960
+              },
+              "ranking": [
+                [
+                  "random"
+                ],
+                [
+                  "vincent"
+                ],
+                [
+                  "lucky"
+                ],
+                [
+                  "dberweger",
+                  "pokerforbots"
+                ]
+              ],
+              "points": {
+                "random": 5.0,
+                "vincent": 4.0,
+                "lucky": 3.0,
+                "dberweger": 1.5,
+                "pokerforbots": 1.5
+              }
+            },
+            {
+              "game_id": "r2:g1:c0:s2",
+              "seats": [
+                "random",
+                "dberweger",
+                "pokerforbots",
+                "vincent",
+                "lucky"
+              ],
+              "stacks": {
+                "random": 0,
+                "dberweger": 1900,
+                "pokerforbots": 4290,
+                "vincent": 1950,
+                "lucky": 1860
+              },
+              "ranking": [
+                [
+                  "pokerforbots"
+                ],
+                [
+                  "vincent"
+                ],
+                [
+                  "dberweger"
+                ],
+                [
+                  "lucky"
+                ],
+                [
+                  "random"
+                ]
+              ],
+              "points": {
+                "pokerforbots": 5.0,
+                "vincent": 4.0,
+                "dberweger": 3.0,
+                "lucky": 2.0,
+                "random": 1.0
+              }
+            },
+            {
+              "game_id": "r2:g1:c0:s3",
+              "seats": [
+                "dberweger",
+                "pokerforbots",
+                "vincent",
+                "lucky",
+                "random"
+              ],
+              "stacks": {
+                "dberweger": 3960,
+                "pokerforbots": 1739,
+                "vincent": 1940,
+                "lucky": 2361,
+                "random": 0
+              },
+              "ranking": [
+                [
+                  "dberweger"
+                ],
+                [
+                  "lucky"
+                ],
+                [
+                  "vincent"
+                ],
+                [
+                  "pokerforbots"
+                ],
+                [
+                  "random"
+                ]
+              ],
+              "points": {
+                "dberweger": 5.0,
+                "lucky": 4.0,
+                "vincent": 3.0,
+                "pokerforbots": 2.0,
+                "random": 1.0
+              }
+            },
+            {
+              "game_id": "r2:g1:c0:s4",
+              "seats": [
+                "pokerforbots",
+                "vincent",
+                "lucky",
+                "random",
+                "dberweger"
+              ],
+              "stacks": {
+                "pokerforbots": 88,
+                "vincent": 1870,
+                "lucky": 2122,
+                "random": 3950,
+                "dberweger": 1970
+              },
+              "ranking": [
+                [
+                  "random"
+                ],
+                [
+                  "lucky"
+                ],
+                [
+                  "dberweger"
+                ],
+                [
+                  "vincent"
+                ],
+                [
+                  "pokerforbots"
+                ]
+              ],
+              "points": {
+                "random": 5.0,
+                "lucky": 4.0,
+                "dberweger": 3.0,
+                "vincent": 2.0,
+                "pokerforbots": 1.0
+              }
+            }
+          ],
+          "game_points": {
+            "vincent": 15.0,
+            "lucky": 17.0,
+            "random": 13.0,
+            "dberweger": 15.5,
+            "pokerforbots": 14.5
+          },
+          "ranking": [
+            [
+              "lucky"
+            ],
+            [
+              "dberweger"
+            ],
+            [
+              "vincent"
+            ],
+            [
+              "pokerforbots"
+            ],
+            [
+              "random"
+            ]
+          ],
+          "round_points": {
+            "lucky": 5.0,
+            "dberweger": 4.0,
+            "vincent": 3.0,
+            "pokerforbots": 2.0,
+            "random": 1.0
+          }
+        }
+      ],
+      "cumulative_points": {
+        "lucky": 7.0,
+        "ethan": 9.0,
+        "dberweger": 5.0,
+        "vincent": 6.0,
+        "dqn_reference": 4.0,
+        "noregrets": 6.0,
+        "fullhouse": 9.0,
+        "pokerforbots": 3.0,
+        "chien": 8.0,
+        "random": 3.0
+      },
+      "ranking": [
+        [
+          "ethan",
+          "fullhouse"
+        ],
+        [
+          "chien"
+        ],
+        [
+          "lucky"
+        ],
+        [
+          "noregrets",
+          "vincent"
+        ],
+        [
+          "dberweger"
+        ],
+        [
+          "dqn_reference"
+        ],
+        [
+          "pokerforbots",
+          "random"
+        ]
+      ]
+    },
+    {
+      "round": 3,
+      "groups": [
+        {
+          "players": [
+            "ethan",
+            "fullhouse",
+            "chien",
+            "lucky",
+            "noregrets"
+          ],
+          "games": [
+            {
+              "game_id": "r3:g0:c0:s0",
+              "seats": [
+                "ethan",
+                "fullhouse",
+                "chien",
+                "lucky",
+                "noregrets"
+              ],
+              "stacks": {
+                "ethan": 2600,
+                "fullhouse": 1960,
+                "chien": 1853,
+                "lucky": 2060,
+                "noregrets": 1527
+              },
+              "ranking": [
+                [
+                  "ethan"
+                ],
+                [
+                  "lucky"
+                ],
+                [
+                  "fullhouse"
+                ],
+                [
+                  "chien"
+                ],
+                [
+                  "noregrets"
+                ]
+              ],
+              "points": {
+                "ethan": 5.0,
+                "lucky": 4.0,
+                "fullhouse": 3.0,
+                "chien": 2.0,
+                "noregrets": 1.0
+              }
+            },
+            {
+              "game_id": "r3:g0:c0:s1",
+              "seats": [
+                "fullhouse",
+                "chien",
+                "lucky",
+                "noregrets",
+                "ethan"
+              ],
+              "stacks": {
+                "fullhouse": 1970,
+                "chien": 1908,
+                "lucky": 1940,
+                "noregrets": 1629,
+                "ethan": 2553
+              },
+              "ranking": [
+                [
+                  "ethan"
+                ],
+                [
+                  "fullhouse"
+                ],
+                [
+                  "lucky"
+                ],
+                [
+                  "chien"
+                ],
+                [
+                  "noregrets"
+                ]
+              ],
+              "points": {
+                "ethan": 5.0,
+                "fullhouse": 4.0,
+                "lucky": 3.0,
+                "chien": 2.0,
+                "noregrets": 1.0
+              }
+            },
+            {
+              "game_id": "r3:g0:c0:s2",
+              "seats": [
+                "chien",
+                "lucky",
+                "noregrets",
+                "ethan",
+                "fullhouse"
+              ],
+              "stacks": {
+                "chien": 2088,
+                "lucky": 2040,
+                "noregrets": 2127,
+                "ethan": 1810,
+                "fullhouse": 1935
+              },
+              "ranking": [
+                [
+                  "noregrets"
+                ],
+                [
+                  "chien"
+                ],
+                [
+                  "lucky"
+                ],
+                [
+                  "fullhouse"
+                ],
+                [
+                  "ethan"
+                ]
+              ],
+              "points": {
+                "noregrets": 5.0,
+                "chien": 4.0,
+                "lucky": 3.0,
+                "fullhouse": 2.0,
+                "ethan": 1.0
+              }
+            },
+            {
+              "game_id": "r3:g0:c0:s3",
+              "seats": [
+                "lucky",
+                "noregrets",
+                "ethan",
+                "fullhouse",
+                "chien"
+              ],
+              "stacks": {
+                "lucky": 838,
+                "noregrets": 180,
+                "ethan": 4942,
+                "fullhouse": 2070,
+                "chien": 1970
+              },
+              "ranking": [
+                [
+                  "ethan"
+                ],
+                [
+                  "fullhouse"
+                ],
+                [
+                  "chien"
+                ],
+                [
+                  "lucky"
+                ],
+                [
+                  "noregrets"
+                ]
+              ],
+              "points": {
+                "ethan": 5.0,
+                "fullhouse": 4.0,
+                "chien": 3.0,
+                "lucky": 2.0,
+                "noregrets": 1.0
+              }
+            },
+            {
+              "game_id": "r3:g0:c0:s4",
+              "seats": [
+                "noregrets",
+                "ethan",
+                "fullhouse",
+                "chien",
+                "lucky"
+              ],
+              "stacks": {
+                "noregrets": 2280,
+                "ethan": 1840,
+                "fullhouse": 1950,
+                "chien": 1970,
+                "lucky": 1960
+              },
+              "ranking": [
+                [
+                  "noregrets"
+                ],
+                [
+                  "chien"
+                ],
+                [
+                  "lucky"
+                ],
+                [
+                  "fullhouse"
+                ],
+                [
+                  "ethan"
+                ]
+              ],
+              "points": {
+                "noregrets": 5.0,
+                "chien": 4.0,
+                "lucky": 3.0,
+                "fullhouse": 2.0,
+                "ethan": 1.0
+              }
+            }
+          ],
+          "game_points": {
+            "ethan": 17.0,
+            "fullhouse": 15.0,
+            "chien": 15.0,
+            "lucky": 15.0,
+            "noregrets": 13.0
+          },
+          "ranking": [
+            [
+              "ethan"
+            ],
+            [
+              "chien",
+              "fullhouse",
+              "lucky"
+            ],
+            [
+              "noregrets"
+            ]
+          ],
+          "round_points": {
+            "ethan": 5.0,
+            "chien": 3.0,
+            "fullhouse": 3.0,
+            "lucky": 3.0,
+            "noregrets": 1.0
+          }
+        },
+        {
+          "players": [
+            "vincent",
+            "dberweger",
+            "dqn_reference",
+            "pokerforbots",
+            "random"
+          ],
+          "games": [
+            {
+              "game_id": "r3:g1:c0:s0",
+              "seats": [
+                "vincent",
+                "dberweger",
+                "dqn_reference",
+                "pokerforbots",
+                "random"
+              ],
+              "stacks": {
+                "vincent": 2050,
+                "dberweger": 1960,
+                "dqn_reference": 1940,
+                "pokerforbots": 0,
+                "random": 4050
+              },
+              "ranking": [
+                [
+                  "random"
+                ],
+                [
+                  "vincent"
+                ],
+                [
+                  "dberweger"
+                ],
+                [
+                  "dqn_reference"
+                ],
+                [
+                  "pokerforbots"
+                ]
+              ],
+              "points": {
+                "random": 5.0,
+                "vincent": 4.0,
+                "dberweger": 3.0,
+                "dqn_reference": 2.0,
+                "pokerforbots": 1.0
+              }
+            },
+            {
+              "game_id": "r3:g1:c0:s1",
+              "seats": [
+                "dberweger",
+                "dqn_reference",
+                "pokerforbots",
+                "random",
+                "vincent"
+              ],
+              "stacks": {
+                "dberweger": 3950,
+                "dqn_reference": 1960,
+                "pokerforbots": 2120,
+                "random": 0,
+                "vincent": 1970
+              },
+              "ranking": [
+                [
+                  "dberweger"
+                ],
+                [
+                  "pokerforbots"
+                ],
+                [
+                  "vincent"
+                ],
+                [
+                  "dqn_reference"
+                ],
+                [
+                  "random"
+                ]
+              ],
+              "points": {
+                "dberweger": 5.0,
+                "pokerforbots": 4.0,
+                "vincent": 3.0,
+                "dqn_reference": 2.0,
+                "random": 1.0
+              }
+            },
+            {
+              "game_id": "r3:g1:c0:s2",
+              "seats": [
+                "dqn_reference",
+                "pokerforbots",
+                "random",
+                "vincent",
+                "dberweger"
+              ],
+              "stacks": {
+                "dqn_reference": 1910,
+                "pokerforbots": 360,
+                "random": 3790,
+                "vincent": 1970,
+                "dberweger": 1970
+              },
+              "ranking": [
+                [
+                  "random"
+                ],
+                [
+                  "dberweger",
+                  "vincent"
+                ],
+                [
+                  "dqn_reference"
+                ],
+                [
+                  "pokerforbots"
+                ]
+              ],
+              "points": {
+                "random": 5.0,
+                "dberweger": 3.5,
+                "vincent": 3.5,
+                "dqn_reference": 2.0,
+                "pokerforbots": 1.0
+              }
+            },
+            {
+              "game_id": "r3:g1:c0:s3",
+              "seats": [
+                "pokerforbots",
+                "random",
+                "vincent",
+                "dberweger",
+                "dqn_reference"
+              ],
+              "stacks": {
+                "pokerforbots": 2770,
+                "random": 0,
+                "vincent": 1850,
+                "dberweger": 3410,
+                "dqn_reference": 1970
+              },
+              "ranking": [
+                [
+                  "dberweger"
+                ],
+                [
+                  "pokerforbots"
+                ],
+                [
+                  "dqn_reference"
+                ],
+                [
+                  "vincent"
+                ],
+                [
+                  "random"
+                ]
+              ],
+              "points": {
+                "dberweger": 5.0,
+                "pokerforbots": 4.0,
+                "dqn_reference": 3.0,
+                "vincent": 2.0,
+                "random": 1.0
+              }
+            },
+            {
+              "game_id": "r3:g1:c0:s4",
+              "seats": [
+                "random",
+                "vincent",
+                "dberweger",
+                "dqn_reference",
+                "pokerforbots"
+              ],
+              "stacks": {
+                "random": 0,
+                "vincent": 1940,
+                "dberweger": 0,
+                "dqn_reference": 1960,
+                "pokerforbots": 6100
+              },
+              "ranking": [
+                [
+                  "pokerforbots"
+                ],
+                [
+                  "dqn_reference"
+                ],
+                [
+                  "vincent"
+                ],
+                [
+                  "dberweger",
+                  "random"
+                ]
+              ],
+              "points": {
+                "pokerforbots": 5.0,
+                "dqn_reference": 4.0,
+                "vincent": 3.0,
+                "dberweger": 1.5,
+                "random": 1.5
+              }
+            }
+          ],
+          "game_points": {
+            "vincent": 15.5,
+            "dberweger": 18.0,
+            "dqn_reference": 13.0,
+            "pokerforbots": 15.0,
+            "random": 13.5
+          },
+          "ranking": [
+            [
+              "dberweger"
+            ],
+            [
+              "vincent"
+            ],
+            [
+              "pokerforbots"
+            ],
+            [
+              "random"
+            ],
+            [
+              "dqn_reference"
+            ]
+          ],
+          "round_points": {
+            "dberweger": 5.0,
+            "vincent": 4.0,
+            "pokerforbots": 3.0,
+            "random": 2.0,
+            "dqn_reference": 1.0
+          }
+        }
+      ],
+      "cumulative_points": {
+        "lucky": 10.0,
+        "ethan": 14.0,
+        "dberweger": 10.0,
+        "vincent": 10.0,
+        "dqn_reference": 5.0,
+        "noregrets": 7.0,
+        "fullhouse": 12.0,
+        "pokerforbots": 6.0,
+        "chien": 11.0,
+        "random": 5.0
+      },
+      "ranking": [
+        [
+          "ethan"
+        ],
+        [
+          "fullhouse"
+        ],
+        [
+          "chien"
+        ],
+        [
+          "dberweger",
+          "lucky",
+          "vincent"
+        ],
+        [
+          "noregrets"
+        ],
+        [
+          "pokerforbots"
+        ],
+        [
+          "dqn_reference",
+          "random"
+        ]
+      ]
+    },
+    {
+      "round": 4,
+      "groups": [
+        {
+          "players": [
+            "ethan",
+            "fullhouse",
+            "chien",
+            "dberweger",
+            "lucky"
+          ],
+          "games": [
+            {
+              "game_id": "r4:g0:c0:s0",
+              "seats": [
+                "ethan",
+                "fullhouse",
+                "chien",
+                "dberweger",
+                "lucky"
+              ],
+              "stacks": {
+                "ethan": 3870,
+                "fullhouse": 1990,
+                "chien": 0,
+                "dberweger": 1970,
+                "lucky": 2170
+              },
+              "ranking": [
+                [
+                  "ethan"
+                ],
+                [
+                  "lucky"
+                ],
+                [
+                  "fullhouse"
+                ],
+                [
+                  "dberweger"
+                ],
+                [
+                  "chien"
+                ]
+              ],
+              "points": {
+                "ethan": 5.0,
+                "lucky": 4.0,
+                "fullhouse": 3.0,
+                "dberweger": 2.0,
+                "chien": 1.0
+              }
+            },
+            {
+              "game_id": "r4:g0:c0:s1",
+              "seats": [
+                "fullhouse",
+                "chien",
+                "dberweger",
+                "lucky",
+                "ethan"
+              ],
+              "stacks": {
+                "fullhouse": 2000,
+                "chien": 1490,
+                "dberweger": 2510,
+                "lucky": 1944,
+                "ethan": 2056
+              },
+              "ranking": [
+                [
+                  "dberweger"
+                ],
+                [
+                  "ethan"
+                ],
+                [
+                  "fullhouse"
+                ],
+                [
+                  "lucky"
+                ],
+                [
+                  "chien"
+                ]
+              ],
+              "points": {
+                "dberweger": 5.0,
+                "ethan": 4.0,
+                "fullhouse": 3.0,
+                "lucky": 2.0,
+                "chien": 1.0
+              }
+            },
+            {
+              "game_id": "r4:g0:c0:s2",
+              "seats": [
+                "chien",
+                "dberweger",
+                "lucky",
+                "ethan",
+                "fullhouse"
+              ],
+              "stacks": {
+                "chien": 316,
+                "dberweger": 1960,
+                "lucky": 2130,
+                "ethan": 3684,
+                "fullhouse": 1910
+              },
+              "ranking": [
+                [
+                  "ethan"
+                ],
+                [
+                  "lucky"
+                ],
+                [
+                  "dberweger"
+                ],
+                [
+                  "fullhouse"
+                ],
+                [
+                  "chien"
+                ]
+              ],
+              "points": {
+                "ethan": 5.0,
+                "lucky": 4.0,
+                "dberweger": 3.0,
+                "fullhouse": 2.0,
+                "chien": 1.0
+              }
+            },
+            {
+              "game_id": "r4:g0:c0:s3",
+              "seats": [
+                "dberweger",
+                "lucky",
+                "ethan",
+                "fullhouse",
+                "chien"
+              ],
+              "stacks": {
+                "dberweger": 2010,
+                "lucky": 2010,
+                "ethan": 1845,
+                "fullhouse": 1970,
+                "chien": 2165
+              },
+              "ranking": [
+                [
+                  "chien"
+                ],
+                [
+                  "dberweger",
+                  "lucky"
+                ],
+                [
+                  "fullhouse"
+                ],
+                [
+                  "ethan"
+                ]
+              ],
+              "points": {
+                "chien": 5.0,
+                "dberweger": 3.5,
+                "lucky": 3.5,
+                "fullhouse": 2.0,
+                "ethan": 1.0
+              }
+            },
+            {
+              "game_id": "r4:g0:c0:s4",
+              "seats": [
+                "lucky",
+                "ethan",
+                "fullhouse",
+                "chien",
+                "dberweger"
+              ],
+              "stacks": {
+                "lucky": 1970,
+                "ethan": 1892,
+                "fullhouse": 2000,
+                "chien": 2168,
+                "dberweger": 1970
+              },
+              "ranking": [
+                [
+                  "chien"
+                ],
+                [
+                  "fullhouse"
+                ],
+                [
+                  "dberweger",
+                  "lucky"
+                ],
+                [
+                  "ethan"
+                ]
+              ],
+              "points": {
+                "chien": 5.0,
+                "fullhouse": 4.0,
+                "dberweger": 2.5,
+                "lucky": 2.5,
+                "ethan": 1.0
+              }
+            }
+          ],
+          "game_points": {
+            "ethan": 16.0,
+            "fullhouse": 14.0,
+            "chien": 13.0,
+            "dberweger": 16.0,
+            "lucky": 16.0
+          },
+          "ranking": [
+            [
+              "dberweger",
+              "ethan",
+              "lucky"
+            ],
+            [
+              "fullhouse"
+            ],
+            [
+              "chien"
+            ]
+          ],
+          "round_points": {
+            "dberweger": 4.0,
+            "ethan": 4.0,
+            "lucky": 4.0,
+            "fullhouse": 2.0,
+            "chien": 1.0
+          }
+        },
+        {
+          "players": [
+            "vincent",
+            "noregrets",
+            "pokerforbots",
+            "dqn_reference",
+            "random"
+          ],
+          "games": [
+            {
+              "game_id": "r4:g1:c0:s0",
+              "seats": [
+                "vincent",
+                "noregrets",
+                "pokerforbots",
+                "dqn_reference",
+                "random"
+              ],
+              "stacks": {
+                "vincent": 1970,
+                "noregrets": 2240,
+                "pokerforbots": 2000,
+                "dqn_reference": 1950,
+                "random": 1840
+              },
+              "ranking": [
+                [
+                  "noregrets"
+                ],
+                [
+                  "pokerforbots"
+                ],
+                [
+                  "vincent"
+                ],
+                [
+                  "dqn_reference"
+                ],
+                [
+                  "random"
+                ]
+              ],
+              "points": {
+                "noregrets": 5.0,
+                "pokerforbots": 4.0,
+                "vincent": 3.0,
+                "dqn_reference": 2.0,
+                "random": 1.0
+              }
+            },
+            {
+              "game_id": "r4:g1:c0:s1",
+              "seats": [
+                "noregrets",
+                "pokerforbots",
+                "dqn_reference",
+                "random",
+                "vincent"
+              ],
+              "stacks": {
+                "noregrets": 0,
+                "pokerforbots": 6100,
+                "dqn_reference": 1940,
+                "random": 0,
+                "vincent": 1960
+              },
+              "ranking": [
+                [
+                  "pokerforbots"
+                ],
+                [
+                  "vincent"
+                ],
+                [
+                  "dqn_reference"
+                ],
+                [
+                  "noregrets",
+                  "random"
+                ]
+              ],
+              "points": {
+                "pokerforbots": 5.0,
+                "vincent": 4.0,
+                "dqn_reference": 3.0,
+                "noregrets": 1.5,
+                "random": 1.5
+              }
+            },
+            {
+              "game_id": "r4:g1:c0:s2",
+              "seats": [
+                "pokerforbots",
+                "dqn_reference",
+                "random",
+                "vincent",
+                "noregrets"
+              ],
+              "stacks": {
+                "pokerforbots": 6160,
+                "dqn_reference": 1940,
+                "random": 0,
+                "vincent": 1900,
+                "noregrets": 0
+              },
+              "ranking": [
+                [
+                  "pokerforbots"
+                ],
+                [
+                  "dqn_reference"
+                ],
+                [
+                  "vincent"
+                ],
+                [
+                  "noregrets",
+                  "random"
+                ]
+              ],
+              "points": {
+                "pokerforbots": 5.0,
+                "dqn_reference": 4.0,
+                "vincent": 3.0,
+                "noregrets": 1.5,
+                "random": 1.5
+              }
+            },
+            {
+              "game_id": "r4:g1:c0:s3",
+              "seats": [
+                "dqn_reference",
+                "random",
+                "vincent",
+                "noregrets",
+                "pokerforbots"
+              ],
+              "stacks": {
+                "dqn_reference": 1970,
+                "random": 0,
+                "vincent": 1880,
+                "noregrets": 6150,
+                "pokerforbots": 0
+              },
+              "ranking": [
+                [
+                  "noregrets"
+                ],
+                [
+                  "dqn_reference"
+                ],
+                [
+                  "vincent"
+                ],
+                [
+                  "pokerforbots",
+                  "random"
+                ]
+              ],
+              "points": {
+                "noregrets": 5.0,
+                "dqn_reference": 4.0,
+                "vincent": 3.0,
+                "pokerforbots": 1.5,
+                "random": 1.5
+              }
+            },
+            {
+              "game_id": "r4:g1:c0:s4",
+              "seats": [
+                "random",
+                "vincent",
+                "noregrets",
+                "pokerforbots",
+                "dqn_reference"
+              ],
+              "stacks": {
+                "random": 6140,
+                "vincent": 1900,
+                "noregrets": 0,
+                "pokerforbots": 0,
+                "dqn_reference": 1960
+              },
+              "ranking": [
+                [
+                  "random"
+                ],
+                [
+                  "dqn_reference"
+                ],
+                [
+                  "vincent"
+                ],
+                [
+                  "noregrets",
+                  "pokerforbots"
+                ]
+              ],
+              "points": {
+                "random": 5.0,
+                "dqn_reference": 4.0,
+                "vincent": 3.0,
+                "noregrets": 1.5,
+                "pokerforbots": 1.5
+              }
+            }
+          ],
+          "game_points": {
+            "vincent": 16.0,
+            "noregrets": 14.5,
+            "pokerforbots": 17.0,
+            "dqn_reference": 17.0,
+            "random": 10.5
+          },
+          "ranking": [
+            [
+              "dqn_reference",
+              "pokerforbots"
+            ],
+            [
+              "vincent"
+            ],
+            [
+              "noregrets"
+            ],
+            [
+              "random"
+            ]
+          ],
+          "round_points": {
+            "dqn_reference": 4.5,
+            "pokerforbots": 4.5,
+            "vincent": 3.0,
+            "noregrets": 2.0,
+            "random": 1.0
+          }
+        }
+      ],
+      "cumulative_points": {
+        "lucky": 14.0,
+        "ethan": 18.0,
+        "dberweger": 14.0,
+        "vincent": 13.0,
+        "dqn_reference": 9.5,
+        "noregrets": 9.0,
+        "fullhouse": 14.0,
+        "pokerforbots": 10.5,
+        "chien": 12.0,
+        "random": 6.0
+      },
+      "ranking": [
+        [
+          "ethan"
+        ],
+        [
+          "lucky"
+        ],
+        [
+          "dberweger",
+          "fullhouse"
+        ],
+        [
+          "vincent"
+        ],
+        [
+          "chien"
+        ],
+        [
+          "pokerforbots"
+        ],
+        [
+          "dqn_reference"
+        ],
+        [
+          "noregrets"
+        ],
+        [
+          "random"
+        ]
+      ]
+    }
+  ],
+  "cumulative_points": {
+    "lucky": 14.0,
+    "ethan": 18.0,
+    "dberweger": 14.0,
+    "vincent": 13.0,
+    "dqn_reference": 9.5,
+    "noregrets": 9.0,
+    "fullhouse": 14.0,
+    "pokerforbots": 10.5,
+    "chien": 12.0,
+    "random": 6.0
+  },
+  "next_order": [
+    "ethan",
+    "lucky",
+    "dberweger",
+    "fullhouse",
+    "vincent",
+    "chien",
+    "pokerforbots",
+    "dqn_reference",
+    "noregrets",
+    "random"
+  ]
+}

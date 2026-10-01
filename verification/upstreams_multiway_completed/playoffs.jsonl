@@ -1,0 +1,1 @@
+{"context":"r4:cumulative","attempt":1,"scores":{"dberweger":0.5,"fullhouse":0.5,"lucky":2.0},"pairs":[{"a":"dberweger","b":"fullhouse","net_chip_difference_two_legs":0},{"a":"dberweger","b":"lucky","net_chip_difference_two_legs":-120},{"a":"fullhouse","b":"lucky","net_chip_difference_two_legs":-120}]}

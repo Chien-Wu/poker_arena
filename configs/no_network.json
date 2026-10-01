@@ -1,0 +1,52 @@
+{
+  "seed": null,
+  "game": {
+    "initial_stack": 2000,
+    "small_blind": 10,
+    "big_blind": 20,
+    "ante": 0,
+    "hands_per_game": 100
+  },
+  "tournament": {
+    "rounds": 4,
+    "group_size": 5,
+    "rotation_cycles": 1,
+    "tiebreak_hands": 10
+  },
+  "execution": {
+    "runner": "docker",
+    "action_timeout_ms": 2000,
+    "require_no_network": true,
+    "docker_image": "poker-arena-bot:local"
+  },
+  "players": [
+    {
+      "id": "chien",
+      "bot": "mybot1",
+      "params": {
+        "equity_samples": 40
+      }
+    },
+    {
+      "id": "random",
+      "bot": "random_bot"
+    },
+    {
+      "id": "caller",
+      "bot": "calling_bot"
+    },
+    {
+      "id": "tight",
+      "bot": "tight_bot"
+    },
+    {
+      "id": "aggressive",
+      "bot": "mybot1",
+      "params": {
+        "equity_samples": 40,
+        "raise_equity": 0.45,
+        "bluff_frequency": 0.12
+      }
+    }
+  ]
+}

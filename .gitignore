@@ -1,0 +1,9 @@
+__pycache__/
+.pytest_cache/
+*.pyc
+.venv/
+results/
+bots/up_*/code/upstream/
+bots/up_*/code/.fetch-*/
+bots/up_pokerforbots/code/handler
+bots/up_pokerforbots/code/bridge/sdk/bots/aggressive/handler.go

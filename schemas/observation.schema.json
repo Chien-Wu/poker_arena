@@ -1,0 +1,312 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Poker Arena observation v1",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "game_id": {
+      "type": "string"
+    },
+    "hand_id": {
+      "type": "string"
+    },
+    "hand_number": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "hero_seat": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "button_seat": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "small_blind_seat": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "big_blind_seat": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "street": {
+      "enum": [
+        "preflop",
+        "flop",
+        "turn",
+        "river"
+      ]
+    },
+    "hole_cards": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[23456789TJQKA][cdhs]$"
+      },
+      "minItems": 2,
+      "maxItems": 2,
+      "uniqueItems": true
+    },
+    "board": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[23456789TJQKA][cdhs]$"
+      },
+      "maxItems": 5,
+      "uniqueItems": true
+    },
+    "players": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "seat": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "player_id": {
+            "type": "string"
+          },
+          "stack": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "starting_stack": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "street_bet": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "total_contribution": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "status": {
+            "enum": [
+              "active",
+              "folded",
+              "all_in",
+              "out"
+            ]
+          }
+        },
+        "required": [
+          "seat",
+          "player_id",
+          "stack",
+          "starting_stack",
+          "street_bet",
+          "total_contribution",
+          "status"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 2,
+      "maxItems": 9
+    },
+    "pot": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "pots": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "amount": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "eligible_seats": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "uniqueItems": true
+          }
+        },
+        "required": [
+          "amount",
+          "eligible_seats"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "legal_actions": {
+      "type": "object",
+      "properties": {
+        "types": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "fold",
+              "check",
+              "call",
+              "raise"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "to_call": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "call_amount": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "min_raise_to": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "max_raise_to": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "full_min_raise_to": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "short_all_in_only": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "types",
+        "to_call",
+        "call_amount",
+        "min_raise_to",
+        "max_raise_to",
+        "full_min_raise_to",
+        "short_all_in_only"
+      ],
+      "additionalProperties": false
+    },
+    "history": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "sequence": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "type": {
+            "enum": [
+              "blind",
+              "ante",
+              "action",
+              "board",
+              "refund"
+            ]
+          },
+          "street": {
+            "type": "string"
+          },
+          "seat": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "minimum": 0
+          },
+          "action": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "paid": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "raise_to": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "minimum": 0
+          },
+          "cards": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[23456789TJQKA][cdhs]$"
+            }
+          }
+        },
+        "required": [
+          "sequence",
+          "type",
+          "street",
+          "seat",
+          "action",
+          "paid",
+          "raise_to",
+          "cards"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "small_blind": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "big_blind": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "ante": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "action_timeout_ms": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "hands_remaining": {
+      "type": "integer",
+      "minimum": 0
+    }
+  },
+  "required": [
+    "schema_version",
+    "game_id",
+    "hand_id",
+    "hand_number",
+    "hero_seat",
+    "button_seat",
+    "small_blind_seat",
+    "big_blind_seat",
+    "street",
+    "hole_cards",
+    "board",
+    "players",
+    "pot",
+    "pots",
+    "legal_actions",
+    "history",
+    "small_blind",
+    "big_blind",
+    "ante",
+    "action_timeout_ms",
+    "hands_remaining"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "id": "up_ethan",
+  "name": "PokerBot (heuristic mode)",
+  "runtime": "python",
+  "entrypoint": "adapter:Bot",
+  "capabilities": {
+    "variant": "nlhe",
+    "min_players": 2,
+    "max_players": 8
+  },
+  "default_params": {
+    "samples": 80
+  },
+  "runtime_network": false,
+  "competition_eligible": false,
+  "provenance": {
+    "kind": "upstream-policy-extract",
+    "original_number": 7,
+    "repository": "ethangarofalo/hold-em-bot",
+    "policy": "PokerBot (heuristic mode)",
+    "note": "Original heuristic mode, no loaded CFR table and no opponent-model updates. Shared equity evaluator is the dependency facade."
+  }
+}

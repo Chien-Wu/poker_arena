@@ -1,0 +1,263 @@
+{
+  "schema_version": 1,
+  "project": "Poker Arena",
+  "built_at_utc": "2026-10-01T15:45:26.168859+00:00",
+  "environment": {
+    "python": "3.13.5",
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+    "pytest": "9.0.2",
+    "numpy": "2.3.5",
+    "go": "go version go1.23.2 linux/amd64"
+  },
+  "source_inspected_test_suite": {
+    "tests": 247,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "passed": 247,
+    "seconds": 62.458
+  },
+  "clean_release_test_suite": {
+    "tests": 247,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 12,
+    "passed": 235,
+    "seconds": 16.201
+  },
+  "native_stdlib_only_smoke": {
+    "command_prefix": "python -S",
+    "runner": "inprocess",
+    "status": "complete",
+    "hands": 23,
+    "bot_failures": 0
+  },
+  "evaluator_exhaustive": {
+    "hands": 2598960,
+    "category_counts": {
+      "0": 1302540,
+      "1": 1098240,
+      "2": 123552,
+      "3": 54912,
+      "4": 10200,
+      "5": 5108,
+      "6": 3744,
+      "7": 624,
+      "8": 40
+    },
+    "status": "passed",
+    "elapsed_seconds": 17.742
+  },
+  "independent_evaluator_random_comparisons": 15000,
+  "randomized_engine_hands": 960,
+  "demo_replay_verified_hands": {
+    "upstreams_hu_completed": 323,
+    "native_completed": 952,
+    "upstreams_multiway_completed": 252
+  },
+  "demos": [
+    {
+      "name": "native_completed",
+      "status": "complete_with_unresolved_ties",
+      "qualifier_games": 20,
+      "playoff_games": 84,
+      "hands": 952,
+      "elapsed_seconds": 279.575,
+      "engine_failures": 0,
+      "source_policy_calls": 0,
+      "adapter_repairs": 0
+    },
+    {
+      "name": "upstreams_hu_completed",
+      "status": "complete_with_unresolved_ties",
+      "qualifier_games": 48,
+      "playoff_games": 18,
+      "hands": 323,
+      "elapsed_seconds": 9.895,
+      "engine_failures": 0,
+      "source_policy_calls": 1056,
+      "adapter_repairs": 11
+    },
+    {
+      "name": "upstreams_multiway_completed",
+      "status": "complete_with_unresolved_ties",
+      "qualifier_games": 40,
+      "playoff_games": 6,
+      "hands": 252,
+      "elapsed_seconds": 18.992,
+      "engine_failures": 0,
+      "source_policy_calls": 1705,
+      "adapter_repairs": 5
+    }
+  ],
+  "integration_coverage": {
+    "denominator_original_repositories": 20,
+    "distinct_repository_policy_adapters": 12,
+    "repository_policy_fraction": 0.6,
+    "multiway_adapters": 8,
+    "heads_up_only_adapters": 4,
+    "verification_mode": "source_inspected_policy_excerpt",
+    "full_upstream_builds_verified": false,
+    "entire_upstream_source_files_git_blob_verified": [
+      "PokerForBots aggressive/handler.go"
+    ],
+    "important": "Reference/heuristic policies are named explicitly; this is not twelve trained original flagship bots. NoRegrets defaults to its upstream untrained check/call fallback. Third-party source caches and trained models are not included in the release."
+  },
+  "policy_validation": [
+    {
+      "bot": "up_dberweger",
+      "repository": "dberweger2017/deepcfr-texas-no-limit-holdem-6-players",
+      "selected_policy": "StylePolicy",
+      "hands": 20,
+      "decisions": 27,
+      "failures": 0,
+      "timeouts": 0,
+      "upstream_calls": 27,
+      "adapter_repairs": 0
+    },
+    {
+      "bot": "up_dqn_reference",
+      "repository": "alexherm0123verify/poker-DQN",
+      "selected_policy": "HeuristicPlayer",
+      "hands": 20,
+      "decisions": 22,
+      "failures": 0,
+      "timeouts": 0,
+      "upstream_calls": 22,
+      "adapter_repairs": 0
+    },
+    {
+      "bot": "up_ethan",
+      "repository": "ethangarofalo/hold-em-bot",
+      "selected_policy": "PokerBot (heuristic mode)",
+      "hands": 7,
+      "decisions": 9,
+      "failures": 0,
+      "timeouts": 0,
+      "upstream_calls": 9,
+      "adapter_repairs": 0
+    },
+    {
+      "bot": "up_fawz",
+      "repository": "fawzmehfil/CFR-Poker-Bot",
+      "selected_policy": "pot_odds_bot",
+      "hands": 20,
+      "decisions": 52,
+      "failures": 0,
+      "timeouts": 0,
+      "upstream_calls": 52,
+      "adapter_repairs": 0
+    },
+    {
+      "bot": "up_fullhouse",
+      "repository": "BouillieAnonymous/4fullhousehackathon",
+      "selected_policy": "Shark.decide",
+      "hands": 20,
+      "decisions": 32,
+      "failures": 0,
+      "timeouts": 0,
+      "upstream_calls": 32,
+      "adapter_repairs": 0
+    },
+    {
+      "bot": "up_gongsta",
+      "repository": "Deltebrain/Gongsta-AI",
+      "selected_policy": "EquityAIPlayer.get_action",
+      "hands": 13,
+      "decisions": 26,
+      "failures": 0,
+      "timeouts": 0,
+      "upstream_calls": 26,
+      "adapter_repairs": 1
+    },
+    {
+      "bot": "up_holdemlab",
+      "repository": "HFossdal/poker-game-simulator",
+      "selected_policy": "RuleBasedHeuristicAgent",
+      "hands": 20,
+      "decisions": 25,
+      "failures": 0,
+      "timeouts": 0,
+      "upstream_calls": 25,
+      "adapter_repairs": 0
+    },
+    {
+      "bot": "up_jeffelin",
+      "repository": "jeffelin/CFR_pokerbot",
+      "selected_policy": "strength_bot.Player",
+      "hands": 20,
+      "decisions": 29,
+      "failures": 0,
+      "timeouts": 0,
+      "upstream_calls": 29,
+      "adapter_repairs": 0
+    },
+    {
+      "bot": "up_lucky",
+      "repository": "luckyone18/Poker",
+      "selected_policy": "MonteCarloBot",
+      "hands": 1,
+      "decisions": 3,
+      "failures": 0,
+      "timeouts": 0,
+      "upstream_calls": 3,
+      "adapter_repairs": 0
+    },
+    {
+      "bot": "up_noregrets",
+      "repository": "conorarmstrong/noregrets",
+      "selected_policy": "legacy PluribusBot.get_action (blueprint-only)",
+      "hands": 9,
+      "decisions": 17,
+      "failures": 0,
+      "timeouts": 0,
+      "upstream_calls": 17,
+      "adapter_repairs": 0
+    },
+    {
+      "bot": "up_pokerforbots",
+      "repository": "lox/pokerforbots",
+      "selected_policy": "aggressive.Handler.OnActionRequest (Go)",
+      "hands": 20,
+      "decisions": 46,
+      "failures": 0,
+      "timeouts": 0,
+      "upstream_calls": 46,
+      "adapter_repairs": 0
+    },
+    {
+      "bot": "up_vincent",
+      "repository": "goddamnVincent/6_players_no_limit_texas_holdem_deepcfr_agent",
+      "selected_policy": "RandomAgent_mcts",
+      "hands": 20,
+      "decisions": 17,
+      "failures": 0,
+      "timeouts": 0,
+      "upstream_calls": 17,
+      "adapter_repairs": 0
+    }
+  ],
+  "source_installer": {
+    "provided": true,
+    "raw_git_blob_hash_check": true,
+    "live_download_tested": false,
+    "offline_hash_rejection_tested": true,
+    "third_party_sources_bundled": false,
+    "required_before_upstream_matches": true
+  },
+  "deployment": {
+    "linux_subprocess_tested": true,
+    "linux_go_command_tested": true,
+    "docker_argument_tests": true,
+    "docker_build_runtime_tested": false,
+    "macos_windows_tested": false
+  },
+  "notes": [
+    "Some demonstration ties remain unresolved after the configured finite HU playoffs. Reports preserve shared ties; no winner is invented.",
+    "Source-policy demonstration leagues use the explicit faster final-only tiebreak profile; their saved configs state all overrides.",
+    "Demo provenance is historical. Final manifests consistently use runtime_network=false and registry admission rejects runtime-network bots.",
+    "A new source-free release skips twelve opt-in upstream tests. Only the other 235 clean-release tests are counted as passed.",
+    "No network enforcement is claimed for in-process or subprocess execution. The provided Docker profile needs deployment verification.",
+    "48-hour code creation and team eligibility require organizer audit. Imported research opponents are not fresh-event submissions."
+  ]
+}

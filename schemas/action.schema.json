@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Poker Arena action v1",
+  "oneOf": [
+    {
+      "type": "object",
+      "properties": {
+        "type": {
+          "enum": [
+            "fold",
+            "check",
+            "call"
+          ]
+        },
+        "raise_to": {
+          "type": "null"
+        }
+      },
+      "required": [
+        "type"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "type": {
+          "const": "raise"
+        },
+        "raise_to": {
+          "type": "integer",
+          "minimum": 1
+        }
+      },
+      "required": [
+        "type",
+        "raise_to"
+      ],
+      "additionalProperties": false
+    }
+  ]
+}

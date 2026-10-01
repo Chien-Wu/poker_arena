@@ -1,0 +1,115 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Poker Arena bot v1",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "id",
+    "name",
+    "runtime",
+    "capabilities"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9_-]+$"
+    },
+    "name": {
+      "type": "string"
+    },
+    "runtime": {
+      "enum": [
+        "python",
+        "command"
+      ]
+    },
+    "entrypoint": {
+      "type": "string",
+      "pattern": "^[A-Za-z_][A-Za-z0-9_]*:[A-Za-z_][A-Za-z0-9_]*$"
+    },
+    "command": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "docker_command": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "capabilities": {
+      "type": "object",
+      "properties": {
+        "variant": {
+          "const": "nlhe"
+        },
+        "min_players": {
+          "const": 2
+        },
+        "max_players": {
+          "type": "integer",
+          "minimum": 2,
+          "maximum": 9
+        }
+      },
+      "required": [
+        "variant",
+        "min_players",
+        "max_players"
+      ],
+      "additionalProperties": false
+    },
+    "default_params": {
+      "type": "object"
+    },
+    "runtime_network": {
+      "const": false
+    },
+    "competition_eligible": {
+      "type": "boolean"
+    },
+    "provenance": {
+      "type": [
+        "object",
+        "string"
+      ]
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "runtime": {
+            "const": "python"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "entrypoint"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "runtime": {
+            "const": "command"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "command"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+# Only some selected upstream policies need NumPy. Core engine has no dependencies.
+numpy==2.3.5

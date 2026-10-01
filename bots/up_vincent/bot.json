@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "id": "up_vincent",
+  "name": "RandomAgent_mcts",
+  "runtime": "python",
+  "entrypoint": "adapter:Bot",
+  "capabilities": {
+    "variant": "nlhe",
+    "min_players": 2,
+    "max_players": 6
+  },
+  "default_params": {
+    "samples": 80
+  },
+  "runtime_network": false,
+  "competition_eligible": false,
+  "provenance": {
+    "kind": "upstream-policy-extract",
+    "original_number": 11,
+    "repository": "goddamnVincent/6_players_no_limit_texas_holdem_deepcfr_agent",
+    "policy": "RandomAgent_mcts",
+    "note": "Existing MCTS-named Monte Carlo baseline, not DeepCFR. Original policy hardcodes two simulated opponents and selects argmax."
+  }
+}

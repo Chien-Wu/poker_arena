@@ -1,0 +1,11 @@
+rank,player_id,bot,points,tied,qualifier_hands_at_table,qualifier_net_chips,decisions,failures,timeouts,upstream_calls,adapter_repairs
+1,ethan,up_ethan,18.0,False,120,8279,252,0,0,252,5
+2,lucky,up_lucky,14.0,False,120,-527,253,0,0,253,0
+3,dberweger,up_dberweger,14.0,True,120,-2430,152,0,0,152,0
+3,fullhouse,up_fullhouse,14.0,True,120,-110,178,0,0,178,0
+5,vincent,up_vincent,13.0,False,120,-1160,124,0,0,124,0
+6,chien,mybot1,12.0,False,120,7385,255,0,0,0,0
+7,pokerforbots,up_pokerforbots,10.5,False,120,-3457,235,0,0,235,0
+8,dqn_reference,up_dqn_reference,9.5,False,120,-620,133,0,0,133,0
+9,noregrets,up_noregrets,9.0,False,120,-2571,378,0,0,378,0
+10,random,random_bot,6.0,False,120,-4789,131,0,0,0,0

@@ -1,0 +1,4 @@
+{
+  "players.0.params.raise_equity": [0.55, 0.65, 0.75],
+  "players.0.params.bet_fraction": [0.5, 0.75]
+}

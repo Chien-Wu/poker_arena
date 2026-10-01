@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "game_id": "game",
+  "hand_id": "game:h1",
+  "hand_number": 1,
+  "hero_seat": 0,
+  "button_seat": 0,
+  "small_blind_seat": 0,
+  "big_blind_seat": 1,
+  "street": "preflop",
+  "hole_cards": [
+    "Qd",
+    "5c"
+  ],
+  "board": [],
+  "players": [
+    {
+      "seat": 0,
+      "player_id": "chien",
+      "stack": 1990,
+      "starting_stack": 2000,
+      "street_bet": 10,
+      "total_contribution": 10,
+      "status": "active"
+    },
+    {
+      "seat": 1,
+      "player_id": "opponent",
+      "stack": 1980,
+      "starting_stack": 2000,
+      "street_bet": 20,
+      "total_contribution": 20,
+      "status": "active"
+    }
+  ],
+  "pot": 30,
+  "pots": [
+    {
+      "amount": 20,
+      "eligible_seats": [
+        0,
+        1
+      ]
+    },
+    {
+      "amount": 10,
+      "eligible_seats": [
+        1
+      ]
+    }
+  ],
+  "legal_actions": {
+    "types": [
+      "fold",
+      "call",
+      "raise"
+    ],
+    "to_call": 10,
+    "call_amount": 10,
+    "min_raise_to": 40,
+    "max_raise_to": 2000,
+    "full_min_raise_to": 40,
+    "short_all_in_only": false
+  },
+  "history": [
+    {
+      "sequence": 0,
+      "type": "blind",
+      "street": "preflop",
+      "seat": 0,
+      "action": null,
+      "paid": 10,
+      "raise_to": null,
+      "cards": []
+    },
+    {
+      "sequence": 1,
+      "type": "blind",
+      "street": "preflop",
+      "seat": 1,
+      "action": null,
+      "paid": 20,
+      "raise_to": null,
+      "cards": []
+    }
+  ],
+  "small_blind": 10,
+  "big_blind": 20,
+  "ante": 0,
+  "action_timeout_ms": 2000,
+  "hands_remaining": 0
+}

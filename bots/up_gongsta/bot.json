@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "id": "up_gongsta",
+  "name": "EquityAIPlayer.get_action",
+  "runtime": "python",
+  "entrypoint": "adapter:Bot",
+  "capabilities": {
+    "variant": "nlhe",
+    "min_players": 2,
+    "max_players": 2
+  },
+  "default_params": {
+    "samples": 80
+  },
+  "runtime_network": false,
+  "competition_eligible": false,
+  "provenance": {
+    "kind": "upstream-policy-extract",
+    "original_number": 8,
+    "repository": "Deltebrain/Gongsta-AI",
+    "policy": "EquityAIPlayer.get_action",
+    "note": "Equity reference policy, not CFRAIPlayer. GUI, speech and training artifacts deliberately excluded."
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "python": "3.13.5",
+  "engine_profile": "nlhe-moving-button-v1",
+  "bot_fingerprints": {
+    "chien": "474e14a65c0ef82fc3f95759acdf6ea87f12105a6585340a13e3d6013fa6cce9",
+    "random": "9a3344fadc9ac8e2375e4a800dd964c566fd71e24b5467da3902339a71c93386",
+    "caller": "a480c93f528ce74c36dbf87c7c5b1d704d3a5209a3a57641419acacba3669e5f",
+    "tight": "6e750f5650bcba1a45d6dd5436172c321da2274cdbeda9a06269183a2bd465a2",
+    "aggressive": "474e14a65c0ef82fc3f95759acdf6ea87f12105a6585340a13e3d6013fa6cce9"
+  },
+  "manifests": {
+    "mybot1": {
+      "schema_version": 1,
+      "id": "mybot1",
+      "name": "Editable Monte Carlo example",
+      "runtime": "python",
+      "entrypoint": "adapter:Bot",
+      "capabilities": {
+        "variant": "nlhe",
+        "min_players": 2,
+        "max_players": 9
+      },
+      "requires_runtime_network": false,
+      "provenance": "native-example",
+      "default_params": {
+        "equity_samples": 80,
+        "raise_equity": 0.65,
+        "bet_fraction": 0.6,
+        "call_margin": 0.02,
+        "bluff_frequency": 0.02
+      }
+    },
+    "random_bot": {
+      "schema_version": 1,
+      "id": "random_bot",
+      "name": "Uniform action baseline",
+      "runtime": "python",
+      "entrypoint": "adapter:Bot",
+      "capabilities": {
+        "variant": "nlhe",
+        "min_players": 2,
+        "max_players": 9
+      },
+      "requires_runtime_network": false,
+      "provenance": "native-example",
+      "default_params": {}
+    },
+    "calling_bot": {
+      "schema_version": 1,
+      "id": "calling_bot",
+      "name": "Check/call baseline",
+      "runtime": "python",
+      "entrypoint": "adapter:Bot",
+      "capabilities": {
+        "variant": "nlhe",
+        "min_players": 2,
+        "max_players": 9
+      },
+      "requires_runtime_network": false,
+      "provenance": "native-example",
+      "default_params": {}
+    },
+    "tight_bot": {
+      "schema_version": 1,
+      "id": "tight_bot",
+      "name": "Tight deterministic baseline",
+      "runtime": "python",
+      "entrypoint": "adapter:Bot",
+      "capabilities": {
+        "variant": "nlhe",
+        "min_players": 2,
+        "max_players": 9
+      },
+      "requires_runtime_network": false,
+      "provenance": "native-example",
+      "default_params": {}
+    }
+  }
+}

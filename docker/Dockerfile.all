@@ -1,0 +1,17 @@
+# Run the explicit source installer before building this variant.
+# Original Go handler must exist at bridge/sdk/bots/aggressive/handler.go.
+FROM golang:1.24 AS go-build
+WORKDIR /build
+COPY bots/up_pokerforbots/code/bridge/ ./
+RUN CGO_ENABLED=0 GOPROXY=off GOTOOLCHAIN=local go build -trimpath -o /out/pokerforbots .
+
+FROM python:3.13-slim
+WORKDIR /app
+COPY requirements-upstreams.txt /tmp/requirements.txt
+RUN pip install --no-cache-dir -r /tmp/requirements.txt
+COPY simulation/__init__.py simulation/contracts.py simulation/sdk.py simulation/registry.py simulation/worker.py /app/simulation/
+COPY utils/ /app/utils/
+COPY --from=go-build /out/pokerforbots /opt/arena-bin/pokerforbots
+ENV PYTHONPATH=/app PYTHONUNBUFFERED=1 PYTHONDONTWRITEBYTECODE=1 OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1
+USER 65534:65534
+CMD ["python", "-m", "simulation.worker"]

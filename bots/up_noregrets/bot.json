@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "id": "up_noregrets",
+  "name": "legacy PluribusBot.get_action (blueprint-only)",
+  "runtime": "python",
+  "entrypoint": "adapter:Bot",
+  "capabilities": {
+    "variant": "nlhe",
+    "min_players": 2,
+    "max_players": 9
+  },
+  "default_params": {
+    "blueprint": null
+  },
+  "runtime_network": false,
+  "competition_eligible": false,
+  "provenance": {
+    "kind": "upstream-policy-extract",
+    "original_number": 14,
+    "repository": "conorarmstrong/noregrets",
+    "policy": "legacy PluribusBot.get_action (blueprint-only)",
+    "note": "Untrained unless a JSON blueprint is supplied. Default executes the upstream empty-blueprint check/call fallback; no strength claim."
+  }
+}

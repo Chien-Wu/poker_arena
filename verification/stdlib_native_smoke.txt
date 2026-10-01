@@ -1,0 +1,79 @@
+{
+  "status": "complete",
+  "qualifier_games": 5,
+  "tiebreak_games": 8,
+  "total_hands": 23,
+  "leaderboard": [
+    {
+      "rank": 1,
+      "player_id": "tight",
+      "bot": "tight_bot",
+      "points": 5.0,
+      "tied": false,
+      "qualifier_hands_at_table": 15,
+      "qualifier_net_chips": 40,
+      "decisions": 21,
+      "failures": 0,
+      "timeouts": 0,
+      "upstream_calls": 0,
+      "adapter_repairs": 0
+    },
+    {
+      "rank": 2,
+      "player_id": "aggressive",
+      "bot": "mybot1",
+      "points": 4.0,
+      "tied": false,
+      "qualifier_hands_at_table": 15,
+      "qualifier_net_chips": 98,
+      "decisions": 26,
+      "failures": 0,
+      "timeouts": 0,
+      "upstream_calls": 0,
+      "adapter_repairs": 0
+    },
+    {
+      "rank": 3,
+      "player_id": "caller",
+      "bot": "calling_bot",
+      "points": 3.0,
+      "tied": false,
+      "qualifier_hands_at_table": 15,
+      "qualifier_net_chips": -36,
+      "decisions": 59,
+      "failures": 0,
+      "timeouts": 0,
+      "upstream_calls": 0,
+      "adapter_repairs": 0
+    },
+    {
+      "rank": 4,
+      "player_id": "random",
+      "bot": "random_bot",
+      "points": 2.0,
+      "tied": false,
+      "qualifier_hands_at_table": 15,
+      "qualifier_net_chips": -180,
+      "decisions": 26,
+      "failures": 0,
+      "timeouts": 0,
+      "upstream_calls": 0,
+      "adapter_repairs": 0
+    },
+    {
+      "rank": 5,
+      "player_id": "chien",
+      "bot": "mybot1",
+      "points": 1.0,
+      "tied": false,
+      "qualifier_hands_at_table": 15,
+      "qualifier_net_chips": 78,
+      "decisions": 32,
+      "failures": 0,
+      "timeouts": 0,
+      "upstream_calls": 0,
+      "adapter_repairs": 0
+    }
+  ],
+  "report": "/mnt/data/poker_arena_stdlib_smoke/report.html"
+}

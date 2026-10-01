@@ -1,0 +1,114 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><title>Poker Arena results</title>
+<style>body{font:16px system-ui;max-width:1150px;margin:40px auto;padding:0 24px;line-height:1.5}
+table{border-collapse:collapse;width:100%}th,td{text-align:left;padding:10px;border-bottom:1px solid #ddd}
+pre{white-space:pre-wrap}small{color:#555}</style><h1>Poker Arena</h1>
+<p>Status: <b>complete_with_unresolved_ties</b> · 40 qualifier games ·
+6 playoff games · 252 hands</p>
+<p>Ranking uses round-placement points, not cumulative chip profit. Adapter repairs are reported separately from bot failures.</p>
+<table><thead><tr><th>Rank</th><th>Entry</th><th>Policy</th><th>Points</th><th>Net chips</th><th>Decisions</th><th>Failures</th><th>Repairs</th></tr></thead><tbody><tr><td>1</td><td>ethan</td><td>up_ethan</td><td>18.0</td><td>8279</td><td>252</td><td>0</td><td>5</td></tr><tr><td>2</td><td>lucky</td><td>up_lucky</td><td>14.0</td><td>-527</td><td>253</td><td>0</td><td>0</td></tr><tr><td>3</td><td>dberweger</td><td>up_dberweger</td><td>14.0</td><td>-2430</td><td>152</td><td>0</td><td>0</td></tr><tr><td>3</td><td>fullhouse</td><td>up_fullhouse</td><td>14.0</td><td>-110</td><td>178</td><td>0</td><td>0</td></tr><tr><td>5</td><td>vincent</td><td>up_vincent</td><td>13.0</td><td>-1160</td><td>124</td><td>0</td><td>0</td></tr><tr><td>6</td><td>chien</td><td>mybot1</td><td>12.0</td><td>7385</td><td>255</td><td>0</td><td>0</td></tr><tr><td>7</td><td>pokerforbots</td><td>up_pokerforbots</td><td>10.5</td><td>-3457</td><td>235</td><td>0</td><td>0</td></tr><tr><td>8</td><td>dqn_reference</td><td>up_dqn_reference</td><td>9.5</td><td>-620</td><td>133</td><td>0</td><td>0</td></tr><tr><td>9</td><td>noregrets</td><td>up_noregrets</td><td>9.0</td><td>-2571</td><td>378</td><td>0</td><td>0</td></tr><tr><td>10</td><td>random</td><td>random_bot</td><td>6.0</td><td>-4789</td><td>131</td><td>0</td><td>0</td></tr></tbody></table>
+<h2>Configuration</h2><pre>{
+  &quot;players&quot;: [
+    {
+      &quot;id&quot;: &quot;lucky&quot;,
+      &quot;bot&quot;: &quot;up_lucky&quot;,
+      &quot;params&quot;: {
+        &quot;samples&quot;: 80
+      }
+    },
+    {
+      &quot;id&quot;: &quot;ethan&quot;,
+      &quot;bot&quot;: &quot;up_ethan&quot;,
+      &quot;params&quot;: {
+        &quot;samples&quot;: 80
+      }
+    },
+    {
+      &quot;id&quot;: &quot;dberweger&quot;,
+      &quot;bot&quot;: &quot;up_dberweger&quot;,
+      &quot;params&quot;: {
+        &quot;samples&quot;: 80
+      }
+    },
+    {
+      &quot;id&quot;: &quot;vincent&quot;,
+      &quot;bot&quot;: &quot;up_vincent&quot;,
+      &quot;params&quot;: {
+        &quot;samples&quot;: 80
+      }
+    },
+    {
+      &quot;id&quot;: &quot;dqn_reference&quot;,
+      &quot;bot&quot;: &quot;up_dqn_reference&quot;,
+      &quot;params&quot;: {
+        &quot;samples&quot;: 80
+      }
+    },
+    {
+      &quot;id&quot;: &quot;noregrets&quot;,
+      &quot;bot&quot;: &quot;up_noregrets&quot;,
+      &quot;params&quot;: {
+        &quot;samples&quot;: 80
+      }
+    },
+    {
+      &quot;id&quot;: &quot;fullhouse&quot;,
+      &quot;bot&quot;: &quot;up_fullhouse&quot;,
+      &quot;params&quot;: {
+        &quot;samples&quot;: 80
+      }
+    },
+    {
+      &quot;id&quot;: &quot;pokerforbots&quot;,
+      &quot;bot&quot;: &quot;up_pokerforbots&quot;,
+      &quot;params&quot;: {
+        &quot;samples&quot;: 80
+      }
+    },
+    {
+      &quot;id&quot;: &quot;chien&quot;,
+      &quot;bot&quot;: &quot;mybot1&quot;,
+      &quot;params&quot;: {
+        &quot;samples&quot;: 80
+      }
+    },
+    {
+      &quot;id&quot;: &quot;random&quot;,
+      &quot;bot&quot;: &quot;random_bot&quot;,
+      &quot;params&quot;: {}
+    }
+  ],
+  &quot;game&quot;: {
+    &quot;initial_stack&quot;: 2000,
+    &quot;small_blind&quot;: 10,
+    &quot;big_blind&quot;: 20,
+    &quot;ante&quot;: 0,
+    &quot;hands_per_game&quot;: 6,
+    &quot;max_actions_per_hand&quot;: 2000,
+    &quot;blind_schedule&quot;: []
+  },
+  &quot;tournament&quot;: {
+    &quot;rounds&quot;: 4,
+    &quot;group_size&quot;: 5,
+    &quot;rotation_cycles&quot;: 1,
+    &quot;regroup&quot;: true,
+    &quot;require_equal_groups&quot;: false,
+    &quot;tiebreak_hands&quot;: 2,
+    &quot;tiebreak_attempts&quot;: 1,
+    &quot;tiebreak_scope&quot;: &quot;final&quot;,
+    &quot;unresolved_ties&quot;: &quot;share&quot;
+  },
+  &quot;execution&quot;: {
+    &quot;runner&quot;: &quot;inprocess&quot;,
+    &quot;action_timeout_ms&quot;: 2000,
+    &quot;startup_timeout_ms&quot;: 20000,
+    &quot;event_timeout_ms&quot;: 2000,
+    &quot;max_failures_per_game&quot;: 3,
+    &quot;failure_policy&quot;: &quot;abort&quot;,
+    &quot;memory_mb&quot;: 2048,
+    &quot;cpu_seconds&quot;: 120,
+    &quot;require_no_network&quot;: false,
+    &quot;docker_image&quot;: &quot;poker-arena-bot:local&quot;
+  },
+  &quot;seed&quot;: 20261002
+}</pre>
+<p><small>Private replay journals contain the full deck. Never mount them into bot containers.</small></p></html>

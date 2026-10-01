@@ -1,0 +1,330 @@
+{
+  "up_ethan": {
+    "repository": "ethangarofalo/hold-em-bot",
+    "policy": "PokerBot (heuristic mode)",
+    "verification": "source_inspected_policy_excerpt",
+    "sources": [
+      {
+        "path": "info_sets.py",
+        "upstream_git_blob_sha": "a12478f1a03e4db220959c24972d5587a7eb6b97",
+        "local_excerpt_sha256": "d14ec50f0988e6caec5b57a605a3fe52c004bd4e36e8c72ff93f4f08d0358632",
+        "whole_blob_match": false
+      },
+      {
+        "path": "bot.py",
+        "upstream_git_blob_sha": "b656fdc498bcdf589ff41ca20c80fc28d09386d1",
+        "local_excerpt_sha256": "8317de59a13aa8268f523c26df02516c5bafbb53e7b68423a69a39ba7f96e476",
+        "whole_blob_match": false
+      }
+    ],
+    "policies": [
+      {
+        "file": "helpers.policy.py",
+        "sha256": "8cd23842d6b41c9ff0ee6a5168c8360a6c86a0d77ac81949a4f5c7258521bbe4",
+        "selectors": [
+          "BoardTexture",
+          "SPRBucket",
+          "classify_board_texture",
+          "classify_spr"
+        ]
+      },
+      {
+        "file": "main.policy.py",
+        "sha256": "ef49bcecbc5f25b4ed5c1584cdc4e402898f64db6ad742a4426a5067cec1a556",
+        "selectors": [
+          "Action",
+          "Position",
+          "PREMIUM_HANDS",
+          "STRONG_HANDS",
+          "PLAYABLE_HANDS",
+          "_hand_category",
+          "PokerBot.__init__",
+          "PokerBot.decide",
+          "PokerBot._preflop_decision",
+          "PokerBot._postflop_decision"
+        ]
+      }
+    ]
+  },
+  "up_dqn_reference": {
+    "repository": "alexherm0123verify/poker-DQN",
+    "policy": "HeuristicPlayer",
+    "verification": "source_inspected_policy_excerpt",
+    "sources": [
+      {
+        "path": "scripts/PlayerModels.py",
+        "upstream_git_blob_sha": "dc88fae770f67dea8838819da4b3f1ef6f8e7de6",
+        "local_excerpt_sha256": "37b262b6d240b18c7a5da70481b0511867eaed83e17efd7a837af70bd6bdf631",
+        "whole_blob_match": false
+      }
+    ],
+    "policies": [
+      {
+        "file": "main.policy.py",
+        "sha256": "f206a1fc140790d22681d9b6abd7d8bdb1525a4e4c90772939642c750fa9c3a1",
+        "selectors": [
+          "HeuristicPlayer"
+        ]
+      }
+    ]
+  },
+  "up_holdemlab": {
+    "repository": "HFossdal/poker-game-simulator",
+    "policy": "RuleBasedHeuristicAgent",
+    "verification": "source_inspected_policy_excerpt",
+    "sources": [
+      {
+        "path": "src/holdem/agents/tight_aggressive.py",
+        "upstream_git_blob_sha": "4585f2fe0446bde78eeed223e50d305c6406a906",
+        "local_excerpt_sha256": "31bf8f169cec80ade5a08e971498e7261e4e2a9206bbdda68579e3fce03d596b",
+        "whole_blob_match": false
+      },
+      {
+        "path": "src/holdem/agents/action_abstraction.py",
+        "upstream_git_blob_sha": "fda77ab3470612b99b5abdaea5a49c6093dcf66e",
+        "local_excerpt_sha256": "c4c3e500ca1bd0728d06293c9c9e4748d7ccf1671432450d0e5ed0bf99d42ab9",
+        "whole_blob_match": false
+      },
+      {
+        "path": "src/holdem/agents/rule_based.py",
+        "upstream_git_blob_sha": "5ebc5966215e9af489eeaf7d11e124babe963f6e",
+        "local_excerpt_sha256": "aa02d1a44d3e2f46f8003e84e255fbe011f4093757b1aa0a27e631af11e02900",
+        "whole_blob_match": false
+      }
+    ],
+    "policies": [
+      {
+        "file": "helpers.policy.py",
+        "sha256": "3ef684721480de1b173f1a817faacbf94569707ac02d5c05d8e3d25d4c046c96",
+        "selectors": [
+          "_preflop_strength",
+          "_postflop_equity_estimate"
+        ]
+      },
+      {
+        "file": "abstraction.policy.py",
+        "sha256": "38413a51646251b1d28771ce5bc0dc49ded2d1c5049a29a67629577afff476e0",
+        "selectors": [
+          "pick_abstract",
+          "_closest_bet_or_raise"
+        ]
+      },
+      {
+        "file": "main.policy.py",
+        "sha256": "79a1e3818102131300627632090bf2adb52247e36277890676b8976de8bb0188",
+        "selectors": [
+          "RuleBasedHeuristicAgent"
+        ]
+      }
+    ]
+  },
+  "up_lucky": {
+    "repository": "luckyone18/Poker",
+    "policy": "MonteCarloBot",
+    "verification": "source_inspected_policy_excerpt",
+    "sources": [
+      {
+        "path": "bots/monte_carlo_bot.py",
+        "upstream_git_blob_sha": "8b0dd528ef08539ecf009c3d06645306c6e9de1c",
+        "local_excerpt_sha256": "6796c29e7a2d690fce5ab57f1607c58df5adf2815b63b2050297dc18587c6a2d",
+        "whole_blob_match": false
+      }
+    ],
+    "policies": [
+      {
+        "file": "main.policy.py",
+        "sha256": "d494012068c892e8bd75cc7a20c1eed526231333c42b4fcd0eb44c998143a2dd",
+        "selectors": [
+          "MonteCarloBot"
+        ]
+      }
+    ]
+  },
+  "up_dberweger": {
+    "repository": "dberweger2017/deepcfr-texas-no-limit-holdem-6-players",
+    "policy": "StylePolicy",
+    "verification": "source_inspected_policy_excerpt",
+    "sources": [
+      {
+        "path": "src/arena/heuristics.py",
+        "upstream_git_blob_sha": "29278f868e3b3d6181a4980a9d2439e44a989747",
+        "local_excerpt_sha256": "cb46f64be4bf2469c77bf2ecd3d931516f64c7d50dda938f40fca64017882f57",
+        "whole_blob_match": false
+      }
+    ],
+    "policies": [
+      {
+        "file": "main.policy.py",
+        "sha256": "278c1656a80362492c1d0eb1189fc2330cbeb25fecb91e1fdf0475c555f99bfe",
+        "selectors": [
+          "Style",
+          "STYLES",
+          "hand_score",
+          "pot_raise",
+          "StylePolicy"
+        ]
+      }
+    ]
+  },
+  "up_jeffelin": {
+    "repository": "jeffelin/CFR_pokerbot",
+    "policy": "strength_bot.Player",
+    "verification": "source_inspected_policy_excerpt",
+    "sources": [
+      {
+        "path": "engine-2026/tuff_model/strength_bot/player.py",
+        "upstream_git_blob_sha": "66e21d6f8ceefc5f9b8c6fdf107eed4eb77b757e",
+        "local_excerpt_sha256": "25435e1363fa6737fb81c1f86f0e34bfd78c43f5daf9570a36231bbe40f49146",
+        "whole_blob_match": false
+      }
+    ],
+    "policies": [
+      {
+        "file": "main.policy.py",
+        "sha256": "9061e632a075a3e6c546839aa80fe8b0d7052c71022bd9f57d9eb3baa073f01e",
+        "selectors": [
+          "card_rank",
+          "card_suit",
+          "hand_strength",
+          "choose_discard",
+          "decide_action",
+          "Player"
+        ]
+      }
+    ]
+  },
+  "up_fawz": {
+    "repository": "fawzmehfil/CFR-Poker-Bot",
+    "policy": "pot_odds_bot",
+    "verification": "source_inspected_policy_excerpt",
+    "sources": [
+      {
+        "path": "holdem_cfr/holdem_eval/__init__.py",
+        "upstream_git_blob_sha": "b5c34e20205a10b57d8299313d578223e28d3206",
+        "local_excerpt_sha256": "48515bf2a2b2f954e6c8fc162978777125e35101b3b90c208ff724f153509513",
+        "whole_blob_match": false
+      }
+    ],
+    "policies": [
+      {
+        "file": "main.policy.py",
+        "sha256": "f0c9b75e4eef2139624cf22137c9889582d23eb9bf05dd38391342acf3585021",
+        "selectors": [
+          "pot_odds_bot"
+        ]
+      }
+    ]
+  },
+  "up_noregrets": {
+    "repository": "conorarmstrong/noregrets",
+    "policy": "legacy PluribusBot.get_action (blueprint-only)",
+    "verification": "source_inspected_policy_excerpt",
+    "sources": [
+      {
+        "path": "legacy/poker_bot_pluribus.py",
+        "upstream_git_blob_sha": "65ac56d959627afa58818750ab8d12354008f7be",
+        "local_excerpt_sha256": "f336bc82863763e0579b80ee1fb1465a0b9526a137f533343434686be2d92fd3",
+        "whole_blob_match": false
+      }
+    ],
+    "policies": [
+      {
+        "file": "main.policy.py",
+        "sha256": "5bfcde3ce4b70e36707d9f02d1031b8dd5d4b82b4f2dc95831a37e1309621b5b",
+        "selectors": [
+          "Action",
+          "InfoSet",
+          "LinearMCCFR.get_average_strategy",
+          "PluribusBot.get_action",
+          "PluribusBot._get_info_set",
+          "PluribusBot._encode_betting_history",
+          "PluribusBot._sample_from_strategy"
+        ]
+      }
+    ]
+  },
+  "up_fullhouse": {
+    "repository": "BouillieAnonymous/4fullhousehackathon",
+    "policy": "Shark.decide",
+    "verification": "source_inspected_policy_excerpt",
+    "sources": [
+      {
+        "path": "docs/official-fullhouse-engine/bots/shark/bot.py",
+        "upstream_git_blob_sha": "59004d4585f9863954f6fb4ef469dceec27b6ad1",
+        "local_excerpt_sha256": "a212b7f965e6a1fbae3141e947c894d0038deb81221dc6826072c9c135e24303",
+        "whole_blob_match": false
+      }
+    ],
+    "policies": [
+      {
+        "file": "main.policy.py",
+        "sha256": "153dddc45897d38627d0ad34ba684e1270ca62675a9d00b5c94b6cefe3061b23",
+        "selectors": [
+          "STRONG_HANDS",
+          "hand_strength",
+          "decide"
+        ]
+      }
+    ]
+  },
+  "up_pokerforbots": {
+    "repository": "lox/pokerforbots",
+    "policy": "aggressive.Handler.OnActionRequest (Go)",
+    "verification": "source_inspected_policy_excerpt",
+    "sources": [
+      {
+        "path": "sdk/bots/aggressive/handler.go",
+        "upstream_git_blob_sha": "52bb6452a579bd88ecc1c8df6c77e49d43060952",
+        "local_excerpt_sha256": "0590673a1e26658c6013aa86c578ec954cc7e55bd6ad62bfd25007f5b4007545",
+        "whole_blob_match": true
+      }
+    ],
+    "policies": []
+  },
+  "up_vincent": {
+    "repository": "goddamnVincent/6_players_no_limit_texas_holdem_deepcfr_agent",
+    "policy": "RandomAgent_mcts",
+    "verification": "source_inspected_policy_excerpt",
+    "sources": [
+      {
+        "path": "src/agents/random_agent_mcts.py",
+        "upstream_git_blob_sha": "10a9ac80d10af0edcd574227d4fb334a9e9602a1",
+        "local_excerpt_sha256": "d9a9b53f0019e2a7e45e6f6c614c396c96924e9295e6fd2087bacb16dec23dce",
+        "whole_blob_match": false
+      }
+    ],
+    "policies": [
+      {
+        "file": "main.policy.py",
+        "sha256": "4e82b9e301ba9a89c3d796041b84e3adc9374a3a56175b6ecfcb4867b77713f7",
+        "selectors": [
+          "stage_names",
+          "RandomAgent_mcts"
+        ]
+      }
+    ]
+  },
+  "up_gongsta": {
+    "repository": "Deltebrain/Gongsta-AI",
+    "policy": "EquityAIPlayer.get_action",
+    "verification": "source_inspected_policy_excerpt",
+    "sources": [
+      {
+        "path": "src/aiplayer.py",
+        "upstream_git_blob_sha": "75d375256c34f8463b1328e8f61175c2c81faaf3",
+        "local_excerpt_sha256": "07a5af17b41537a6c1d5cb3719f1d884aa27675b5cf1fbf2eb89e959498fe13a",
+        "whole_blob_match": false
+      }
+    ],
+    "policies": [
+      {
+        "file": "main.policy.py",
+        "sha256": "1d3fa78b9d3217a22dcab83bc1de69f2ea9c6346bce20a06d4b1da238f75934e",
+        "selectors": [
+          "getAction",
+          "EquityAIPlayer.get_action"
+        ]
+      }
+    ]
+  }
+}

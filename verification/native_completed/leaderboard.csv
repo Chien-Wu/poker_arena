@@ -1,0 +1,6 @@
+rank,player_id,bot,points,tied,qualifier_hands_at_table,qualifier_net_chips,decisions,failures,timeouts,upstream_calls,adapter_repairs
+1,chien,mybot1,19.0,False,400,29411,845,0,0,0,0
+2,aggressive,mybot1,13.0,False,400,476,725,0,0,0,0
+3,tight,tight_bot,13.0,False,400,3806,635,0,0,0,0
+4,caller,calling_bot,10.0,False,400,-8567,978,0,0,0,0
+5,random,random_bot,5.0,False,400,-25126,442,0,0,0,0

@@ -1,0 +1,377 @@
+{
+  "integrations": 12,
+  "results": [
+    {
+      "bot": "up_dberweger",
+      "game_id": "validate:up_dberweger",
+      "purpose": "qualifier",
+      "seats": [
+        "candidate",
+        "opponent_1"
+      ],
+      "hands": 20,
+      "stacks": {
+        "candidate": 1950,
+        "opponent_1": 2050
+      },
+      "stats": {
+        "candidate": {
+          "decisions": 27,
+          "failures": 0,
+          "timeouts": 0,
+          "upstream_calls": 27,
+          "adapter_repairs": 0
+        },
+        "opponent_1": {
+          "decisions": 21,
+          "failures": 0,
+          "timeouts": 0,
+          "upstream_calls": 0,
+          "adapter_repairs": 0
+        }
+      },
+      "disabled": []
+    },
+    {
+      "bot": "up_dqn_reference",
+      "game_id": "validate:up_dqn_reference",
+      "purpose": "qualifier",
+      "seats": [
+        "candidate",
+        "opponent_1"
+      ],
+      "hands": 20,
+      "stacks": {
+        "candidate": 3700,
+        "opponent_1": 300
+      },
+      "stats": {
+        "candidate": {
+          "decisions": 22,
+          "failures": 0,
+          "timeouts": 0,
+          "upstream_calls": 22,
+          "adapter_repairs": 0
+        },
+        "opponent_1": {
+          "decisions": 14,
+          "failures": 0,
+          "timeouts": 0,
+          "upstream_calls": 0,
+          "adapter_repairs": 0
+        }
+      },
+      "disabled": []
+    },
+    {
+      "bot": "up_ethan",
+      "game_id": "validate:up_ethan",
+      "purpose": "qualifier",
+      "seats": [
+        "candidate",
+        "opponent_1"
+      ],
+      "hands": 7,
+      "stacks": {
+        "candidate": 4000,
+        "opponent_1": 0
+      },
+      "stats": {
+        "candidate": {
+          "decisions": 9,
+          "failures": 0,
+          "timeouts": 0,
+          "upstream_calls": 9,
+          "adapter_repairs": 0
+        },
+        "opponent_1": {
+          "decisions": 9,
+          "failures": 0,
+          "timeouts": 0,
+          "upstream_calls": 0,
+          "adapter_repairs": 0
+        }
+      },
+      "disabled": []
+    },
+    {
+      "bot": "up_fawz",
+      "game_id": "validate:up_fawz",
+      "purpose": "qualifier",
+      "seats": [
+        "candidate",
+        "opponent_1"
+      ],
+      "hands": 20,
+      "stacks": {
+        "candidate": 4000,
+        "opponent_1": 0
+      },
+      "stats": {
+        "candidate": {
+          "decisions": 52,
+          "failures": 0,
+          "timeouts": 0,
+          "upstream_calls": 52,
+          "adapter_repairs": 0
+        },
+        "opponent_1": {
+          "decisions": 54,
+          "failures": 0,
+          "timeouts": 0,
+          "upstream_calls": 0,
+          "adapter_repairs": 0
+        }
+      },
+      "disabled": []
+    },
+    {
+      "bot": "up_fullhouse",
+      "game_id": "validate:up_fullhouse",
+      "purpose": "qualifier",
+      "seats": [
+        "candidate",
+        "opponent_1"
+      ],
+      "hands": 20,
+      "stacks": {
+        "candidate": 1940,
+        "opponent_1": 2060
+      },
+      "stats": {
+        "candidate": {
+          "decisions": 32,
+          "failures": 0,
+          "timeouts": 0,
+          "upstream_calls": 32,
+          "adapter_repairs": 0
+        },
+        "opponent_1": {
+          "decisions": 20,
+          "failures": 0,
+          "timeouts": 0,
+          "upstream_calls": 0,
+          "adapter_repairs": 0
+        }
+      },
+      "disabled": []
+    },
+    {
+      "bot": "up_gongsta",
+      "game_id": "validate:up_gongsta",
+      "purpose": "qualifier",
+      "seats": [
+        "candidate",
+        "opponent_1"
+      ],
+      "hands": 13,
+      "stacks": {
+        "candidate": 4000,
+        "opponent_1": 0
+      },
+      "stats": {
+        "candidate": {
+          "decisions": 26,
+          "failures": 0,
+          "timeouts": 0,
+          "upstream_calls": 26,
+          "adapter_repairs": 1
+        },
+        "opponent_1": {
+          "decisions": 31,
+          "failures": 0,
+          "timeouts": 0,
+          "upstream_calls": 0,
+          "adapter_repairs": 0
+        }
+      },
+      "disabled": []
+    },
+    {
+      "bot": "up_holdemlab",
+      "game_id": "validate:up_holdemlab",
+      "purpose": "qualifier",
+      "seats": [
+        "candidate",
+        "opponent_1"
+      ],
+      "hands": 20,
+      "stacks": {
+        "candidate": 3930,
+        "opponent_1": 70
+      },
+      "stats": {
+        "candidate": {
+          "decisions": 25,
+          "failures": 0,
+          "timeouts": 0,
+          "upstream_calls": 25,
+          "adapter_repairs": 0
+        },
+        "opponent_1": {
+          "decisions": 22,
+          "failures": 0,
+          "timeouts": 0,
+          "upstream_calls": 0,
+          "adapter_repairs": 0
+        }
+      },
+      "disabled": []
+    },
+    {
+      "bot": "up_jeffelin",
+      "game_id": "validate:up_jeffelin",
+      "purpose": "qualifier",
+      "seats": [
+        "candidate",
+        "opponent_1"
+      ],
+      "hands": 20,
+      "stacks": {
+        "candidate": 1760,
+        "opponent_1": 2240
+      },
+      "stats": {
+        "candidate": {
+          "decisions": 29,
+          "failures": 0,
+          "timeouts": 0,
+          "upstream_calls": 29,
+          "adapter_repairs": 0
+        },
+        "opponent_1": {
+          "decisions": 19,
+          "failures": 0,
+          "timeouts": 0,
+          "upstream_calls": 0,
+          "adapter_repairs": 0
+        }
+      },
+      "disabled": []
+    },
+    {
+      "bot": "up_lucky",
+      "game_id": "validate:up_lucky",
+      "purpose": "qualifier",
+      "seats": [
+        "candidate",
+        "opponent_1"
+      ],
+      "hands": 1,
+      "stacks": {
+        "candidate": 4000,
+        "opponent_1": 0
+      },
+      "stats": {
+        "candidate": {
+          "decisions": 3,
+          "failures": 0,
+          "timeouts": 0,
+          "upstream_calls": 3,
+          "adapter_repairs": 0
+        },
+        "opponent_1": {
+          "decisions": 3,
+          "failures": 0,
+          "timeouts": 0,
+          "upstream_calls": 0,
+          "adapter_repairs": 0
+        }
+      },
+      "disabled": []
+    },
+    {
+      "bot": "up_noregrets",
+      "game_id": "validate:up_noregrets",
+      "purpose": "qualifier",
+      "seats": [
+        "candidate",
+        "opponent_1"
+      ],
+      "hands": 9,
+      "stacks": {
+        "candidate": 4000,
+        "opponent_1": 0
+      },
+      "stats": {
+        "candidate": {
+          "decisions": 17,
+          "failures": 0,
+          "timeouts": 0,
+          "upstream_calls": 17,
+          "adapter_repairs": 0
+        },
+        "opponent_1": {
+          "decisions": 18,
+          "failures": 0,
+          "timeouts": 0,
+          "upstream_calls": 0,
+          "adapter_repairs": 0
+        }
+      },
+      "disabled": []
+    },
+    {
+      "bot": "up_pokerforbots",
+      "game_id": "validate:up_pokerforbots",
+      "purpose": "qualifier",
+      "seats": [
+        "candidate",
+        "opponent_1"
+      ],
+      "hands": 20,
+      "stacks": {
+        "candidate": 3990,
+        "opponent_1": 10
+      },
+      "stats": {
+        "candidate": {
+          "decisions": 46,
+          "failures": 0,
+          "timeouts": 0,
+          "upstream_calls": 46,
+          "adapter_repairs": 0
+        },
+        "opponent_1": {
+          "decisions": 51,
+          "failures": 0,
+          "timeouts": 0,
+          "upstream_calls": 0,
+          "adapter_repairs": 0
+        }
+      },
+      "disabled": []
+    },
+    {
+      "bot": "up_vincent",
+      "game_id": "validate:up_vincent",
+      "purpose": "qualifier",
+      "seats": [
+        "candidate",
+        "opponent_1"
+      ],
+      "hands": 20,
+      "stacks": {
+        "candidate": 1790,
+        "opponent_1": 2210
+      },
+      "stats": {
+        "candidate": {
+          "decisions": 17,
+          "failures": 0,
+          "timeouts": 0,
+          "upstream_calls": 17,
+          "adapter_repairs": 0
+        },
+        "opponent_1": {
+          "decisions": 10,
+          "failures": 0,
+          "timeouts": 0,
+          "upstream_calls": 0,
+          "adapter_repairs": 0
+        }
+      },
+      "disabled": []
+    }
+  ]
+}

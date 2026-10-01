@@ -1,0 +1,268 @@
+{
+  "schema_version": 1,
+  "original_list_size": 20,
+  "sources": {
+    "up_fawz": {
+      "original_number": 4,
+      "repository": "fawzmehfil/CFR-Poker-Bot",
+      "policy": "pot_odds_bot",
+      "note": "Existing heuristic baseline, not a trained CFR policy.",
+      "files": [
+        {
+          "name": "main",
+          "path": "holdem_cfr/holdem_eval/__init__.py",
+          "blob_sha": "b5c34e20205a10b57d8299313d578223e28d3206",
+          "selectors": [
+            "pot_odds_bot"
+          ],
+          "source_url": "https://github.com/fawzmehfil/CFR-Poker-Bot/blob/main/holdem_cfr/holdem_eval/__init__.py"
+        }
+      ]
+    },
+    "up_jeffelin": {
+      "original_number": 5,
+      "repository": "jeffelin/CFR_pokerbot",
+      "policy": "strength_bot.Player",
+      "note": "Heads-up betting-only projection of the 2026 discard-game reference policy; discard rounds are not simulated.",
+      "files": [
+        {
+          "name": "main",
+          "path": "engine-2026/tuff_model/strength_bot/player.py",
+          "blob_sha": "66e21d6f8ceefc5f9b8c6fdf107eed4eb77b757e",
+          "selectors": [
+            "card_rank",
+            "card_suit",
+            "hand_strength",
+            "choose_discard",
+            "decide_action",
+            "Player"
+          ],
+          "source_url": "https://github.com/jeffelin/CFR_pokerbot/blob/main/engine-2026/tuff_model/strength_bot/player.py"
+        }
+      ]
+    },
+    "up_lucky": {
+      "original_number": 6,
+      "repository": "luckyone18/Poker",
+      "policy": "MonteCarloBot",
+      "note": "Actual Monte Carlo policy. Original multiway ties are valued at one half, preserved.",
+      "files": [
+        {
+          "name": "main",
+          "path": "bots/monte_carlo_bot.py",
+          "blob_sha": "8b0dd528ef08539ecf009c3d06645306c6e9de1c",
+          "selectors": [
+            "MonteCarloBot"
+          ],
+          "source_url": "https://github.com/luckyone18/Poker/blob/main/bots/monte_carlo_bot.py"
+        }
+      ]
+    },
+    "up_ethan": {
+      "original_number": 7,
+      "repository": "ethangarofalo/hold-em-bot",
+      "policy": "PokerBot (heuristic mode)",
+      "note": "Original heuristic mode, no loaded CFR table and no opponent-model updates. Shared equity evaluator is the dependency facade.",
+      "files": [
+        {
+          "name": "helpers",
+          "path": "info_sets.py",
+          "blob_sha": "a12478f1a03e4db220959c24972d5587a7eb6b97",
+          "selectors": [
+            "BoardTexture",
+            "SPRBucket",
+            "classify_board_texture",
+            "classify_spr"
+          ],
+          "source_url": "https://github.com/ethangarofalo/hold-em-bot/blob/main/info_sets.py"
+        },
+        {
+          "name": "main",
+          "path": "bot.py",
+          "blob_sha": "b656fdc498bcdf589ff41ca20c80fc28d09386d1",
+          "selectors": [
+            "Action",
+            "Position",
+            "PREMIUM_HANDS",
+            "STRONG_HANDS",
+            "PLAYABLE_HANDS",
+            "_hand_category",
+            "PokerBot.__init__",
+            "PokerBot.decide",
+            "PokerBot._preflop_decision",
+            "PokerBot._postflop_decision"
+          ],
+          "source_url": "https://github.com/ethangarofalo/hold-em-bot/blob/main/bot.py"
+        }
+      ]
+    },
+    "up_gongsta": {
+      "original_number": 8,
+      "repository": "Deltebrain/Gongsta-AI",
+      "policy": "EquityAIPlayer.get_action",
+      "note": "Equity reference policy, not CFRAIPlayer. GUI, speech and training artifacts deliberately excluded.",
+      "files": [
+        {
+          "name": "main",
+          "path": "src/aiplayer.py",
+          "blob_sha": "75d375256c34f8463b1328e8f61175c2c81faaf3",
+          "selectors": [
+            "getAction",
+            "EquityAIPlayer.get_action"
+          ],
+          "source_url": "https://github.com/Deltebrain/Gongsta-AI/blob/main/src/aiplayer.py"
+        }
+      ]
+    },
+    "up_dberweger": {
+      "original_number": 10,
+      "repository": "dberweger2017/deepcfr-texas-no-limit-holdem-6-players",
+      "policy": "StylePolicy",
+      "note": "Card-aware style/reference policy, not the DeepCFR neural checkpoint.",
+      "files": [
+        {
+          "name": "main",
+          "path": "src/arena/heuristics.py",
+          "blob_sha": "29278f868e3b3d6181a4980a9d2439e44a989747",
+          "selectors": [
+            "Style",
+            "STYLES",
+            "hand_score",
+            "pot_raise",
+            "StylePolicy"
+          ],
+          "source_url": "https://github.com/dberweger2017/deepcfr-texas-no-limit-holdem-6-players/blob/main/src/arena/heuristics.py"
+        }
+      ]
+    },
+    "up_vincent": {
+      "original_number": 11,
+      "repository": "goddamnVincent/6_players_no_limit_texas_holdem_deepcfr_agent",
+      "policy": "RandomAgent_mcts",
+      "note": "Existing MCTS-named Monte Carlo baseline, not DeepCFR. Original policy hardcodes two simulated opponents and selects argmax.",
+      "files": [
+        {
+          "name": "main",
+          "path": "src/agents/random_agent_mcts.py",
+          "blob_sha": "10a9ac80d10af0edcd574227d4fb334a9e9602a1",
+          "selectors": [
+            "stage_names",
+            "RandomAgent_mcts"
+          ],
+          "source_url": "https://github.com/goddamnVincent/6_players_no_limit_texas_holdem_deepcfr_agent/blob/main/src/agents/random_agent_mcts.py"
+        }
+      ]
+    },
+    "up_dqn_reference": {
+      "original_number": 12,
+      "repository": "alexherm0123verify/poker-DQN",
+      "policy": "HeuristicPlayer",
+      "note": "PyPokerEngine heuristic reference, not DQN weights. Original hardcoded nine-player equity assumption is preserved.",
+      "files": [
+        {
+          "name": "main",
+          "path": "scripts/PlayerModels.py",
+          "blob_sha": "dc88fae770f67dea8838819da4b3f1ef6f8e7de6",
+          "selectors": [
+            "HeuristicPlayer"
+          ],
+          "source_url": "https://github.com/alexherm0123verify/poker-DQN/blob/main/scripts/PlayerModels.py"
+        }
+      ]
+    },
+    "up_noregrets": {
+      "original_number": 14,
+      "repository": "conorarmstrong/noregrets",
+      "policy": "legacy PluribusBot.get_action (blueprint-only)",
+      "note": "Untrained unless a JSON blueprint is supplied. Default executes the upstream empty-blueprint check/call fallback; no strength claim.",
+      "files": [
+        {
+          "name": "main",
+          "path": "legacy/poker_bot_pluribus.py",
+          "blob_sha": "65ac56d959627afa58818750ab8d12354008f7be",
+          "selectors": [
+            "Action",
+            "InfoSet",
+            "LinearMCCFR.get_average_strategy",
+            "PluribusBot.get_action",
+            "PluribusBot._get_info_set",
+            "PluribusBot._encode_betting_history",
+            "PluribusBot._sample_from_strategy"
+          ],
+          "source_url": "https://github.com/conorarmstrong/noregrets/blob/main/legacy/poker_bot_pluribus.py"
+        }
+      ]
+    },
+    "up_fullhouse": {
+      "original_number": 15,
+      "repository": "BouillieAnonymous/4fullhousehackathon",
+      "policy": "Shark.decide",
+      "note": "Shark reference policy, not the separately packaged 13.x submission.",
+      "files": [
+        {
+          "name": "main",
+          "path": "docs/official-fullhouse-engine/bots/shark/bot.py",
+          "blob_sha": "59004d4585f9863954f6fb4ef469dceec27b6ad1",
+          "selectors": [
+            "STRONG_HANDS",
+            "hand_strength",
+            "decide"
+          ],
+          "source_url": "https://github.com/BouillieAnonymous/4fullhousehackathon/blob/main/docs/official-fullhouse-engine/bots/shark/bot.py"
+        }
+      ]
+    },
+    "up_pokerforbots": {
+      "original_number": 16,
+      "repository": "lox/pokerforbots",
+      "policy": "aggressive.Handler.OnActionRequest (Go)",
+      "note": "Actual Go handler, compiled with a minimal local SDK facade. Seeded PCG constructor added beside the unmodified source.",
+      "files": [
+        {
+          "name": "main",
+          "path": "sdk/bots/aggressive/handler.go",
+          "blob_sha": "52bb6452a579bd88ecc1c8df6c77e49d43060952",
+          "selectors": [],
+          "source_url": "https://github.com/lox/pokerforbots/blob/main/sdk/bots/aggressive/handler.go"
+        }
+      ]
+    },
+    "up_holdemlab": {
+      "original_number": 17,
+      "repository": "HFossdal/poker-game-simulator",
+      "policy": "RuleBasedHeuristicAgent",
+      "note": "Heads-up rule-based reference policy; not the CFR policy. Adapter supplies its abstract legal-action menu.",
+      "files": [
+        {
+          "name": "helpers",
+          "path": "src/holdem/agents/tight_aggressive.py",
+          "blob_sha": "4585f2fe0446bde78eeed223e50d305c6406a906",
+          "selectors": [
+            "_preflop_strength",
+            "_postflop_equity_estimate"
+          ],
+          "source_url": "https://github.com/HFossdal/poker-game-simulator/blob/main/src/holdem/agents/tight_aggressive.py"
+        },
+        {
+          "name": "abstraction",
+          "path": "src/holdem/agents/action_abstraction.py",
+          "blob_sha": "fda77ab3470612b99b5abdaea5a49c6093dcf66e",
+          "selectors": [
+            "pick_abstract",
+            "_closest_bet_or_raise"
+          ],
+          "source_url": "https://github.com/HFossdal/poker-game-simulator/blob/main/src/holdem/agents/action_abstraction.py"
+        },
+        {
+          "name": "main",
+          "path": "src/holdem/agents/rule_based.py",
+          "blob_sha": "5ebc5966215e9af489eeaf7d11e124babe963f6e",
+          "selectors": [
+            "RuleBasedHeuristicAgent"
+          ],
+          "source_url": "https://github.com/HFossdal/poker-game-simulator/blob/main/src/holdem/agents/rule_based.py"
+        }
+      ]
+    }
+  }
+}

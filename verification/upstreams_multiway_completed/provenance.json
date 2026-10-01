@@ -1,0 +1,250 @@
+{
+  "python": "3.13.5",
+  "engine_profile": "nlhe-moving-button-v1",
+  "bot_fingerprints": {
+    "lucky": "57a36d91476424546b506c1dbdc65d74d03bd96a1cea75582583dddc3251b83b",
+    "ethan": "cc289809267d4b61e3f6b6138236293e692c7505c7c0b9cabbea73e9891f7cd8",
+    "dberweger": "aa655658e0e32550f4a0b2cff3eb520ff01890b233817d3f6e174089bb055cf9",
+    "vincent": "589e7d9d2c682e37519d38d52d131c852bf6bfeebb28120df5bb60f115dca570",
+    "dqn_reference": "2bc794de235a2b459c8f2a0c816fc0b20ea8a00625608ff4d78498d5326bc256",
+    "noregrets": "902f77236374cd494b3d7bd33091748698ae6e52c8caf5fa55eb6193aab2019e",
+    "fullhouse": "e98557561b6c02a3160b9daa79ac43410c7e0e80e815db6e5a0080dcd952900e",
+    "pokerforbots": "9f1349d0063e80fd9d26b2afd05fb802c0e4bfa7dcfb2a384bc3e28ef989d1ce",
+    "chien": "474e14a65c0ef82fc3f95759acdf6ea87f12105a6585340a13e3d6013fa6cce9",
+    "random": "9a3344fadc9ac8e2375e4a800dd964c566fd71e24b5467da3902339a71c93386"
+  },
+  "manifests": {
+    "up_lucky": {
+      "schema_version": 1,
+      "id": "up_lucky",
+      "name": "MonteCarloBot",
+      "runtime": "python",
+      "entrypoint": "adapter:Bot",
+      "capabilities": {
+        "variant": "nlhe",
+        "min_players": 2,
+        "max_players": 9
+      },
+      "default_params": {
+        "samples": 80
+      },
+      "runtime_network": false,
+      "competition_eligible": false,
+      "provenance": {
+        "kind": "upstream-policy-extract",
+        "original_number": 6,
+        "repository": "luckyone18/Poker",
+        "policy": "MonteCarloBot",
+        "note": "Actual Monte Carlo policy. Original multiway ties are valued at one half, preserved."
+      }
+    },
+    "up_ethan": {
+      "schema_version": 1,
+      "id": "up_ethan",
+      "name": "PokerBot (heuristic mode)",
+      "runtime": "python",
+      "entrypoint": "adapter:Bot",
+      "capabilities": {
+        "variant": "nlhe",
+        "min_players": 2,
+        "max_players": 8
+      },
+      "default_params": {
+        "samples": 80
+      },
+      "runtime_network": false,
+      "competition_eligible": false,
+      "provenance": {
+        "kind": "upstream-policy-extract",
+        "original_number": 7,
+        "repository": "ethangarofalo/hold-em-bot",
+        "policy": "PokerBot (heuristic mode)",
+        "note": "Original heuristic mode, no loaded CFR table and no opponent-model updates. Shared equity evaluator is the dependency facade."
+      }
+    },
+    "up_dberweger": {
+      "schema_version": 1,
+      "id": "up_dberweger",
+      "name": "StylePolicy",
+      "runtime": "python",
+      "entrypoint": "adapter:Bot",
+      "capabilities": {
+        "variant": "nlhe",
+        "min_players": 2,
+        "max_players": 9
+      },
+      "default_params": {
+        "samples": 80,
+        "style": "tight_aggressive"
+      },
+      "runtime_network": false,
+      "competition_eligible": false,
+      "provenance": {
+        "kind": "upstream-policy-extract",
+        "original_number": 10,
+        "repository": "dberweger2017/deepcfr-texas-no-limit-holdem-6-players",
+        "policy": "StylePolicy",
+        "note": "Card-aware style/reference policy, not the DeepCFR neural checkpoint."
+      }
+    },
+    "up_vincent": {
+      "schema_version": 1,
+      "id": "up_vincent",
+      "name": "RandomAgent_mcts",
+      "runtime": "python",
+      "entrypoint": "adapter:Bot",
+      "capabilities": {
+        "variant": "nlhe",
+        "min_players": 2,
+        "max_players": 6
+      },
+      "default_params": {
+        "samples": 80
+      },
+      "runtime_network": false,
+      "competition_eligible": false,
+      "provenance": {
+        "kind": "upstream-policy-extract",
+        "original_number": 11,
+        "repository": "goddamnVincent/6_players_no_limit_texas_holdem_deepcfr_agent",
+        "policy": "RandomAgent_mcts",
+        "note": "Existing MCTS-named Monte Carlo baseline, not DeepCFR. Original policy hardcodes two simulated opponents and selects argmax."
+      }
+    },
+    "up_dqn_reference": {
+      "schema_version": 1,
+      "id": "up_dqn_reference",
+      "name": "HeuristicPlayer",
+      "runtime": "python",
+      "entrypoint": "adapter:Bot",
+      "capabilities": {
+        "variant": "nlhe",
+        "min_players": 2,
+        "max_players": 9
+      },
+      "default_params": {
+        "samples": 80
+      },
+      "runtime_network": false,
+      "competition_eligible": false,
+      "provenance": {
+        "kind": "upstream-policy-extract",
+        "original_number": 12,
+        "repository": "alexherm0123verify/poker-DQN",
+        "policy": "HeuristicPlayer",
+        "note": "PyPokerEngine heuristic reference, not DQN weights. Original hardcoded nine-player equity assumption is preserved."
+      }
+    },
+    "up_noregrets": {
+      "schema_version": 1,
+      "id": "up_noregrets",
+      "name": "legacy PluribusBot.get_action (blueprint-only)",
+      "runtime": "python",
+      "entrypoint": "adapter:Bot",
+      "capabilities": {
+        "variant": "nlhe",
+        "min_players": 2,
+        "max_players": 9
+      },
+      "default_params": {
+        "blueprint": null
+      },
+      "runtime_network": false,
+      "competition_eligible": false,
+      "provenance": {
+        "kind": "upstream-policy-extract",
+        "original_number": 14,
+        "repository": "conorarmstrong/noregrets",
+        "policy": "legacy PluribusBot.get_action (blueprint-only)",
+        "note": "Untrained unless a JSON blueprint is supplied. Default executes the upstream empty-blueprint check/call fallback; no strength claim."
+      }
+    },
+    "up_fullhouse": {
+      "schema_version": 1,
+      "id": "up_fullhouse",
+      "name": "Shark.decide",
+      "runtime": "python",
+      "entrypoint": "adapter:Bot",
+      "capabilities": {
+        "variant": "nlhe",
+        "min_players": 2,
+        "max_players": 9
+      },
+      "default_params": {
+        "samples": 80
+      },
+      "runtime_network": false,
+      "competition_eligible": false,
+      "provenance": {
+        "kind": "upstream-policy-extract",
+        "original_number": 15,
+        "repository": "BouillieAnonymous/4fullhousehackathon",
+        "policy": "Shark.decide",
+        "note": "Shark reference policy, not the separately packaged 13.x submission."
+      }
+    },
+    "up_pokerforbots": {
+      "schema_version": 1,
+      "id": "up_pokerforbots",
+      "name": "aggressive.Handler.OnActionRequest (Go)",
+      "runtime": "command",
+      "capabilities": {
+        "variant": "nlhe",
+        "min_players": 2,
+        "max_players": 9
+      },
+      "default_params": {},
+      "runtime_network": false,
+      "competition_eligible": false,
+      "provenance": {
+        "kind": "upstream-policy-extract",
+        "original_number": 16,
+        "repository": "lox/pokerforbots",
+        "policy": "aggressive.Handler.OnActionRequest (Go)",
+        "note": "Actual Go handler, compiled with a minimal local SDK facade. Seeded PCG constructor added beside the unmodified source."
+      },
+      "command": [
+        "{bot_dir}/code/handler"
+      ],
+      "docker_command": [
+        "/opt/arena-bin/pokerforbots"
+      ]
+    },
+    "mybot1": {
+      "schema_version": 1,
+      "id": "mybot1",
+      "name": "Editable Monte Carlo example",
+      "runtime": "python",
+      "entrypoint": "adapter:Bot",
+      "capabilities": {
+        "variant": "nlhe",
+        "min_players": 2,
+        "max_players": 9
+      },
+      "requires_runtime_network": false,
+      "provenance": "native-example",
+      "default_params": {
+        "equity_samples": 80,
+        "raise_equity": 0.65,
+        "bet_fraction": 0.6,
+        "call_margin": 0.02,
+        "bluff_frequency": 0.02
+      }
+    },
+    "random_bot": {
+      "schema_version": 1,
+      "id": "random_bot",
+      "name": "Uniform action baseline",
+      "runtime": "python",
+      "entrypoint": "adapter:Bot",
+      "capabilities": {
+        "variant": "nlhe",
+        "min_players": 2,
+        "max_players": 9
+      },
+      "requires_runtime_network": false,
+      "provenance": "native-example",
+      "default_params": {}
+    }
+  }
+}

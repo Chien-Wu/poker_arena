@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "id": "up_holdemlab",
+  "name": "RuleBasedHeuristicAgent",
+  "runtime": "python",
+  "entrypoint": "adapter:Bot",
+  "capabilities": {
+    "variant": "nlhe",
+    "min_players": 2,
+    "max_players": 2
+  },
+  "default_params": {
+    "samples": 80
+  },
+  "runtime_network": false,
+  "competition_eligible": false,
+  "provenance": {
+    "kind": "upstream-policy-extract",
+    "original_number": 17,
+    "repository": "HFossdal/poker-game-simulator",
+    "policy": "RuleBasedHeuristicAgent",
+    "note": "Heads-up rule-based reference policy; not the CFR policy. Adapter supplies its abstract legal-action menu."
+  }
+}

@@ -1,0 +1,2189 @@
+{
+  "schema_version": 1,
+  "status": "complete_with_unresolved_ties",
+  "seed": 20261002,
+  "config": {
+    "players": [
+      {
+        "id": "fawz",
+        "bot": "up_fawz",
+        "params": {
+          "samples": 80
+        }
+      },
+      {
+        "id": "jeffelin",
+        "bot": "up_jeffelin",
+        "params": {
+          "samples": 80
+        }
+      },
+      {
+        "id": "lucky",
+        "bot": "up_lucky",
+        "params": {
+          "samples": 80
+        }
+      },
+      {
+        "id": "ethan",
+        "bot": "up_ethan",
+        "params": {
+          "samples": 80
+        }
+      },
+      {
+        "id": "gongsta",
+        "bot": "up_gongsta",
+        "params": {
+          "samples": 80
+        }
+      },
+      {
+        "id": "dberweger",
+        "bot": "up_dberweger",
+        "params": {
+          "samples": 80
+        }
+      },
+      {
+        "id": "vincent",
+        "bot": "up_vincent",
+        "params": {
+          "samples": 80
+        }
+      },
+      {
+        "id": "dqn_reference",
+        "bot": "up_dqn_reference",
+        "params": {
+          "samples": 80
+        }
+      },
+      {
+        "id": "noregrets",
+        "bot": "up_noregrets",
+        "params": {
+          "samples": 80
+        }
+      },
+      {
+        "id": "fullhouse",
+        "bot": "up_fullhouse",
+        "params": {
+          "samples": 80
+        }
+      },
+      {
+        "id": "pokerforbots",
+        "bot": "up_pokerforbots",
+        "params": {
+          "samples": 80
+        }
+      },
+      {
+        "id": "holdemlab",
+        "bot": "up_holdemlab",
+        "params": {
+          "samples": 80
+        }
+      }
+    ],
+    "game": {
+      "initial_stack": 2000,
+      "small_blind": 10,
+      "big_blind": 20,
+      "ante": 0,
+      "hands_per_game": 6,
+      "max_actions_per_hand": 2000,
+      "blind_schedule": []
+    },
+    "tournament": {
+      "rounds": 4,
+      "group_size": 2,
+      "rotation_cycles": 1,
+      "regroup": true,
+      "require_equal_groups": false,
+      "tiebreak_hands": 2,
+      "tiebreak_attempts": 1,
+      "tiebreak_scope": "final",
+      "unresolved_ties": "share"
+    },
+    "execution": {
+      "runner": "inprocess",
+      "action_timeout_ms": 2000,
+      "startup_timeout_ms": 20000,
+      "event_timeout_ms": 2000,
+      "max_failures_per_game": 3,
+      "failure_policy": "abort",
+      "memory_mb": 2048,
+      "cpu_seconds": 120,
+      "require_no_network": false,
+      "docker_image": "poker-arena-bot:local"
+    },
+    "seed": 20261002
+  },
+  "group_sizes": [
+    2,
+    2,
+    2,
+    2,
+    2,
+    2
+  ],
+  "warnings": [],
+  "leaderboard": [
+    {
+      "rank": 1,
+      "player_id": "lucky",
+      "bot": "up_lucky",
+      "points": 7.0,
+      "tied": false,
+      "qualifier_hands_at_table": 48,
+      "qualifier_net_chips": 674,
+      "decisions": 135,
+      "failures": 0,
+      "timeouts": 0,
+      "upstream_calls": 135,
+      "adapter_repairs": 0
+    },
+    {
+      "rank": 2,
+      "player_id": "ethan",
+      "bot": "up_ethan",
+      "points": 7.0,
+      "tied": true,
+      "qualifier_hands_at_table": 48,
+      "qualifier_net_chips": 2295,
+      "decisions": 115,
+      "failures": 0,
+      "timeouts": 0,
+      "upstream_calls": 115,
+      "adapter_repairs": 6
+    },
+    {
+      "rank": 2,
+      "player_id": "jeffelin",
+      "bot": "up_jeffelin",
+      "points": 7.0,
+      "tied": true,
+      "qualifier_hands_at_table": 48,
+      "qualifier_net_chips": -50,
+      "decisions": 49,
+      "failures": 0,
+      "timeouts": 0,
+      "upstream_calls": 49,
+      "adapter_repairs": 0
+    },
+    {
+      "rank": 4,
+      "player_id": "gongsta",
+      "bot": "up_gongsta",
+      "points": 6.5,
+      "tied": true,
+      "qualifier_hands_at_table": 48,
+      "qualifier_net_chips": -314,
+      "decisions": 89,
+      "failures": 0,
+      "timeouts": 0,
+      "upstream_calls": 89,
+      "adapter_repairs": 5
+    },
+    {
+      "rank": 4,
+      "player_id": "noregrets",
+      "bot": "up_noregrets",
+      "points": 6.5,
+      "tied": true,
+      "qualifier_hands_at_table": 48,
+      "qualifier_net_chips": -131,
+      "decisions": 101,
+      "failures": 0,
+      "timeouts": 0,
+      "upstream_calls": 101,
+      "adapter_repairs": 0
+    },
+    {
+      "rank": 4,
+      "player_id": "pokerforbots",
+      "bot": "up_pokerforbots",
+      "points": 6.5,
+      "tied": true,
+      "qualifier_hands_at_table": 48,
+      "qualifier_net_chips": -1122,
+      "decisions": 131,
+      "failures": 0,
+      "timeouts": 0,
+      "upstream_calls": 131,
+      "adapter_repairs": 0
+    },
+    {
+      "rank": 7,
+      "player_id": "holdemlab",
+      "bot": "up_holdemlab",
+      "points": 6.0,
+      "tied": false,
+      "qualifier_hands_at_table": 48,
+      "qualifier_net_chips": 364,
+      "decisions": 79,
+      "failures": 0,
+      "timeouts": 0,
+      "upstream_calls": 79,
+      "adapter_repairs": 0
+    },
+    {
+      "rank": 8,
+      "player_id": "fullhouse",
+      "bot": "up_fullhouse",
+      "points": 5.5,
+      "tied": false,
+      "qualifier_hands_at_table": 48,
+      "qualifier_net_chips": 215,
+      "decisions": 70,
+      "failures": 0,
+      "timeouts": 0,
+      "upstream_calls": 70,
+      "adapter_repairs": 0
+    },
+    {
+      "rank": 9,
+      "player_id": "fawz",
+      "bot": "up_fawz",
+      "points": 5.5,
+      "tied": false,
+      "qualifier_hands_at_table": 48,
+      "qualifier_net_chips": -2581,
+      "decisions": 125,
+      "failures": 0,
+      "timeouts": 0,
+      "upstream_calls": 125,
+      "adapter_repairs": 0
+    },
+    {
+      "rank": 10,
+      "player_id": "vincent",
+      "bot": "up_vincent",
+      "points": 5.5,
+      "tied": false,
+      "qualifier_hands_at_table": 48,
+      "qualifier_net_chips": -180,
+      "decisions": 32,
+      "failures": 0,
+      "timeouts": 0,
+      "upstream_calls": 32,
+      "adapter_repairs": 0
+    },
+    {
+      "rank": 11,
+      "player_id": "dberweger",
+      "bot": "up_dberweger",
+      "points": 5.0,
+      "tied": false,
+      "qualifier_hands_at_table": 48,
+      "qualifier_net_chips": 1140,
+      "decisions": 94,
+      "failures": 0,
+      "timeouts": 0,
+      "upstream_calls": 94,
+      "adapter_repairs": 0
+    },
+    {
+      "rank": 12,
+      "player_id": "dqn_reference",
+      "bot": "up_dqn_reference",
+      "points": 4.0,
+      "tied": false,
+      "qualifier_hands_at_table": 48,
+      "qualifier_net_chips": -310,
+      "decisions": 36,
+      "failures": 0,
+      "timeouts": 0,
+      "upstream_calls": 36,
+      "adapter_repairs": 0
+    }
+  ],
+  "ranking": [
+    [
+      "lucky"
+    ],
+    [
+      "ethan",
+      "jeffelin"
+    ],
+    [
+      "gongsta",
+      "noregrets",
+      "pokerforbots"
+    ],
+    [
+      "holdemlab"
+    ],
+    [
+      "fullhouse"
+    ],
+    [
+      "fawz"
+    ],
+    [
+      "vincent"
+    ],
+    [
+      "dberweger"
+    ],
+    [
+      "dqn_reference"
+    ]
+  ],
+  "rounds": [
+    {
+      "round": 1,
+      "groups": [
+        {
+          "players": [
+            "noregrets",
+            "pokerforbots"
+          ],
+          "games": [
+            {
+              "game_id": "r1:g0:c0:s0",
+              "seats": [
+                "noregrets",
+                "pokerforbots"
+              ],
+              "stacks": {
+                "noregrets": 1920,
+                "pokerforbots": 2080
+              },
+              "ranking": [
+                [
+                  "pokerforbots"
+                ],
+                [
+                  "noregrets"
+                ]
+              ],
+              "points": {
+                "pokerforbots": 2.0,
+                "noregrets": 1.0
+              }
+            },
+            {
+              "game_id": "r1:g0:c0:s1",
+              "seats": [
+                "pokerforbots",
+                "noregrets"
+              ],
+              "stacks": {
+                "pokerforbots": 2140,
+                "noregrets": 1860
+              },
+              "ranking": [
+                [
+                  "pokerforbots"
+                ],
+                [
+                  "noregrets"
+                ]
+              ],
+              "points": {
+                "pokerforbots": 2.0,
+                "noregrets": 1.0
+              }
+            }
+          ],
+          "game_points": {
+            "noregrets": 2.0,
+            "pokerforbots": 4.0
+          },
+          "ranking": [
+            [
+              "pokerforbots"
+            ],
+            [
+              "noregrets"
+            ]
+          ],
+          "round_points": {
+            "pokerforbots": 2.0,
+            "noregrets": 1.0
+          }
+        },
+        {
+          "players": [
+            "fawz",
+            "dberweger"
+          ],
+          "games": [
+            {
+              "game_id": "r1:g1:c0:s0",
+              "seats": [
+                "fawz",
+                "dberweger"
+              ],
+              "stacks": {
+                "fawz": 1970,
+                "dberweger": 2030
+              },
+              "ranking": [
+                [
+                  "dberweger"
+                ],
+                [
+                  "fawz"
+                ]
+              ],
+              "points": {
+                "dberweger": 2.0,
+                "fawz": 1.0
+              }
+            },
+            {
+              "game_id": "r1:g1:c0:s1",
+              "seats": [
+                "dberweger",
+                "fawz"
+              ],
+              "stacks": {
+                "dberweger": 1990,
+                "fawz": 2010
+              },
+              "ranking": [
+                [
+                  "fawz"
+                ],
+                [
+                  "dberweger"
+                ]
+              ],
+              "points": {
+                "fawz": 2.0,
+                "dberweger": 1.0
+              }
+            }
+          ],
+          "game_points": {
+            "fawz": 3.0,
+            "dberweger": 3.0
+          },
+          "ranking": [
+            [
+              "dberweger",
+              "fawz"
+            ]
+          ],
+          "round_points": {
+            "dberweger": 1.5,
+            "fawz": 1.5
+          }
+        },
+        {
+          "players": [
+            "ethan",
+            "dqn_reference"
+          ],
+          "games": [
+            {
+              "game_id": "r1:g2:c0:s0",
+              "seats": [
+                "ethan",
+                "dqn_reference"
+              ],
+              "stacks": {
+                "ethan": 2060,
+                "dqn_reference": 1940
+              },
+              "ranking": [
+                [
+                  "ethan"
+                ],
+                [
+                  "dqn_reference"
+                ]
+              ],
+              "points": {
+                "ethan": 2.0,
+                "dqn_reference": 1.0
+              }
+            },
+            {
+              "game_id": "r1:g2:c0:s1",
+              "seats": [
+                "dqn_reference",
+                "ethan"
+              ],
+              "stacks": {
+                "dqn_reference": 1970,
+                "ethan": 2030
+              },
+              "ranking": [
+                [
+                  "ethan"
+                ],
+                [
+                  "dqn_reference"
+                ]
+              ],
+              "points": {
+                "ethan": 2.0,
+                "dqn_reference": 1.0
+              }
+            }
+          ],
+          "game_points": {
+            "ethan": 4.0,
+            "dqn_reference": 2.0
+          },
+          "ranking": [
+            [
+              "ethan"
+            ],
+            [
+              "dqn_reference"
+            ]
+          ],
+          "round_points": {
+            "ethan": 2.0,
+            "dqn_reference": 1.0
+          }
+        },
+        {
+          "players": [
+            "jeffelin",
+            "vincent"
+          ],
+          "games": [
+            {
+              "game_id": "r1:g3:c0:s0",
+              "seats": [
+                "jeffelin",
+                "vincent"
+              ],
+              "stacks": {
+                "jeffelin": 2000,
+                "vincent": 2000
+              },
+              "ranking": [
+                [
+                  "jeffelin",
+                  "vincent"
+                ]
+              ],
+              "points": {
+                "jeffelin": 1.5,
+                "vincent": 1.5
+              }
+            },
+            {
+              "game_id": "r1:g3:c0:s1",
+              "seats": [
+                "vincent",
+                "jeffelin"
+              ],
+              "stacks": {
+                "vincent": 2000,
+                "jeffelin": 2000
+              },
+              "ranking": [
+                [
+                  "jeffelin",
+                  "vincent"
+                ]
+              ],
+              "points": {
+                "jeffelin": 1.5,
+                "vincent": 1.5
+              }
+            }
+          ],
+          "game_points": {
+            "jeffelin": 3.0,
+            "vincent": 3.0
+          },
+          "ranking": [
+            [
+              "jeffelin",
+              "vincent"
+            ]
+          ],
+          "round_points": {
+            "jeffelin": 1.5,
+            "vincent": 1.5
+          }
+        },
+        {
+          "players": [
+            "fullhouse",
+            "lucky"
+          ],
+          "games": [
+            {
+              "game_id": "r1:g4:c0:s0",
+              "seats": [
+                "fullhouse",
+                "lucky"
+              ],
+              "stacks": {
+                "fullhouse": 1990,
+                "lucky": 2010
+              },
+              "ranking": [
+                [
+                  "lucky"
+                ],
+                [
+                  "fullhouse"
+                ]
+              ],
+              "points": {
+                "lucky": 2.0,
+                "fullhouse": 1.0
+              }
+            },
+            {
+              "game_id": "r1:g4:c0:s1",
+              "seats": [
+                "lucky",
+                "fullhouse"
+              ],
+              "stacks": {
+                "lucky": 2026,
+                "fullhouse": 1974
+              },
+              "ranking": [
+                [
+                  "lucky"
+                ],
+                [
+                  "fullhouse"
+                ]
+              ],
+              "points": {
+                "lucky": 2.0,
+                "fullhouse": 1.0
+              }
+            }
+          ],
+          "game_points": {
+            "fullhouse": 2.0,
+            "lucky": 4.0
+          },
+          "ranking": [
+            [
+              "lucky"
+            ],
+            [
+              "fullhouse"
+            ]
+          ],
+          "round_points": {
+            "lucky": 2.0,
+            "fullhouse": 1.0
+          }
+        },
+        {
+          "players": [
+            "holdemlab",
+            "gongsta"
+          ],
+          "games": [
+            {
+              "game_id": "r1:g5:c0:s0",
+              "seats": [
+                "holdemlab",
+                "gongsta"
+              ],
+              "stacks": {
+                "holdemlab": 1980,
+                "gongsta": 2020
+              },
+              "ranking": [
+                [
+                  "gongsta"
+                ],
+                [
+                  "holdemlab"
+                ]
+              ],
+              "points": {
+                "gongsta": 2.0,
+                "holdemlab": 1.0
+              }
+            },
+            {
+              "game_id": "r1:g5:c0:s1",
+              "seats": [
+                "gongsta",
+                "holdemlab"
+              ],
+              "stacks": {
+                "gongsta": 1470,
+                "holdemlab": 2530
+              },
+              "ranking": [
+                [
+                  "holdemlab"
+                ],
+                [
+                  "gongsta"
+                ]
+              ],
+              "points": {
+                "holdemlab": 2.0,
+                "gongsta": 1.0
+              }
+            }
+          ],
+          "game_points": {
+            "holdemlab": 3.0,
+            "gongsta": 3.0
+          },
+          "ranking": [
+            [
+              "gongsta",
+              "holdemlab"
+            ]
+          ],
+          "round_points": {
+            "gongsta": 1.5,
+            "holdemlab": 1.5
+          }
+        }
+      ],
+      "cumulative_points": {
+        "fawz": 1.5,
+        "jeffelin": 1.5,
+        "lucky": 2.0,
+        "ethan": 2.0,
+        "gongsta": 1.5,
+        "dberweger": 1.5,
+        "vincent": 1.5,
+        "dqn_reference": 1.0,
+        "noregrets": 1.0,
+        "fullhouse": 1.0,
+        "pokerforbots": 2.0,
+        "holdemlab": 1.5
+      },
+      "ranking": [
+        [
+          "ethan",
+          "lucky",
+          "pokerforbots"
+        ],
+        [
+          "dberweger",
+          "fawz",
+          "gongsta",
+          "holdemlab",
+          "jeffelin",
+          "vincent"
+        ],
+        [
+          "dqn_reference",
+          "fullhouse",
+          "noregrets"
+        ]
+      ]
+    },
+    {
+      "round": 2,
+      "groups": [
+        {
+          "players": [
+            "ethan",
+            "lucky"
+          ],
+          "games": [
+            {
+              "game_id": "r2:g0:c0:s0",
+              "seats": [
+                "ethan",
+                "lucky"
+              ],
+              "stacks": {
+                "ethan": 1980,
+                "lucky": 2020
+              },
+              "ranking": [
+                [
+                  "lucky"
+                ],
+                [
+                  "ethan"
+                ]
+              ],
+              "points": {
+                "lucky": 2.0,
+                "ethan": 1.0
+              }
+            },
+            {
+              "game_id": "r2:g0:c0:s1",
+              "seats": [
+                "lucky",
+                "ethan"
+              ],
+              "stacks": {
+                "lucky": 2730,
+                "ethan": 1270
+              },
+              "ranking": [
+                [
+                  "lucky"
+                ],
+                [
+                  "ethan"
+                ]
+              ],
+              "points": {
+                "lucky": 2.0,
+                "ethan": 1.0
+              }
+            }
+          ],
+          "game_points": {
+            "ethan": 2.0,
+            "lucky": 4.0
+          },
+          "ranking": [
+            [
+              "lucky"
+            ],
+            [
+              "ethan"
+            ]
+          ],
+          "round_points": {
+            "lucky": 2.0,
+            "ethan": 1.0
+          }
+        },
+        {
+          "players": [
+            "pokerforbots",
+            "dberweger"
+          ],
+          "games": [
+            {
+              "game_id": "r2:g1:c0:s0",
+              "seats": [
+                "pokerforbots",
+                "dberweger"
+              ],
+              "stacks": {
+                "pokerforbots": 2090,
+                "dberweger": 1910
+              },
+              "ranking": [
+                [
+                  "pokerforbots"
+                ],
+                [
+                  "dberweger"
+                ]
+              ],
+              "points": {
+                "pokerforbots": 2.0,
+                "dberweger": 1.0
+              }
+            },
+            {
+              "game_id": "r2:g1:c0:s1",
+              "seats": [
+                "dberweger",
+                "pokerforbots"
+              ],
+              "stacks": {
+                "dberweger": 1620,
+                "pokerforbots": 2380
+              },
+              "ranking": [
+                [
+                  "pokerforbots"
+                ],
+                [
+                  "dberweger"
+                ]
+              ],
+              "points": {
+                "pokerforbots": 2.0,
+                "dberweger": 1.0
+              }
+            }
+          ],
+          "game_points": {
+            "pokerforbots": 4.0,
+            "dberweger": 2.0
+          },
+          "ranking": [
+            [
+              "pokerforbots"
+            ],
+            [
+              "dberweger"
+            ]
+          ],
+          "round_points": {
+            "pokerforbots": 2.0,
+            "dberweger": 1.0
+          }
+        },
+        {
+          "players": [
+            "fawz",
+            "gongsta"
+          ],
+          "games": [
+            {
+              "game_id": "r2:g2:c0:s0",
+              "seats": [
+                "fawz",
+                "gongsta"
+              ],
+              "stacks": {
+                "fawz": 1820,
+                "gongsta": 2180
+              },
+              "ranking": [
+                [
+                  "gongsta"
+                ],
+                [
+                  "fawz"
+                ]
+              ],
+              "points": {
+                "gongsta": 2.0,
+                "fawz": 1.0
+              }
+            },
+            {
+              "game_id": "r2:g2:c0:s1",
+              "seats": [
+                "gongsta",
+                "fawz"
+              ],
+              "stacks": {
+                "gongsta": 1760,
+                "fawz": 2240
+              },
+              "ranking": [
+                [
+                  "fawz"
+                ],
+                [
+                  "gongsta"
+                ]
+              ],
+              "points": {
+                "fawz": 2.0,
+                "gongsta": 1.0
+              }
+            }
+          ],
+          "game_points": {
+            "fawz": 3.0,
+            "gongsta": 3.0
+          },
+          "ranking": [
+            [
+              "fawz",
+              "gongsta"
+            ]
+          ],
+          "round_points": {
+            "fawz": 1.5,
+            "gongsta": 1.5
+          }
+        },
+        {
+          "players": [
+            "holdemlab",
+            "jeffelin"
+          ],
+          "games": [
+            {
+              "game_id": "r2:g3:c0:s0",
+              "seats": [
+                "holdemlab",
+                "jeffelin"
+              ],
+              "stacks": {
+                "holdemlab": 1970,
+                "jeffelin": 2030
+              },
+              "ranking": [
+                [
+                  "jeffelin"
+                ],
+                [
+                  "holdemlab"
+                ]
+              ],
+              "points": {
+                "jeffelin": 2.0,
+                "holdemlab": 1.0
+              }
+            },
+            {
+              "game_id": "r2:g3:c0:s1",
+              "seats": [
+                "jeffelin",
+                "holdemlab"
+              ],
+              "stacks": {
+                "jeffelin": 2010,
+                "holdemlab": 1990
+              },
+              "ranking": [
+                [
+                  "jeffelin"
+                ],
+                [
+                  "holdemlab"
+                ]
+              ],
+              "points": {
+                "jeffelin": 2.0,
+                "holdemlab": 1.0
+              }
+            }
+          ],
+          "game_points": {
+            "holdemlab": 2.0,
+            "jeffelin": 4.0
+          },
+          "ranking": [
+            [
+              "jeffelin"
+            ],
+            [
+              "holdemlab"
+            ]
+          ],
+          "round_points": {
+            "jeffelin": 2.0,
+            "holdemlab": 1.0
+          }
+        },
+        {
+          "players": [
+            "vincent",
+            "dqn_reference"
+          ],
+          "games": [
+            {
+              "game_id": "r2:g4:c0:s0",
+              "seats": [
+                "vincent",
+                "dqn_reference"
+              ],
+              "stacks": {
+                "vincent": 2000,
+                "dqn_reference": 2000
+              },
+              "ranking": [
+                [
+                  "dqn_reference",
+                  "vincent"
+                ]
+              ],
+              "points": {
+                "dqn_reference": 1.5,
+                "vincent": 1.5
+              }
+            },
+            {
+              "game_id": "r2:g4:c0:s1",
+              "seats": [
+                "dqn_reference",
+                "vincent"
+              ],
+              "stacks": {
+                "dqn_reference": 1970,
+                "vincent": 2030
+              },
+              "ranking": [
+                [
+                  "vincent"
+                ],
+                [
+                  "dqn_reference"
+                ]
+              ],
+              "points": {
+                "vincent": 2.0,
+                "dqn_reference": 1.0
+              }
+            }
+          ],
+          "game_points": {
+            "vincent": 3.5,
+            "dqn_reference": 2.5
+          },
+          "ranking": [
+            [
+              "vincent"
+            ],
+            [
+              "dqn_reference"
+            ]
+          ],
+          "round_points": {
+            "vincent": 2.0,
+            "dqn_reference": 1.0
+          }
+        },
+        {
+          "players": [
+            "fullhouse",
+            "noregrets"
+          ],
+          "games": [
+            {
+              "game_id": "r2:g5:c0:s0",
+              "seats": [
+                "fullhouse",
+                "noregrets"
+              ],
+              "stacks": {
+                "fullhouse": 1950,
+                "noregrets": 2050
+              },
+              "ranking": [
+                [
+                  "noregrets"
+                ],
+                [
+                  "fullhouse"
+                ]
+              ],
+              "points": {
+                "noregrets": 2.0,
+                "fullhouse": 1.0
+              }
+            },
+            {
+              "game_id": "r2:g5:c0:s1",
+              "seats": [
+                "noregrets",
+                "fullhouse"
+              ],
+              "stacks": {
+                "noregrets": 1679,
+                "fullhouse": 2321
+              },
+              "ranking": [
+                [
+                  "fullhouse"
+                ],
+                [
+                  "noregrets"
+                ]
+              ],
+              "points": {
+                "fullhouse": 2.0,
+                "noregrets": 1.0
+              }
+            }
+          ],
+          "game_points": {
+            "fullhouse": 3.0,
+            "noregrets": 3.0
+          },
+          "ranking": [
+            [
+              "fullhouse",
+              "noregrets"
+            ]
+          ],
+          "round_points": {
+            "fullhouse": 1.5,
+            "noregrets": 1.5
+          }
+        }
+      ],
+      "cumulative_points": {
+        "fawz": 3.0,
+        "jeffelin": 3.5,
+        "lucky": 4.0,
+        "ethan": 3.0,
+        "gongsta": 3.0,
+        "dberweger": 2.5,
+        "vincent": 3.5,
+        "dqn_reference": 2.0,
+        "noregrets": 2.5,
+        "fullhouse": 2.5,
+        "pokerforbots": 4.0,
+        "holdemlab": 2.5
+      },
+      "ranking": [
+        [
+          "lucky",
+          "pokerforbots"
+        ],
+        [
+          "jeffelin",
+          "vincent"
+        ],
+        [
+          "ethan",
+          "fawz",
+          "gongsta"
+        ],
+        [
+          "dberweger",
+          "fullhouse",
+          "holdemlab",
+          "noregrets"
+        ],
+        [
+          "dqn_reference"
+        ]
+      ]
+    },
+    {
+      "round": 3,
+      "groups": [
+        {
+          "players": [
+            "lucky",
+            "pokerforbots"
+          ],
+          "games": [
+            {
+              "game_id": "r3:g0:c0:s0",
+              "seats": [
+                "lucky",
+                "pokerforbots"
+              ],
+              "stacks": {
+                "lucky": 18,
+                "pokerforbots": 3982
+              },
+              "ranking": [
+                [
+                  "pokerforbots"
+                ],
+                [
+                  "lucky"
+                ]
+              ],
+              "points": {
+                "pokerforbots": 2.0,
+                "lucky": 1.0
+              }
+            },
+            {
+              "game_id": "r3:g0:c0:s1",
+              "seats": [
+                "pokerforbots",
+                "lucky"
+              ],
+              "stacks": {
+                "pokerforbots": 250,
+                "lucky": 3750
+              },
+              "ranking": [
+                [
+                  "lucky"
+                ],
+                [
+                  "pokerforbots"
+                ]
+              ],
+              "points": {
+                "lucky": 2.0,
+                "pokerforbots": 1.0
+              }
+            }
+          ],
+          "game_points": {
+            "lucky": 3.0,
+            "pokerforbots": 3.0
+          },
+          "ranking": [
+            [
+              "lucky",
+              "pokerforbots"
+            ]
+          ],
+          "round_points": {
+            "lucky": 1.5,
+            "pokerforbots": 1.5
+          }
+        },
+        {
+          "players": [
+            "jeffelin",
+            "vincent"
+          ],
+          "games": [
+            {
+              "game_id": "r3:g1:c0:s0",
+              "seats": [
+                "jeffelin",
+                "vincent"
+              ],
+              "stacks": {
+                "jeffelin": 2000,
+                "vincent": 2000
+              },
+              "ranking": [
+                [
+                  "jeffelin",
+                  "vincent"
+                ]
+              ],
+              "points": {
+                "jeffelin": 1.5,
+                "vincent": 1.5
+              }
+            },
+            {
+              "game_id": "r3:g1:c0:s1",
+              "seats": [
+                "vincent",
+                "jeffelin"
+              ],
+              "stacks": {
+                "vincent": 1970,
+                "jeffelin": 2030
+              },
+              "ranking": [
+                [
+                  "jeffelin"
+                ],
+                [
+                  "vincent"
+                ]
+              ],
+              "points": {
+                "jeffelin": 2.0,
+                "vincent": 1.0
+              }
+            }
+          ],
+          "game_points": {
+            "jeffelin": 3.5,
+            "vincent": 2.5
+          },
+          "ranking": [
+            [
+              "jeffelin"
+            ],
+            [
+              "vincent"
+            ]
+          ],
+          "round_points": {
+            "jeffelin": 2.0,
+            "vincent": 1.0
+          }
+        },
+        {
+          "players": [
+            "ethan",
+            "fawz"
+          ],
+          "games": [
+            {
+              "game_id": "r3:g2:c0:s0",
+              "seats": [
+                "ethan",
+                "fawz"
+              ],
+              "stacks": {
+                "ethan": 2579,
+                "fawz": 1421
+              },
+              "ranking": [
+                [
+                  "ethan"
+                ],
+                [
+                  "fawz"
+                ]
+              ],
+              "points": {
+                "ethan": 2.0,
+                "fawz": 1.0
+              }
+            },
+            {
+              "game_id": "r3:g2:c0:s1",
+              "seats": [
+                "fawz",
+                "ethan"
+              ],
+              "stacks": {
+                "fawz": 1668,
+                "ethan": 2332
+              },
+              "ranking": [
+                [
+                  "ethan"
+                ],
+                [
+                  "fawz"
+                ]
+              ],
+              "points": {
+                "ethan": 2.0,
+                "fawz": 1.0
+              }
+            }
+          ],
+          "game_points": {
+            "ethan": 4.0,
+            "fawz": 2.0
+          },
+          "ranking": [
+            [
+              "ethan"
+            ],
+            [
+              "fawz"
+            ]
+          ],
+          "round_points": {
+            "ethan": 2.0,
+            "fawz": 1.0
+          }
+        },
+        {
+          "players": [
+            "gongsta",
+            "dberweger"
+          ],
+          "games": [
+            {
+              "game_id": "r3:g3:c0:s0",
+              "seats": [
+                "gongsta",
+                "dberweger"
+              ],
+              "stacks": {
+                "gongsta": 2030,
+                "dberweger": 1970
+              },
+              "ranking": [
+                [
+                  "gongsta"
+                ],
+                [
+                  "dberweger"
+                ]
+              ],
+              "points": {
+                "gongsta": 2.0,
+                "dberweger": 1.0
+              }
+            },
+            {
+              "game_id": "r3:g3:c0:s1",
+              "seats": [
+                "dberweger",
+                "gongsta"
+              ],
+              "stacks": {
+                "dberweger": 1910,
+                "gongsta": 2090
+              },
+              "ranking": [
+                [
+                  "gongsta"
+                ],
+                [
+                  "dberweger"
+                ]
+              ],
+              "points": {
+                "gongsta": 2.0,
+                "dberweger": 1.0
+              }
+            }
+          ],
+          "game_points": {
+            "gongsta": 4.0,
+            "dberweger": 2.0
+          },
+          "ranking": [
+            [
+              "gongsta"
+            ],
+            [
+              "dberweger"
+            ]
+          ],
+          "round_points": {
+            "gongsta": 2.0,
+            "dberweger": 1.0
+          }
+        },
+        {
+          "players": [
+            "fullhouse",
+            "holdemlab"
+          ],
+          "games": [
+            {
+              "game_id": "r3:g4:c0:s0",
+              "seats": [
+                "fullhouse",
+                "holdemlab"
+              ],
+              "stacks": {
+                "fullhouse": 2000,
+                "holdemlab": 2000
+              },
+              "ranking": [
+                [
+                  "fullhouse",
+                  "holdemlab"
+                ]
+              ],
+              "points": {
+                "fullhouse": 1.5,
+                "holdemlab": 1.5
+              }
+            },
+            {
+              "game_id": "r3:g4:c0:s1",
+              "seats": [
+                "holdemlab",
+                "fullhouse"
+              ],
+              "stacks": {
+                "holdemlab": 2030,
+                "fullhouse": 1970
+              },
+              "ranking": [
+                [
+                  "holdemlab"
+                ],
+                [
+                  "fullhouse"
+                ]
+              ],
+              "points": {
+                "holdemlab": 2.0,
+                "fullhouse": 1.0
+              }
+            }
+          ],
+          "game_points": {
+            "fullhouse": 2.5,
+            "holdemlab": 3.5
+          },
+          "ranking": [
+            [
+              "holdemlab"
+            ],
+            [
+              "fullhouse"
+            ]
+          ],
+          "round_points": {
+            "holdemlab": 2.0,
+            "fullhouse": 1.0
+          }
+        },
+        {
+          "players": [
+            "noregrets",
+            "dqn_reference"
+          ],
+          "games": [
+            {
+              "game_id": "r3:g5:c0:s0",
+              "seats": [
+                "noregrets",
+                "dqn_reference"
+              ],
+              "stacks": {
+                "noregrets": 2090,
+                "dqn_reference": 1910
+              },
+              "ranking": [
+                [
+                  "noregrets"
+                ],
+                [
+                  "dqn_reference"
+                ]
+              ],
+              "points": {
+                "noregrets": 2.0,
+                "dqn_reference": 1.0
+              }
+            },
+            {
+              "game_id": "r3:g5:c0:s1",
+              "seats": [
+                "dqn_reference",
+                "noregrets"
+              ],
+              "stacks": {
+                "dqn_reference": 1910,
+                "noregrets": 2090
+              },
+              "ranking": [
+                [
+                  "noregrets"
+                ],
+                [
+                  "dqn_reference"
+                ]
+              ],
+              "points": {
+                "noregrets": 2.0,
+                "dqn_reference": 1.0
+              }
+            }
+          ],
+          "game_points": {
+            "noregrets": 4.0,
+            "dqn_reference": 2.0
+          },
+          "ranking": [
+            [
+              "noregrets"
+            ],
+            [
+              "dqn_reference"
+            ]
+          ],
+          "round_points": {
+            "noregrets": 2.0,
+            "dqn_reference": 1.0
+          }
+        }
+      ],
+      "cumulative_points": {
+        "fawz": 4.0,
+        "jeffelin": 5.5,
+        "lucky": 5.5,
+        "ethan": 5.0,
+        "gongsta": 5.0,
+        "dberweger": 3.5,
+        "vincent": 4.5,
+        "dqn_reference": 3.0,
+        "noregrets": 4.5,
+        "fullhouse": 3.5,
+        "pokerforbots": 5.5,
+        "holdemlab": 4.5
+      },
+      "ranking": [
+        [
+          "jeffelin",
+          "lucky",
+          "pokerforbots"
+        ],
+        [
+          "ethan",
+          "gongsta"
+        ],
+        [
+          "holdemlab",
+          "noregrets",
+          "vincent"
+        ],
+        [
+          "fawz"
+        ],
+        [
+          "dberweger",
+          "fullhouse"
+        ],
+        [
+          "dqn_reference"
+        ]
+      ]
+    },
+    {
+      "round": 4,
+      "groups": [
+        {
+          "players": [
+            "jeffelin",
+            "lucky"
+          ],
+          "games": [
+            {
+              "game_id": "r4:g0:c0:s0",
+              "seats": [
+                "jeffelin",
+                "lucky"
+              ],
+              "stacks": {
+                "jeffelin": 2040,
+                "lucky": 1960
+              },
+              "ranking": [
+                [
+                  "jeffelin"
+                ],
+                [
+                  "lucky"
+                ]
+              ],
+              "points": {
+                "jeffelin": 2.0,
+                "lucky": 1.0
+              }
+            },
+            {
+              "game_id": "r4:g0:c0:s1",
+              "seats": [
+                "lucky",
+                "jeffelin"
+              ],
+              "stacks": {
+                "lucky": 2160,
+                "jeffelin": 1840
+              },
+              "ranking": [
+                [
+                  "lucky"
+                ],
+                [
+                  "jeffelin"
+                ]
+              ],
+              "points": {
+                "lucky": 2.0,
+                "jeffelin": 1.0
+              }
+            }
+          ],
+          "game_points": {
+            "jeffelin": 3.0,
+            "lucky": 3.0
+          },
+          "ranking": [
+            [
+              "jeffelin",
+              "lucky"
+            ]
+          ],
+          "round_points": {
+            "jeffelin": 1.5,
+            "lucky": 1.5
+          }
+        },
+        {
+          "players": [
+            "pokerforbots",
+            "ethan"
+          ],
+          "games": [
+            {
+              "game_id": "r4:g1:c0:s0",
+              "seats": [
+                "pokerforbots",
+                "ethan"
+              ],
+              "stacks": {
+                "pokerforbots": 168,
+                "ethan": 3832
+              },
+              "ranking": [
+                [
+                  "ethan"
+                ],
+                [
+                  "pokerforbots"
+                ]
+              ],
+              "points": {
+                "ethan": 2.0,
+                "pokerforbots": 1.0
+              }
+            },
+            {
+              "game_id": "r4:g1:c0:s1",
+              "seats": [
+                "ethan",
+                "pokerforbots"
+              ],
+              "stacks": {
+                "ethan": 2212,
+                "pokerforbots": 1788
+              },
+              "ranking": [
+                [
+                  "ethan"
+                ],
+                [
+                  "pokerforbots"
+                ]
+              ],
+              "points": {
+                "ethan": 2.0,
+                "pokerforbots": 1.0
+              }
+            }
+          ],
+          "game_points": {
+            "pokerforbots": 2.0,
+            "ethan": 4.0
+          },
+          "ranking": [
+            [
+              "ethan"
+            ],
+            [
+              "pokerforbots"
+            ]
+          ],
+          "round_points": {
+            "ethan": 2.0,
+            "pokerforbots": 1.0
+          }
+        },
+        {
+          "players": [
+            "gongsta",
+            "holdemlab"
+          ],
+          "games": [
+            {
+              "game_id": "r4:g2:c0:s0",
+              "seats": [
+                "gongsta",
+                "holdemlab"
+              ],
+              "stacks": {
+                "gongsta": 1990,
+                "holdemlab": 2010
+              },
+              "ranking": [
+                [
+                  "holdemlab"
+                ],
+                [
+                  "gongsta"
+                ]
+              ],
+              "points": {
+                "holdemlab": 2.0,
+                "gongsta": 1.0
+              }
+            },
+            {
+              "game_id": "r4:g2:c0:s1",
+              "seats": [
+                "holdemlab",
+                "gongsta"
+              ],
+              "stacks": {
+                "holdemlab": 1854,
+                "gongsta": 2146
+              },
+              "ranking": [
+                [
+                  "gongsta"
+                ],
+                [
+                  "holdemlab"
+                ]
+              ],
+              "points": {
+                "gongsta": 2.0,
+                "holdemlab": 1.0
+              }
+            }
+          ],
+          "game_points": {
+            "gongsta": 3.0,
+            "holdemlab": 3.0
+          },
+          "ranking": [
+            [
+              "gongsta",
+              "holdemlab"
+            ]
+          ],
+          "round_points": {
+            "gongsta": 1.5,
+            "holdemlab": 1.5
+          }
+        },
+        {
+          "players": [
+            "noregrets",
+            "vincent"
+          ],
+          "games": [
+            {
+              "game_id": "r4:g3:c0:s0",
+              "seats": [
+                "noregrets",
+                "vincent"
+              ],
+              "stacks": {
+                "noregrets": 2090,
+                "vincent": 1910
+              },
+              "ranking": [
+                [
+                  "noregrets"
+                ],
+                [
+                  "vincent"
+                ]
+              ],
+              "points": {
+                "noregrets": 2.0,
+                "vincent": 1.0
+              }
+            },
+            {
+              "game_id": "r4:g3:c0:s1",
+              "seats": [
+                "vincent",
+                "noregrets"
+              ],
+              "stacks": {
+                "vincent": 1910,
+                "noregrets": 2090
+              },
+              "ranking": [
+                [
+                  "noregrets"
+                ],
+                [
+                  "vincent"
+                ]
+              ],
+              "points": {
+                "noregrets": 2.0,
+                "vincent": 1.0
+              }
+            }
+          ],
+          "game_points": {
+            "noregrets": 4.0,
+            "vincent": 2.0
+          },
+          "ranking": [
+            [
+              "noregrets"
+            ],
+            [
+              "vincent"
+            ]
+          ],
+          "round_points": {
+            "noregrets": 2.0,
+            "vincent": 1.0
+          }
+        },
+        {
+          "players": [
+            "fawz",
+            "dberweger"
+          ],
+          "games": [
+            {
+              "game_id": "r4:g4:c0:s0",
+              "seats": [
+                "fawz",
+                "dberweger"
+              ],
+              "stacks": {
+                "fawz": 2130,
+                "dberweger": 1870
+              },
+              "ranking": [
+                [
+                  "fawz"
+                ],
+                [
+                  "dberweger"
+                ]
+              ],
+              "points": {
+                "fawz": 2.0,
+                "dberweger": 1.0
+              }
+            },
+            {
+              "game_id": "r4:g4:c0:s1",
+              "seats": [
+                "dberweger",
+                "fawz"
+              ],
+              "stacks": {
+                "dberweger": 3840,
+                "fawz": 160
+              },
+              "ranking": [
+                [
+                  "dberweger"
+                ],
+                [
+                  "fawz"
+                ]
+              ],
+              "points": {
+                "dberweger": 2.0,
+                "fawz": 1.0
+              }
+            }
+          ],
+          "game_points": {
+            "fawz": 3.0,
+            "dberweger": 3.0
+          },
+          "ranking": [
+            [
+              "dberweger",
+              "fawz"
+            ]
+          ],
+          "round_points": {
+            "dberweger": 1.5,
+            "fawz": 1.5
+          }
+        },
+        {
+          "players": [
+            "fullhouse",
+            "dqn_reference"
+          ],
+          "games": [
+            {
+              "game_id": "r4:g5:c0:s0",
+              "seats": [
+                "fullhouse",
+                "dqn_reference"
+              ],
+              "stacks": {
+                "fullhouse": 2000,
+                "dqn_reference": 2000
+              },
+              "ranking": [
+                [
+                  "dqn_reference",
+                  "fullhouse"
+                ]
+              ],
+              "points": {
+                "dqn_reference": 1.5,
+                "fullhouse": 1.5
+              }
+            },
+            {
+              "game_id": "r4:g5:c0:s1",
+              "seats": [
+                "dqn_reference",
+                "fullhouse"
+              ],
+              "stacks": {
+                "dqn_reference": 1990,
+                "fullhouse": 2010
+              },
+              "ranking": [
+                [
+                  "fullhouse"
+                ],
+                [
+                  "dqn_reference"
+                ]
+              ],
+              "points": {
+                "fullhouse": 2.0,
+                "dqn_reference": 1.0
+              }
+            }
+          ],
+          "game_points": {
+            "fullhouse": 3.5,
+            "dqn_reference": 2.5
+          },
+          "ranking": [
+            [
+              "fullhouse"
+            ],
+            [
+              "dqn_reference"
+            ]
+          ],
+          "round_points": {
+            "fullhouse": 2.0,
+            "dqn_reference": 1.0
+          }
+        }
+      ],
+      "cumulative_points": {
+        "fawz": 5.5,
+        "jeffelin": 7.0,
+        "lucky": 7.0,
+        "ethan": 7.0,
+        "gongsta": 6.5,
+        "dberweger": 5.0,
+        "vincent": 5.5,
+        "dqn_reference": 4.0,
+        "noregrets": 6.5,
+        "fullhouse": 5.5,
+        "pokerforbots": 6.5,
+        "holdemlab": 6.0
+      },
+      "ranking": [
+        [
+          "lucky"
+        ],
+        [
+          "ethan",
+          "jeffelin"
+        ],
+        [
+          "gongsta",
+          "noregrets",
+          "pokerforbots"
+        ],
+        [
+          "holdemlab"
+        ],
+        [
+          "fullhouse"
+        ],
+        [
+          "fawz"
+        ],
+        [
+          "vincent"
+        ],
+        [
+          "dberweger"
+        ],
+        [
+          "dqn_reference"
+        ]
+      ]
+    }
+  ],
+  "qualifier_games": 48,
+  "tiebreak_games": 18,
+  "total_hands": 323,
+  "unresolved_ties": [
+    {
+      "context": "r4:cumulative",
+      "players": [
+        "ethan",
+        "jeffelin"
+      ],
+      "attempts": 1
+    },
+    {
+      "context": "r4:cumulative",
+      "players": [
+        "gongsta",
+        "noregrets",
+        "pokerforbots"
+      ],
+      "attempts": 1
+    }
+  ]
+}

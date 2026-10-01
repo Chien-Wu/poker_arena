@@ -1,0 +1,105 @@
+{
+  "players": [
+    {
+      "id": "lucky",
+      "bot": "up_lucky",
+      "params": {
+        "samples": 80
+      }
+    },
+    {
+      "id": "ethan",
+      "bot": "up_ethan",
+      "params": {
+        "samples": 80
+      }
+    },
+    {
+      "id": "dberweger",
+      "bot": "up_dberweger",
+      "params": {
+        "samples": 80
+      }
+    },
+    {
+      "id": "vincent",
+      "bot": "up_vincent",
+      "params": {
+        "samples": 80
+      }
+    },
+    {
+      "id": "dqn_reference",
+      "bot": "up_dqn_reference",
+      "params": {
+        "samples": 80
+      }
+    },
+    {
+      "id": "noregrets",
+      "bot": "up_noregrets",
+      "params": {
+        "samples": 80
+      }
+    },
+    {
+      "id": "fullhouse",
+      "bot": "up_fullhouse",
+      "params": {
+        "samples": 80
+      }
+    },
+    {
+      "id": "pokerforbots",
+      "bot": "up_pokerforbots",
+      "params": {
+        "samples": 80
+      }
+    },
+    {
+      "id": "chien",
+      "bot": "mybot1",
+      "params": {
+        "samples": 80
+      }
+    },
+    {
+      "id": "random",
+      "bot": "random_bot",
+      "params": {}
+    }
+  ],
+  "game": {
+    "initial_stack": 2000,
+    "small_blind": 10,
+    "big_blind": 20,
+    "ante": 0,
+    "hands_per_game": 6,
+    "max_actions_per_hand": 2000,
+    "blind_schedule": []
+  },
+  "tournament": {
+    "rounds": 4,
+    "group_size": 5,
+    "rotation_cycles": 1,
+    "regroup": true,
+    "require_equal_groups": false,
+    "tiebreak_hands": 2,
+    "tiebreak_attempts": 1,
+    "tiebreak_scope": "final",
+    "unresolved_ties": "share"
+  },
+  "execution": {
+    "runner": "inprocess",
+    "action_timeout_ms": 2000,
+    "startup_timeout_ms": 20000,
+    "event_timeout_ms": 2000,
+    "max_failures_per_game": 3,
+    "failure_policy": "abort",
+    "memory_mb": 2048,
+    "cpu_seconds": 120,
+    "require_no_network": false,
+    "docker_image": "poker-arena-bot:local"
+  },
+  "seed": 20261002
+}

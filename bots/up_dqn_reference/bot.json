@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "id": "up_dqn_reference",
+  "name": "HeuristicPlayer",
+  "runtime": "python",
+  "entrypoint": "adapter:Bot",
+  "capabilities": {
+    "variant": "nlhe",
+    "min_players": 2,
+    "max_players": 9
+  },
+  "default_params": {
+    "samples": 80
+  },
+  "runtime_network": false,
+  "competition_eligible": false,
+  "provenance": {
+    "kind": "upstream-policy-extract",
+    "original_number": 12,
+    "repository": "alexherm0123verify/poker-DQN",
+    "policy": "HeuristicPlayer",
+    "note": "PyPokerEngine heuristic reference, not DQN weights. Original hardcoded nine-player equity assumption is preserved."
+  }
+}

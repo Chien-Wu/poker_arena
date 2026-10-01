@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "id": "random_bot",
+  "name": "Uniform action baseline",
+  "runtime": "python",
+  "entrypoint": "adapter:Bot",
+  "capabilities": {
+    "variant": "nlhe",
+    "min_players": 2,
+    "max_players": 9
+  },
+  "provenance": "native-example",
+  "default_params": {},
+  "runtime_network": false,
+  "competition_eligible": false
+}

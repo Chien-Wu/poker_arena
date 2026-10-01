@@ -1,0 +1,37 @@
+{
+  "demos": [
+    {
+      "name": "native_completed",
+      "status": "complete_with_unresolved_ties",
+      "qualifier_games": 20,
+      "playoff_games": 84,
+      "hands": 952,
+      "elapsed_seconds": 279.575,
+      "engine_failures": 0,
+      "source_policy_calls": 0,
+      "adapter_repairs": 0
+    },
+    {
+      "name": "upstreams_hu_completed",
+      "status": "complete_with_unresolved_ties",
+      "qualifier_games": 48,
+      "playoff_games": 18,
+      "hands": 323,
+      "elapsed_seconds": 9.895,
+      "engine_failures": 0,
+      "source_policy_calls": 1056,
+      "adapter_repairs": 11
+    },
+    {
+      "name": "upstreams_multiway_completed",
+      "status": "complete_with_unresolved_ties",
+      "qualifier_games": 40,
+      "playoff_games": 6,
+      "hands": 252,
+      "elapsed_seconds": 18.992,
+      "engine_failures": 0,
+      "source_policy_calls": 1705,
+      "adapter_repairs": 5
+    }
+  ]
+}

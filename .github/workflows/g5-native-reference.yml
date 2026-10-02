@@ -31,9 +31,10 @@ jobs:
             <ItemGroup><Compile Include="Program.cs"/><ProjectReference Include="../../upstream/src/G5.Logic/G5.Logic.csproj"/></ItemGroup>
           </Project>
           EOF
-          # Project location is g5_port/reference: use repository-root upstream.
-          sed -i 's@../../upstream/@../../../upstream/@' /dev/null 2>/dev/null || true
-          sed -i 's@../../upstream/@../../upstream/@' g5_port/reference/G5MacReference.csproj
+          # Capture stdout before changing Console.Out; beforefieldinit may defer
+          # static field initializers until after Main has redirected diagnostics.
+          sed -i 's/static readonly TextWriter Wire = Console.Out;/static TextWriter Wire;/' g5_port/reference/Program.cs
+          sed -i 's/Console.SetOut(Console.Error);/Wire=Console.Out; Console.SetOut(Console.Error);/' g5_port/reference/Program.cs
           dotnet publish g5_port/reference/G5MacReference.csproj -c Release -r linux-x64 --self-contained true -o out/native
           cp upstream/src/DecisionMaking/libdec_making.so out/native/DecisionMaking.dll
           cp -L /usr/lib/x86_64-linux-gnu/libtbb.so.12 out/native/
@@ -44,7 +45,6 @@ jobs:
           cp g5_port/reference/{Program.cs,G5MacReference.csproj} out/
           find upstream/src/G5.Logic upstream/src/DecisionMaking -type f \( -name '*.cs' -o -name '*.cpp' -o -name '*.h' \) -print0 | sort -z | xargs -0 sha256sum > out/original-source-sha256.txt
           cp upstream/src/DecisionMaking/libdec_making.so out/original-native.so
-          # A separately labelled no-rake build permits isolating the rules change.
           cp upstream/src/DecisionMaking/GameState.cpp out/GameState.original.cpp
           python3 - <<'PY'
           from pathlib import Path
@@ -58,6 +58,8 @@ jobs:
           cp upstream/src/DecisionMaking/GameState.cpp out/GameState.no-rake.cpp
           cd out/native
           LD_LIBRARY_PATH=. ./G5MacReference --export ../oracle
+          printf '%s\n' '{"type":"hello","player":0,"num_players":2,"num_hands":100,"stack":200,"blinds":[1,2],"time_bank_ms":30000,"increment_ms":100}' '{"type":"hand_start","hand":0,"seat":0,"button":0,"stacks":[200,200],"hole":["As","Ad"],"players":[0,1]}' '{"type":"act","hand":0,"seat":0,"button":0,"street":"preflop","hole":["As","Ad"],"board":[],"pot":3,"to_call":1,"min_raise_to":4,"max_raise_to":200,"can_raise":true,"stacks":[199,198],"street_bets":[1,2],"folded":[false,false],"history":[],"players":[0,1],"clock_ms":30000}' | LD_LIBRARY_PATH=. ./G5MacReference > ../wire-smoke.jsonl 2> ../wire-smoke.log
+          python3 -c 'import json; a=[json.loads(s) for s in open("../wire-smoke.jsonl")]; assert len(a)==1 and a[0]["action"] in ["raise","call","fold","check"], a; print(a)'
       - name: Pack lean executable and fixtures (no SDKs)
         if: always()
         run: |

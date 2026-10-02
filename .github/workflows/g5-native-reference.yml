@@ -1,0 +1,73 @@
+name: G5 native reference
+on:
+  push:
+    branches: [g5-mac-port-20261002]
+    paths: ['.github/workflows/g5-native-reference.yml', 'g5_port/reference/**']
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 15
+    env:
+      DOTNET_CLI_TELEMETRY_OPTOUT: '1'
+      DOTNET_NOLOGO: '1'
+      DOTNET_SYSTEM_GLOBALIZATION_INVARIANT: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with: {dotnet-version: '8.0.x'}
+      - name: Get pinned original and native dependency
+        run: |
+          set -euxo pipefail
+          mkdir -p upstream out
+          curl --fail -L --retry 2 https://codeload.github.com/Nemandza82/g5-poker-bot/tar.gz/251d43dcea7a1a034b5759402e3a116b57b1e6c5 | tar -xz --strip-components=1 -C upstream
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends libtbb-dev
+          make -C upstream/src/DecisionMaking -j2
+          cat > g5_port/reference/G5MacReference.csproj <<'EOF'
+          <Project Sdk="Microsoft.NET.Sdk">
+            <PropertyGroup><OutputType>Exe</OutputType><TargetFramework>net8.0</TargetFramework><InvariantGlobalization>true</InvariantGlobalization><EnableDefaultCompileItems>false</EnableDefaultCompileItems></PropertyGroup>
+            <ItemGroup><Compile Include="Program.cs"/><ProjectReference Include="../../upstream/src/G5.Logic/G5.Logic.csproj"/></ItemGroup>
+          </Project>
+          EOF
+          # Project location is g5_port/reference: use repository-root upstream.
+          sed -i 's@../../upstream/@../../../upstream/@' /dev/null 2>/dev/null || true
+          sed -i 's@../../upstream/@../../upstream/@' g5_port/reference/G5MacReference.csproj
+          dotnet publish g5_port/reference/G5MacReference.csproj -c Release -r linux-x64 --self-contained true -o out/native
+          cp upstream/src/DecisionMaking/libdec_making.so out/native/DecisionMaking.dll
+          cp -L /usr/lib/x86_64-linux-gnu/libtbb.so.12 out/native/
+          cp upstream/redist/{PreFlopEquities.txt,full_stats_list_6max.bin,full_stats_list_hu.bin} out/native/
+          mkdir -p out/native/PreFlopCharts
+          cp -r upstream/redist/PreFlopCharts/200bb out/native/PreFlopCharts/
+          cp upstream/LICENSE out/native/G5-LICENSE
+          cp g5_port/reference/{Program.cs,G5MacReference.csproj} out/
+          find upstream/src/G5.Logic upstream/src/DecisionMaking -type f \( -name '*.cs' -o -name '*.cpp' -o -name '*.h' \) -print0 | sort -z | xargs -0 sha256sum > out/original-source-sha256.txt
+          cp upstream/src/DecisionMaking/libdec_making.so out/original-native.so
+          # A separately labelled no-rake build permits isolating the rules change.
+          cp upstream/src/DecisionMaking/GameState.cpp out/GameState.original.cpp
+          python3 - <<'PY'
+          from pathlib import Path
+          p=Path('upstream/src/DecisionMaking/GameState.cpp')
+          s=p.read_text(); needle='winnings -= rake;'
+          assert s.count(needle)==1
+          p.write_text(s.replace(needle,'winnings -= 0; // MAC no-rake evaluation variant ONLY'))
+          PY
+          make -C upstream/src/DecisionMaking -j2
+          cp upstream/src/DecisionMaking/libdec_making.so out/no-rake-native.so
+          cp upstream/src/DecisionMaking/GameState.cpp out/GameState.no-rake.cpp
+          cd out/native
+          LD_LIBRARY_PATH=. ./G5MacReference --export ../oracle
+      - name: Pack lean executable and fixtures (no SDKs)
+        if: always()
+        run: |
+          du -sh out/* || true
+          tar -czf g5-native-reference.tar.gz out
+          sha256sum g5-native-reference.tar.gz
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: g5-native-reference
+          path: g5-native-reference.tar.gz
+          compression-level: 0
+          retention-days: 7

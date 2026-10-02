@@ -1,0 +1,43 @@
+name: MAC research snapshot
+on:
+  push:
+    branches: [codex/mac-strong-bot-20261002]
+    paths: [.github/workflows/mac-research.yml]
+permissions:
+  contents: read
+jobs:
+  snapshot:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Fetch public research sources, without executing them
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p snapshot/sources snapshot/downloads
+          git archive HEAD | tar -x -C snapshot/sources
+          git clone --depth 1 https://github.com/advitrocks9/fullhouse-bot.git snapshot/fullhouse-deepcfr
+          git -C snapshot/fullhouse-deepcfr rev-parse HEAD > snapshot/fullhouse-deepcfr.commit
+          rm -rf snapshot/fullhouse-deepcfr/.git
+          curl --fail --location --retry 2 --max-time 90 https://poker.monashcoding.com/dl/macpoker-0.1.0-py3-none-any.whl -o snapshot/downloads/macpoker-0.1.0-py3-none-any.whl
+          python3 -m pip download --no-deps --no-binary=:all: eval7==0.1.10 -d snapshot/downloads
+          python3 -m pip download --no-deps treys -d snapshot/downloads
+          python3 - <<'PY'
+          import hashlib,json,pathlib
+          root=pathlib.Path('snapshot')
+          manifest={str(p.relative_to(root)):hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(root.rglob('*')) if p.is_file()}
+          (root/'SHA256SUMS.json').write_text(json.dumps(manifest,indent=2)+'\n')
+          print('FILES',len(manifest))
+          print('BYTES',sum(p.stat().st_size for p in root.rglob('*') if p.is_file()))
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: mac-research-snapshot
+          path: snapshot/
+          include-hidden-files: true
+          retention-days: 1
+          if-no-files-found: error

@@ -1,4 +1,4 @@
-name: MAC research dependencies
+name: MAC independent opponents
 on:
   push:
     branches: [codex/mac-strong-bot-20261002]
@@ -10,40 +10,31 @@ jobs:
     runs-on: ubuntu-24.04
     timeout-minutes: 10
     steps:
-      - name: Download evaluator sources without running package setup
+      - name: Fetch public source without executing any bot
         run: |
-          mkdir -p snapshot/downloads
-          python3 - <<'PY'
-          import hashlib,json,pathlib,urllib.request
-          root=pathlib.Path('snapshot/downloads')
-          for name,version,typ in [('eval7','0.1.10','sdist'),('treys','0.1.8','bdist_wheel')]:
-              meta=json.load(urllib.request.urlopen(f'https://pypi.org/pypi/{name}/{version}/json'))
-              item=next(x for x in meta['urls'] if x['packagetype']==typ)
-              data=urllib.request.urlopen(item['url']).read()
-              assert hashlib.sha256(data).hexdigest()==item['digests']['sha256']
-              (root/item['filename']).write_bytes(data)
-          PY
-      - name: Acquire relocatable Python 3.12 for local compatibility tests
-        run: |
-          python3 -m pip install uv
-          uv python install 3.12
-          PY=$(uv python find 3.12)
-          ROOT=$(dirname $(dirname $(readlink -f "$PY")))
-          tar -czf snapshot/python312.tar.gz -C "$ROOT" .
-          python3 -m pip download --only-binary=:all: --python-version 3.12 --abi cp312 --platform manylinux_2_17_x86_64 --implementation cp --no-deps numpy==2.2.6 -d snapshot/downloads
-      - name: Record archive provenance
-        run: |
+          set -euo pipefail
+          mkdir -p snapshot
+          git clone --depth 1 https://github.com/lucashsu007-create/fullhouse-hackathon-write-up-repo.git fetched
+          git -C fetched rev-parse HEAD > snapshot/lucas.commit
+          test "$(cat snapshot/lucas.commit)" = 8b98ee3efce3b224177609352258dc86db901cce
+          mkdir -p snapshot/lucas
+          cp fetched/LICENSE fetched/README.md snapshot/lucas/
+          cp -r fetched/bots snapshot/lucas/
+          cp -r 'fetched/advanced testing bots' snapshot/lucas/
+          find fetched -maxdepth 2 -type f -iname '*v16*' -print > snapshot/v16_paths.txt
+          curl -L --fail --max-time 30 https://callmemaybe.pages.dev -o snapshot/callmemaybe_public.html || true
           python3 - <<'PY'
           import hashlib,json,pathlib
           root=pathlib.Path('snapshot')
           out={str(p.relative_to(root)):hashlib.sha256(p.read_bytes()).hexdigest() for p in root.rglob('*') if p.is_file()}
           (root/'SHA256SUMS.json').write_text(json.dumps(out,indent=2)+'\n')
-          print(json.dumps(out,indent=2))
+          print('FILES',len(out))
+          print('BYTES',sum(p.stat().st_size for p in root.rglob('*') if p.is_file()))
           PY
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: mac-test-dependencies
+          name: mac-independent-opponents
           path: snapshot/
           retention-days: 1
           if-no-files-found: error

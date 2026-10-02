@@ -1,4 +1,4 @@
-name: MAC independent opponents
+name: MAC finalist source audit
 on:
   push:
     branches: [codex/mac-strong-bot-20261002]
@@ -10,31 +10,36 @@ jobs:
     runs-on: ubuntu-24.04
     timeout-minutes: 10
     steps:
-      - name: Fetch public source without executing any bot
+      - name: Download public source only, never execute bot code
         run: |
           set -euo pipefail
-          mkdir -p snapshot
+          mkdir -p snapshot/lucas
           git clone --depth 1 https://github.com/lucashsu007-create/fullhouse-hackathon-write-up-repo.git fetched
           git -C fetched rev-parse HEAD > snapshot/lucas.commit
           test "$(cat snapshot/lucas.commit)" = 8b98ee3efce3b224177609352258dc86db901cce
-          mkdir -p snapshot/lucas
-          cp fetched/LICENSE fetched/README.md snapshot/lucas/
-          cp -r fetched/bots snapshot/lucas/
-          cp -r 'fetched/advanced testing bots' snapshot/lucas/
-          find fetched -maxdepth 2 -type f -iname '*v16*' -print > snapshot/v16_paths.txt
-          curl -L --fail --max-time 30 https://callmemaybe.pages.dev -o snapshot/callmemaybe_public.html || true
+          git -C fetched ls-tree -r --name-only HEAD > snapshot/file_inventory.txt
+          python3 - <<'PY'
+          import pathlib,shutil
+          root=pathlib.Path('fetched');out=pathlib.Path('snapshot/lucas')
+          for p in root.rglob('*'):
+              rel=p.relative_to(root)
+              if '.git' in rel.parts or 'engine' in rel.parts or not p.is_file():continue
+              if p.suffix in ('.py','.npz','.npy') or p.name in ('README.md','LICENSE'):
+                  if p.stat().st_size>20_000_000:continue
+                  target=out/rel;target.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(p,target)
+          PY
+          curl -L --fail --max-time 30 https://callmemaybe.pages.dev/assets/index-xDlP684w.js -o snapshot/callmemaybe_public.js || true
           python3 - <<'PY'
           import hashlib,json,pathlib
           root=pathlib.Path('snapshot')
           out={str(p.relative_to(root)):hashlib.sha256(p.read_bytes()).hexdigest() for p in root.rglob('*') if p.is_file()}
           (root/'SHA256SUMS.json').write_text(json.dumps(out,indent=2)+'\n')
-          print('FILES',len(out))
-          print('BYTES',sum(p.stat().st_size for p in root.rglob('*') if p.is_file()))
+          print('FILES',len(out));print('BYTES',sum(p.stat().st_size for p in root.rglob('*') if p.is_file()))
           PY
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: mac-independent-opponents
+          name: mac-finalist-audit
           path: snapshot/
           retention-days: 1
           if-no-files-found: error

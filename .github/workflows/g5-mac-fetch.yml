@@ -1,0 +1,28 @@
+name: G5 source and SDK fetch
+on:
+  push:
+    branches: [g5-mac-port-20261002]
+    paths: ['.github/workflows/g5-mac-fetch.yml']
+permissions:
+  contents: read
+jobs:
+  fetch:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 5
+    steps:
+      - name: Fetch fixed public artifacts
+        run: |
+          set -euxo pipefail
+          mkdir -p deps
+          curl --fail --location --retry 2 https://codeload.github.com/Nemandza82/g5-poker-bot/tar.gz/251d43dcea7a1a034b5759402e3a116b57b1e6c5 -o deps/g5.tar.gz
+          curl --fail --location --retry 2 https://poker.monashcoding.com/dl/macpoker-0.1.0-py3-none-any.whl -o deps/macpoker-0.1.0-py3-none-any.whl
+          curl --fail --location --retry 2 https://docs.poker.monashcoding.com/rules/ -o deps/mac-rules.html
+          sha256sum deps/* | tee deps/SHA256SUMS
+          du -h deps/*
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: g5-source-and-mac-sdk
+          path: deps/
+          compression-level: 0
+          retention-days: 7

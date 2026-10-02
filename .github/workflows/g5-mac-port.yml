@@ -1,0 +1,81 @@
+name: G5 MAC port audit
+on:
+  push:
+    branches: [g5-mac-port-20261002]
+    paths:
+      - '.github/workflows/g5-mac-port.yml'
+      - 'g5_mac/**'
+permissions:
+  contents: read
+jobs:
+  reference:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 25
+    env:
+      DOTNET_CLI_TELEMETRY_OPTOUT: '1'
+      DOTNET_NOLOGO: '1'
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+      - name: Obtain pinned public sources and official SDK
+        run: |
+          set -euxo pipefail
+          mkdir -p g5_audit/deps g5_audit/reference
+          curl --fail --location --retry 2 https://codeload.github.com/Nemandza82/g5-poker-bot/tar.gz/251d43dcea7a1a034b5759402e3a116b57b1e6c5 -o g5_audit/deps/g5.tar.gz
+          mkdir -p g5_audit/upstream
+          tar -xzf g5_audit/deps/g5.tar.gz --strip-components=1 -C g5_audit/upstream
+          curl --fail --location --retry 2 https://poker.monashcoding.com/dl/macpoker-0.1.0-py3-none-any.whl -o g5_audit/deps/macpoker-0.1.0-py3-none-any.whl
+          sha256sum g5_audit/deps/* | tee g5_audit/SHA256SUMS
+          python -m pip install numpy g5_audit/deps/macpoker-0.1.0-py3-none-any.whl
+          python -m pip freeze | tee g5_audit/python-packages.txt
+          macpoker play house:call house:checkfold --deals 2 --subprocess --history g5_audit/sdk-smoke.json
+      - name: Build original native G5 and original .NET wrapper
+        run: |
+          set -euxo pipefail
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends libtbb-dev
+          make -C g5_audit/upstream/src/DecisionMaking -j2
+          dotnet publish g5_audit/upstream/src/G5.Chipzen -c Release -f net8.0 -r linux-x64 --self-contained true -o g5_audit/reference
+          cp g5_audit/upstream/src/DecisionMaking/libdec_making.so g5_audit/reference/DecisionMaking.dll
+          cp -L /usr/lib/x86_64-linux-gnu/libtbb.so.12 g5_audit/reference/
+          cp g5_audit/upstream/redist/PreFlopEquities.txt g5_audit/reference/
+          cp g5_audit/upstream/redist/full_stats_list_hu.bin g5_audit/reference/
+          mkdir -p g5_audit/reference/PreFlopCharts
+          cp -r g5_audit/upstream/redist/PreFlopCharts/200bb g5_audit/reference/PreFlopCharts/
+          dotnet --info | tee g5_audit/dotnet-info.txt
+          lscpu | tee g5_audit/cpu-info.txt
+          ldd g5_audit/reference/DecisionMaking.dll | tee g5_audit/native-deps.txt
+      - name: Export source inventory and SDK API for inspection
+        run: |
+          python - <<'PY'
+          import inspect,json,pathlib,macpoker,zipfile
+          out=pathlib.Path('g5_audit')
+          print('SDK_LOCATION',macpoker.__file__)
+          print('SDK_FILES')
+          root=pathlib.Path(macpoker.__file__).parent
+          for p in sorted(root.rglob('*.py')):
+              print('SDK_FILE',p.relative_to(root),p.stat().st_size)
+          print('G5_SOURCE_FILES')
+          for p in sorted((out/'upstream/src').rglob('*')):
+              if p.is_file() and p.suffix in ['.cs','.cpp','.h','.csproj']:
+                  print(p.relative_to(out/'upstream'),p.stat().st_size)
+          (out/'sdk').mkdir(exist_ok=True)
+          import shutil
+          shutil.copytree(root,out/'sdk/macpoker',dirs_exist_ok=True)
+          print('BOT_API',inspect.getsource(macpoker.Bot))
+          PY
+          tar -czf g5_audit/deps/dotnet-sdk.tar.gz -C /usr/share/dotnet .
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: g5-mac-bootstrap
+          path: g5_audit/
+          retention-days: 7
+          compression-level: 6
